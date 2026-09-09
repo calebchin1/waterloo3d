@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UW Tunnels 3D</title>
+    <meta name="description" content="Every student-accessible tunnel, bridge and doorway link on the University of Waterloo campus, in 3D." />
+    <link rel="stylesheet" href="/vendor/maplibre-gl.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%23ff8c1a'/><path d='M3 10h10M5 6h6' stroke='%23fff' stroke-width='2' stroke-linecap='round'/></svg>" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <aside id="panel">
+      <header>
+        <h1>UW Tunnels <span>3D</span></h1>
+        <p>Every student-accessible indoor link between buildings on the University of Waterloo main campus.</p>
+      </header>
+      <section class="legend">
+        <label><input type="checkbox" data-kind="tunnel" checked /><i class="sw tunnel"></i>Tunnels <em id="n-tunnel"></em></label>
+        <label><input type="checkbox" data-kind="bridge" checked /><i class="sw bridge"></i>Bridges <em id="n-bridge"></em></label>
+        <label><input type="checkbox" data-kind="doorway" checked /><i class="sw doorway"></i>Doorway links <em id="n-doorway"></em></label>
+      </section>
+      <section class="controls">
+        <label class="toggle"><input type="checkbox" id="xray" checked /> X‑ray buildings</label>
+        <label class="toggle"><input type="checkbox" id="unverified" checked /> Show unverified (OSM‑only)</label>
+        <button id="reset" type="button">Reset view</button>
+      </section>
+      <section class="list">
+        <input id="search" type="search" placeholder="Search building code or name…" autocomplete="off" />
+        <ul id="results"></ul>
+      </section>
+      <footer>
+        Data: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · basemap <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> · link list from <a href="https://uwimprint.ca/an-introduction-to-tunnels-and-bridges-on-campus/" target="_blank" rel="noopener">Imprint</a>. Tunnel depths and bridge heights are nominal.
+      </footer>
+    </aside>
+    <button id="panel-toggle" type="button" aria-label="Toggle panel">☰</button>
+    <script src="/vendor/maplibre-gl.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

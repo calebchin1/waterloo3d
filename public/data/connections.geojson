@@ -1,0 +1,1497 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "sch-tc",
+   "properties": {
+    "id": "sch-tc",
+    "from": "SCH",
+    "to": "TC",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "SCH – TC",
+    "status": "open",
+    "verified": true,
+    "source": "osm:139814054",
+    "notes": "Start of the Arts Quad tunnel system; bright orange hallway under SCH.",
+    "length_m": 57
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405341,
+      43.4690219
+     ],
+     [
+      -80.5410375,
+      43.4688408
+     ],
+     [
+      -80.5410375,
+      43.4688408
+     ],
+     [
+      -80.541154,
+      43.4689081
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "tc-al",
+   "properties": {
+    "id": "tc-al",
+    "from": "TC",
+    "to": "AL",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "TC – AL",
+    "status": "open",
+    "verified": true,
+    "source": "osm:368682710,osm:187712344",
+    "notes": "Arts Quad tunnel system.",
+    "length_m": 74
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541154,
+      43.4689081
+     ],
+     [
+      -80.5410375,
+      43.4688408
+     ],
+     [
+      -80.5410375,
+      43.4688408
+     ],
+     [
+      -80.5412334,
+      43.4687843
+     ],
+     [
+      -80.5412686,
+      43.4687727
+     ],
+     [
+      -80.541509,
+      43.4686937
+     ],
+     [
+      -80.5415281,
+      43.4687217
+     ],
+     [
+      -80.5415545,
+      43.4687611
+     ],
+     [
+      -80.5416198,
+      43.4688586
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "al-ml",
+   "properties": {
+    "id": "al-ml",
+    "from": "AL",
+    "to": "ML",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "AL – ML",
+    "status": "open",
+    "verified": true,
+    "source": "osm:49785862,osm:187712346",
+    "notes": "Arts Quad tunnel system.",
+    "length_m": 57
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420502,
+      43.4687855
+     ],
+     [
+      -80.5423927,
+      43.4686659
+     ],
+     [
+      -80.5424679,
+      43.4687798
+     ],
+     [
+      -80.5424679,
+      43.4687798
+     ],
+     [
+      -80.5426133,
+      43.4688019
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "al-ev1",
+   "properties": {
+    "id": "al-ev1",
+    "from": "AL",
+    "to": "EV1",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "AL – EV1",
+    "status": "open",
+    "verified": true,
+    "source": "osm:49785862,osm:49785860",
+    "notes": "Arts Quad tunnel system; EV2/EV3 reached by doorway from EV1.",
+    "length_m": 47
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420502,
+      43.4687855
+     ],
+     [
+      -80.5423927,
+      43.4686659
+     ],
+     [
+      -80.542305,
+      43.4685357
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ev1-hh",
+   "properties": {
+    "id": "ev1-hh",
+    "from": "EV1",
+    "to": "HH",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "EV1 to HH Walkway",
+    "status": "open",
+    "verified": true,
+    "source": "osm:49785864,osm:383816289",
+    "notes": "End of the Arts Quad tunnel system; steps up into HH.",
+    "length_m": 26
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422379,
+      43.4682649
+     ],
+     [
+      -80.5420908,
+      43.4682499
+     ],
+     [
+      -80.5420908,
+      43.4682499
+     ],
+     [
+      -80.5420273,
+      43.4681573
+     ],
+     [
+      -80.542013,
+      43.4681337
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "mc-c2",
+   "properties": {
+    "id": "mc-c2",
+    "from": "MC",
+    "to": "C2",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "MC – C2",
+    "status": "open",
+    "verified": true,
+    "source": "osm:183247348",
+    "notes": "Tunnel between MC and C2.",
+    "length_m": 25
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5436179,
+      43.4720504
+     ],
+     [
+      -80.5434694,
+      43.4720508
+     ],
+     [
+      -80.5434694,
+      43.4720508
+     ],
+     [
+      -80.5433272,
+      43.4721026
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "rch-e2",
+   "properties": {
+    "id": "rch-e2",
+    "from": "RCH",
+    "to": "E2",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "RCH – E2",
+    "status": "open",
+    "verified": true,
+    "source": "osm:51856426",
+    "notes": "RCH lecture hall tunnel to E2.",
+    "length_m": 28
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5407909,
+      43.4704448
+     ],
+     [
+      -80.5408784,
+      43.4705715
+     ],
+     [
+      -80.5408784,
+      43.4705715
+     ],
+     [
+      -80.5407559,
+      43.4706329
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "rch-dwe",
+   "properties": {
+    "id": "rch-dwe",
+    "from": "RCH",
+    "to": "DWE",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "RCH – DWE",
+    "status": "open",
+    "verified": true,
+    "source": "osm:187714493",
+    "notes": "RCH lecture hall tunnel to DWE.",
+    "length_m": 35
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5407427,
+      43.4701735
+     ],
+     [
+      -80.5406946,
+      43.4700708
+     ],
+     [
+      -80.5406946,
+      43.4700708
+     ],
+     [
+      -80.5405579,
+      43.4698866
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "esc-eit-t",
+   "properties": {
+    "id": "esc-eit-t",
+    "from": "ESC",
+    "to": "EIT",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "ESC – EIT",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "ESC and EIT are joined by both a tunnel and a bridge. Traced; not in OSM.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425589,
+      43.4712479
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "phy-e2-t",
+   "properties": {
+    "id": "phy-e2-t",
+    "from": "PHY",
+    "to": "E2",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "PHY – E2",
+    "status": "open",
+    "verified": false,
+    "source": "osm:186942884",
+    "notes": "OSM maps an underground footway here in addition to the bridge. Unverified.",
+    "length_m": 21
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411923,
+      43.4704676
+     ],
+     [
+      -80.5411195,
+      43.470494
+     ],
+     [
+      -80.540987,
+      43.4705421
+     ],
+     [
+      -80.5409614,
+      43.4705513
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "qnc-b2-t",
+   "properties": {
+    "id": "qnc-b2-t",
+    "from": "QNC",
+    "to": "B2",
+    "kind": "tunnel",
+    "z_m": -4,
+    "name": "QNC – B2",
+    "status": "open",
+    "verified": false,
+    "source": "osm:815045355",
+    "notes": "OSM maps an underground footway between QNC and B2. Unverified.",
+    "length_m": 139
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5438743,
+      43.4714565
+     ],
+     [
+      -80.5437407,
+      43.471504
+     ],
+     [
+      -80.5437232,
+      43.4715102
+     ],
+     [
+      -80.5434981,
+      43.4711749
+     ],
+     [
+      -80.5434501,
+      43.4711002
+     ],
+     [
+      -80.5434984,
+      43.4710811
+     ],
+     [
+      -80.5435224,
+      43.4710729
+     ],
+     [
+      -80.54391,
+      43.470933
+     ],
+     [
+      -80.5439339,
+      43.4709249
+     ],
+     [
+      -80.5439099,
+      43.4708901
+     ],
+     [
+      -80.5440512,
+      43.4708391
+     ],
+     [
+      -80.5440372,
+      43.4708185
+     ],
+     [
+      -80.5439711,
+      43.4707214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "slc-mc",
+   "properties": {
+    "id": "slc-mc",
+    "from": "SLC",
+    "to": "MC",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "SLC – MC",
+    "status": "open",
+    "verified": true,
+    "source": "osm:983281506",
+    "notes": "Glass-panelled bridge SLC to MC.",
+    "length_m": 51
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5450054,
+      43.4720948
+     ],
+     [
+      -80.5444417,
+      43.4723015
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "pac-slc",
+   "properties": {
+    "id": "pac-slc",
+    "from": "PAC",
+    "to": "SLC",
+    "kind": "bridge",
+    "z_m": 8,
+    "name": "PAC – SLC",
+    "status": "open",
+    "verified": true,
+    "source": "osm:145079151",
+    "notes": "PAC to SLC link (upper level).",
+    "length_m": 42
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5459461,
+      43.4720419
+     ],
+     [
+      -80.5458439,
+      43.4719631
+     ],
+     [
+      -80.5458439,
+      43.4719631
+     ],
+     [
+      -80.5454898,
+      43.4718845
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "mc-dc",
+   "properties": {
+    "id": "mc-dc",
+    "from": "MC",
+    "to": "DC",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "MC – DC",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Glass-panelled bridge MC to DC. Traced; not in OSM.",
+    "length_m": 54
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437408,
+      43.4724154
+     ],
+     [
+      -80.5436905,
+      43.4725175
+     ],
+     [
+      -80.5436905,
+      43.4725175
+     ],
+     [
+      -80.5433543,
+      43.4726421
+     ],
+     [
+      -80.5433543,
+      43.4726421
+     ],
+     [
+      -80.5432061,
+      43.4726353
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "dc-m3",
+   "properties": {
+    "id": "dc-m3",
+    "from": "DC",
+    "to": "M3",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "DC – M3",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Bridge DC to M3. Traced; not in OSM.",
+    "length_m": 53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434356,
+      43.4727806
+     ],
+     [
+      -80.5437335,
+      43.4730793
+     ],
+     [
+      -80.5437335,
+      43.4730793
+     ],
+     [
+      -80.5438726,
+      43.4731174
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "dc-c2",
+   "properties": {
+    "id": "dc-c2",
+    "from": "DC",
+    "to": "C2",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "DC – C2",
+    "status": "open",
+    "verified": true,
+    "source": "osm:137183050",
+    "notes": "Bridge DC to C2.",
+    "length_m": 39
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424388,
+      43.4724099
+     ],
+     [
+      -80.5427378,
+      43.4722989
+     ],
+     [
+      -80.5427378,
+      43.4722989
+     ],
+     [
+      -80.5428191,
+      43.4722081
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "dc-e3",
+   "properties": {
+    "id": "dc-e3",
+    "from": "DC",
+    "to": "E3",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "DC – E3",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Bridge DC to E3. Traced; not in OSM.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5413073,
+      43.4718838
+     ],
+     [
+      -80.5412098,
+      43.4718019
+     ],
+     [
+      -80.5412098,
+      43.4718019
+     ],
+     [
+      -80.5412098,
+      43.4718019
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e3-e5",
+   "properties": {
+    "id": "e3-e5",
+    "from": "E3",
+    "to": "E5",
+    "kind": "bridge",
+    "z_m": 6,
+    "name": "E5 Bridge",
+    "status": "open",
+    "verified": true,
+    "source": "osm:175807556",
+    "notes": "Crosses Ring Road and the ION tracks.",
+    "length_m": 93
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5404796,
+      43.4719161
+     ],
+     [
+      -80.5404927,
+      43.4719362
+     ],
+     [
+      -80.5399002,
+      43.4722898
+     ],
+     [
+      -80.539876,
+      43.4723079
+     ],
+     [
+      -80.5398527,
+      43.4723287
+     ],
+     [
+      -80.539845,
+      43.4723494
+     ],
+     [
+      -80.5398437,
+      43.4723686
+     ],
+     [
+      -80.5398505,
+      43.472391
+     ],
+     [
+      -80.5398626,
+      43.4724233
+     ],
+     [
+      -80.5398626,
+      43.4724233
+     ],
+     [
+      -80.539903,
+      43.4725277
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "pse-e6",
+   "properties": {
+    "id": "pse-e6",
+    "from": "PSE",
+    "to": "E6",
+    "kind": "bridge",
+    "z_m": 6,
+    "name": "E6 Bridge",
+    "status": "open",
+    "verified": true,
+    "source": "osm:626283189",
+    "notes": "PSE (formerly E7) to E6.",
+    "length_m": 42
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5393241,
+      43.4730211
+     ],
+     [
+      -80.5392332,
+      43.473056
+     ],
+     [
+      -80.5390896,
+      43.4730966
+     ],
+     [
+      -80.5389848,
+      43.4731374
+     ],
+     [
+      -80.5389848,
+      43.4731374
+     ],
+     [
+      -80.5388533,
+      43.4731879
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e2-dwe",
+   "properties": {
+    "id": "e2-dwe",
+    "from": "E2",
+    "to": "DWE",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "E2 – DWE",
+    "status": "open",
+    "verified": true,
+    "source": "osm:265314066",
+    "notes": "Bridge E2 to DWE.",
+    "length_m": 26
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.539877,
+      43.4703425
+     ],
+     [
+      -80.5397992,
+      43.47025
+     ],
+     [
+      -80.5397992,
+      43.47025
+     ],
+     [
+      -80.5397224,
+      43.4701389
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e2-phy",
+   "properties": {
+    "id": "e2-phy",
+    "from": "E2",
+    "to": "PHY",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "E2 – PHY",
+    "status": "open",
+    "verified": true,
+    "source": "osm:182198718",
+    "notes": "Bridge E2 to PHY.",
+    "length_m": 18
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410112,
+      43.4706234
+     ],
+     [
+      -80.5410809,
+      43.4705979
+     ],
+     [
+      -80.5410809,
+      43.4705979
+     ],
+     [
+      -80.5412148,
+      43.4706449
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "esc-eit-b",
+   "properties": {
+    "id": "esc-eit-b",
+    "from": "ESC",
+    "to": "EIT",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "ESC – EIT",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "ESC to EIT bridge. Traced; not in OSM.",
+    "length_m": 83
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425589,
+      43.4712479
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ],
+     [
+      -80.54255,
+      43.4715
+     ],
+     [
+      -80.5424309,
+      43.4711928
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "mc-qnc",
+   "properties": {
+    "id": "mc-qnc",
+    "from": "MC",
+    "to": "QNC",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "MC to QNC Walkway",
+    "status": "open",
+    "verified": true,
+    "source": "osm:182197539",
+    "notes": "Covered walkway MC to QNC.",
+    "length_m": 34
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5440066,
+      43.4718433
+     ],
+     [
+      -80.5440496,
+      43.4717394
+     ],
+     [
+      -80.5440496,
+      43.4717394
+     ],
+     [
+      -80.5439068,
+      43.4715702
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e2-e3",
+   "properties": {
+    "id": "e2-e3",
+    "from": "E2",
+    "to": "E3",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "E2 to E3 Walkway",
+    "status": "open",
+    "verified": true,
+    "source": "osm:182286461",
+    "notes": "Imprint calls this a doorway; OSM maps a short walkway.",
+    "length_m": 15
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5402455,
+      43.4713284
+     ],
+     [
+      -80.5402647,
+      43.4713544
+     ],
+     [
+      -80.5402647,
+      43.4713544
+     ],
+     [
+      -80.5403246,
+      43.4714537
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "c2-esc",
+   "properties": {
+    "id": "c2-esc",
+    "from": "C2",
+    "to": "ESC",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "C2 – ESC",
+    "status": "open",
+    "verified": false,
+    "source": "osm:182087258",
+    "notes": "OSM-mapped bridge C2 to ESC. Unverified.",
+    "length_m": 22
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430164,
+      43.4719361
+     ],
+     [
+      -80.5430561,
+      43.4718315
+     ],
+     [
+      -80.5430561,
+      43.4718315
+     ],
+     [
+      -80.5429994,
+      43.4717487
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ev2-ev3",
+   "properties": {
+    "id": "ev2-ev3",
+    "from": "EV2",
+    "to": "EV3",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "EV2 – EV3",
+    "status": "open",
+    "verified": true,
+    "source": "osm:574196261",
+    "notes": "EV2 to EV3 link.",
+    "length_m": 49
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434528,
+      43.467765
+     ],
+     [
+      -80.5433868,
+      43.4676678
+     ],
+     [
+      -80.5433443,
+      43.4676053
+     ],
+     [
+      -80.5433892,
+      43.4676175
+     ],
+     [
+      -80.543259,
+      43.4676977
+     ],
+     [
+      -80.5431454,
+      43.4677677
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ev2-pas",
+   "properties": {
+    "id": "ev2-pas",
+    "from": "EV2",
+    "to": "PAS",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "EV2 – PAS",
+    "status": "open",
+    "verified": false,
+    "source": "osm:189317460",
+    "notes": "OSM-mapped bridge EV2 to PAS. Unverified.",
+    "length_m": 38
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430138,
+      43.4679922
+     ],
+     [
+      -80.5428659,
+      43.4680019
+     ],
+     [
+      -80.5428659,
+      43.4680019
+     ],
+     [
+      -80.5428368,
+      43.4679612
+     ],
+     [
+      -80.542716,
+      43.4677918
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "stc-nh",
+   "properties": {
+    "id": "stc-nh",
+    "from": "STC",
+    "to": "NH",
+    "kind": "bridge",
+    "z_m": 5,
+    "name": "STC – NH",
+    "status": "open",
+    "verified": false,
+    "source": "osm:364274039",
+    "notes": "OSM-mapped bridge STC to Needles Hall. Unverified.",
+    "length_m": 32
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437,
+      43.4704413
+     ],
+     [
+      -80.5436905,
+      43.4704252
+     ],
+     [
+      -80.5437246,
+      43.4702664
+     ],
+     [
+      -80.5437246,
+      43.4702664
+     ],
+     [
+      -80.5436994,
+      43.4701595
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "cph-lota",
+   "properties": {
+    "id": "cph-lota",
+    "from": "CPH",
+    "to": "Lot A",
+    "kind": "bridge",
+    "z_m": 8,
+    "name": "CPH – Lot A",
+    "status": "closed",
+    "verified": true,
+    "source": "osm:130347239",
+    "notes": "Pedestrian bridge over University Ave to Parking Lot A. Closed for rebuild; reopening scheduled September 2026.",
+    "length_m": 77
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5388767,
+      43.4706048
+     ],
+     [
+      -80.5387657,
+      43.4705327
+     ],
+     [
+      -80.5387657,
+      43.4705327
+     ],
+     [
+      -80.5380141,
+      43.4703182
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ev1-ev2",
+   "properties": {
+    "id": "ev1-ev2",
+    "from": "EV1",
+    "to": "EV2",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "EV1 – EV2",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429059,
+      43.4681198
+     ],
+     [
+      -80.5429059,
+      43.4681198
+     ],
+     [
+      -80.5429059,
+      43.4681198
+     ],
+     [
+      -80.5430167,
+      43.4680475
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "eit-phy",
+   "properties": {
+    "id": "eit-phy",
+    "from": "EIT",
+    "to": "PHY",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "EIT – PHY",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420794,
+      43.4713652
+     ],
+     [
+      -80.5420235,
+      43.4712646
+     ],
+     [
+      -80.5420235,
+      43.4712646
+     ],
+     [
+      -80.5420235,
+      43.4712646
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "b1-b2",
+   "properties": {
+    "id": "b1-b2",
+    "from": "B1",
+    "to": "B2",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "B1 – B2",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5431895,
+      43.4708308
+     ],
+     [
+      -80.5431895,
+      43.4708308
+     ],
+     [
+      -80.5431895,
+      43.4708308
+     ],
+     [
+      -80.5433329,
+      43.4708024
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "b2-stc",
+   "properties": {
+    "id": "b2-stc",
+    "from": "B2",
+    "to": "STC",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "B2 – STC",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5439535,
+      43.4706023
+     ],
+     [
+      -80.5440748,
+      43.4705397
+     ],
+     [
+      -80.5440748,
+      43.4705397
+     ],
+     [
+      -80.5440748,
+      43.4705397
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "b1-stc",
+   "properties": {
+    "id": "b1-stc",
+    "from": "B1",
+    "to": "STC",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "B1 – STC",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429201,
+      43.4704437
+     ],
+     [
+      -80.5429201,
+      43.4704437
+     ],
+     [
+      -80.5429201,
+      43.4704437
+     ],
+     [
+      -80.5430676,
+      43.4704568
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e5-pse",
+   "properties": {
+    "id": "e5-pse",
+    "from": "E5",
+    "to": "PSE",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "E5 – PSE",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorway E5 to PSE (E7).",
+    "length_m": 24
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5397667,
+      43.4726763
+     ],
+     [
+      -80.5396529,
+      43.4726066
+     ],
+     [
+      -80.5396529,
+      43.4726066
+     ],
+     [
+      -80.5396529,
+      43.4726066
+     ],
+     [
+      -80.5396529,
+      43.4726066
+     ],
+     [
+      -80.5395973,
+      43.4727072
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "e2-cph",
+   "properties": {
+    "id": "e2-cph",
+    "from": "E2",
+    "to": "CPH",
+    "kind": "doorway",
+    "z_m": 1,
+    "name": "E2 – CPH",
+    "status": "open",
+    "verified": true,
+    "source": "traced",
+    "notes": "Interior doorways E2 to CPH.",
+    "length_m": 12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5398556,
+      43.4710915
+     ],
+     [
+      -80.5397344,
+      43.4711542
+     ],
+     [
+      -80.5397344,
+      43.4711542
+     ],
+     [
+      -80.5397344,
+      43.4711542
+     ]
+    ]
+   }
+  }
+ ]
+}

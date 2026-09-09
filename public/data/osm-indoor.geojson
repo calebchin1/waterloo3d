@@ -1,0 +1,9247 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": 28062283,
+   "properties": {
+    "osm_id": 28062283,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5452851,
+      43.4708597
+     ],
+     [
+      -80.5453482,
+      43.4709637
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 34732723,
+   "properties": {
+    "osm_id": 34732723,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5374308,
+      43.4666624
+     ],
+     [
+      -80.537282,
+      43.4665074
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 34732726,
+   "properties": {
+    "osm_id": 34732726,
+    "name": null,
+    "highway": "path",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.535572,
+      43.4670593
+     ],
+     [
+      -80.535658,
+      43.4669348
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 49302648,
+   "properties": {
+    "osm_id": 49302648,
+    "name": null,
+    "highway": "cycleway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.544754,
+      43.4702226
+     ],
+     [
+      -80.5446194,
+      43.4702421
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 49785860,
+   "properties": {
+    "osm_id": 49785860,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.542305,
+      43.4685357
+     ],
+     [
+      -80.5423927,
+      43.4686659
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 49785862,
+   "properties": {
+    "osm_id": 49785862,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5423927,
+      43.4686659
+     ],
+     [
+      -80.5420502,
+      43.4687855
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 49785864,
+   "properties": {
+    "osm_id": 49785864,
+    "name": "EV1 to HH Walkway",
+    "highway": "footway",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420908,
+      43.4682499
+     ],
+     [
+      -80.5420273,
+      43.4681573
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 51856426,
+   "properties": {
+    "osm_id": 51856426,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5408784,
+      43.4705715
+     ],
+     [
+      -80.5407909,
+      43.4704448
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 130347239,
+   "properties": {
+    "osm_id": 130347239,
+    "name": null,
+    "highway": "construction",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "4",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5380141,
+      43.4703182
+     ],
+     [
+      -80.5387657,
+      43.4705327
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 130348883,
+   "properties": {
+    "osm_id": 130348883,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5514924,
+      43.4712385
+     ],
+     [
+      -80.5514524,
+      43.4712776
+     ],
+     [
+      -80.5514306,
+      43.471299
+     ],
+     [
+      -80.5513088,
+      43.4714632
+     ],
+     [
+      -80.5512583,
+      43.4715683
+     ],
+     [
+      -80.5511524,
+      43.4716996
+     ],
+     [
+      -80.551093,
+      43.4717576
+     ],
+     [
+      -80.5510232,
+      43.4718258
+     ],
+     [
+      -80.5509829,
+      43.4718694
+     ],
+     [
+      -80.5509524,
+      43.4718934
+     ],
+     [
+      -80.5507089,
+      43.4719822
+     ],
+     [
+      -80.5506102,
+      43.4720291
+     ],
+     [
+      -80.5505379,
+      43.4720738
+     ],
+     [
+      -80.5505131,
+      43.472084
+     ],
+     [
+      -80.5503867,
+      43.4721361
+     ],
+     [
+      -80.5501959,
+      43.4722299
+     ],
+     [
+      -80.5500093,
+      43.4722885
+     ],
+     [
+      -80.5498234,
+      43.4722607
+     ],
+     [
+      -80.549639,
+      43.4723427
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 131828037,
+   "properties": {
+    "osm_id": 131828037,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "2",
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5416386,
+      43.4722199
+     ],
+     [
+      -80.5415012,
+      43.4720209
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 131828050,
+   "properties": {
+    "osm_id": 131828050,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "4",
+    "level": "2;3",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5417128,
+      43.4716062
+     ],
+     [
+      -80.5417707,
+      43.4716899
+     ],
+     [
+      -80.5415476,
+      43.4717712
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 137060905,
+   "properties": {
+    "osm_id": 137060905,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434074,
+      43.4657879
+     ],
+     [
+      -80.5433291,
+      43.4658203
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 137183050,
+   "properties": {
+    "osm_id": 137183050,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5427378,
+      43.4722989
+     ],
+     [
+      -80.5424388,
+      43.4724099
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 139814054,
+   "properties": {
+    "osm_id": 139814054,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405341,
+      43.4690219
+     ],
+     [
+      -80.5410375,
+      43.4688408
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 141718263,
+   "properties": {
+    "osm_id": 141718263,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5483602,
+      43.4756207
+     ],
+     [
+      -80.5484143,
+      43.4756014
+     ],
+     [
+      -80.5482882,
+      43.4754147
+     ],
+     [
+      -80.5480302,
+      43.475033
+     ],
+     [
+      -80.5479854,
+      43.4749666
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 145079151,
+   "properties": {
+    "osm_id": 145079151,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "2",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5458439,
+      43.4719631
+     ],
+     [
+      -80.5454898,
+      43.4718845
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 145079432,
+   "properties": {
+    "osm_id": 145079432,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5445223,
+      43.4683066
+     ],
+     [
+      -80.5444005,
+      43.4682932
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 175807556,
+   "properties": {
+    "osm_id": 175807556,
+    "name": "E5 Bridge",
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5398626,
+      43.4724233
+     ],
+     [
+      -80.5398505,
+      43.472391
+     ],
+     [
+      -80.5398437,
+      43.4723686
+     ],
+     [
+      -80.539845,
+      43.4723494
+     ],
+     [
+      -80.5398527,
+      43.4723287
+     ],
+     [
+      -80.539876,
+      43.4723079
+     ],
+     [
+      -80.5399002,
+      43.4722898
+     ],
+     [
+      -80.5404927,
+      43.4719362
+     ],
+     [
+      -80.5404796,
+      43.4719161
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 176108540,
+   "properties": {
+    "osm_id": 176108540,
+    "name": null,
+    "highway": "service",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5446421,
+      43.4760146
+     ],
+     [
+      -80.5451834,
+      43.475832
+     ],
+     [
+      -80.5452004,
+      43.4757752
+     ],
+     [
+      -80.5451528,
+      43.475716
+     ],
+     [
+      -80.5450779,
+      43.4756913
+     ],
+     [
+      -80.5444999,
+      43.4758824
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182030790,
+   "properties": {
+    "osm_id": 182030790,
+    "name": null,
+    "highway": "construction",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5380141,
+      43.4703182
+     ],
+     [
+      -80.5379441,
+      43.4702981
+     ],
+     [
+      -80.537936,
+      43.4703126
+     ],
+     [
+      -80.5380095,
+      43.4703329
+     ],
+     [
+      -80.5380128,
+      43.470326
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182087258,
+   "properties": {
+    "osm_id": 182087258,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430561,
+      43.4718315
+     ],
+     [
+      -80.5429994,
+      43.4717487
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182090035,
+   "properties": {
+    "osm_id": 182090035,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1.5",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411564,
+      43.4718761
+     ],
+     [
+      -80.5411318,
+      43.471885
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182091549,
+   "properties": {
+    "osm_id": 182091549,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424445,
+      43.4726596
+     ],
+     [
+      -80.542415,
+      43.4726703
+     ],
+     [
+      -80.5424034,
+      43.4726746
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182197539,
+   "properties": {
+    "osm_id": 182197539,
+    "name": "MC to QNC Walkway",
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5440496,
+      43.4717394
+     ],
+     [
+      -80.5439068,
+      43.4715702
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182197540,
+   "properties": {
+    "osm_id": 182197540,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5435328,
+      43.4710879
+     ],
+     [
+      -80.5434941,
+      43.4710319
+     ],
+     [
+      -80.543469,
+      43.4709954
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182197541,
+   "properties": {
+    "osm_id": 182197541,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5397992,
+      43.47025
+     ],
+     [
+      -80.5397683,
+      43.4702053
+     ],
+     [
+      -80.5397224,
+      43.4701389
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182198718,
+   "properties": {
+    "osm_id": 182198718,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410809,
+      43.4705979
+     ],
+     [
+      -80.5410112,
+      43.4706234
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182286335,
+   "properties": {
+    "osm_id": 182286335,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5402398,
+      43.4707191
+     ],
+     [
+      -80.5401537,
+      43.4707504
+     ],
+     [
+      -80.5401023,
+      43.4707691
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182286461,
+   "properties": {
+    "osm_id": 182286461,
+    "name": "E2 to E3 Walkway",
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5402647,
+      43.4713544
+     ],
+     [
+      -80.5402455,
+      43.4713284
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296014,
+   "properties": {
+    "osm_id": 182296014,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410314,
+      43.4719216
+     ],
+     [
+      -80.5410643,
+      43.4719096
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296026,
+   "properties": {
+    "osm_id": 182296026,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415012,
+      43.4720209
+     ],
+     [
+      -80.5414652,
+      43.4719688
+     ],
+     [
+      -80.5414309,
+      43.4719812
+     ],
+     [
+      -80.5413392,
+      43.4718484
+     ],
+     [
+      -80.5413178,
+      43.4718174
+     ],
+     [
+      -80.5411564,
+      43.4718761
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296028,
+   "properties": {
+    "osm_id": 182296028,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410127,
+      43.4718946
+     ],
+     [
+      -80.5410456,
+      43.4718826
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296030,
+   "properties": {
+    "osm_id": 182296030,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1;1.5",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411318,
+      43.471885
+     ],
+     [
+      -80.5410841,
+      43.4719024
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296045,
+   "properties": {
+    "osm_id": 182296045,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5413604,
+      43.471794
+     ],
+     [
+      -80.5413207,
+      43.4718085
+     ],
+     [
+      -80.5412989,
+      43.4718164
+     ],
+     [
+      -80.5412776,
+      43.4718242
+     ],
+     [
+      -80.5411624,
+      43.4718661
+     ],
+     [
+      -80.5411521,
+      43.4718698
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182296050,
+   "properties": {
+    "osm_id": 182296050,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410841,
+      43.4719024
+     ],
+     [
+      -80.5410749,
+      43.4719057
+     ],
+     [
+      -80.5410643,
+      43.4719096
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297253,
+   "properties": {
+    "osm_id": 182297253,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410112,
+      43.4706234
+     ],
+     [
+      -80.5409334,
+      43.4706513
+     ],
+     [
+      -80.5403091,
+      43.4708756
+     ],
+     [
+      -80.5402347,
+      43.4709023
+     ],
+     [
+      -80.5396208,
+      43.4711228
+     ],
+     [
+      -80.5395731,
+      43.4710528
+     ],
+     [
+      -80.5394898,
+      43.4710827
+     ],
+     [
+      -80.5392712,
+      43.4707624
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297255,
+   "properties": {
+    "osm_id": 182297255,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.540552,
+      43.4712273
+     ],
+     [
+      -80.5404388,
+      43.4710634
+     ],
+     [
+      -80.5403091,
+      43.4708756
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297257,
+   "properties": {
+    "osm_id": 182297257,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5413392,
+      43.4718484
+     ],
+     [
+      -80.5415476,
+      43.4717712
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297258,
+   "properties": {
+    "osm_id": 182297258,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5406258,
+      43.4712714
+     ],
+     [
+      -80.5405808,
+      43.4712063
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297260,
+   "properties": {
+    "osm_id": 182297260,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5403606,
+      43.4711908
+     ],
+     [
+      -80.540505,
+      43.4711383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297263,
+   "properties": {
+    "osm_id": 182297263,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405887,
+      43.4712805
+     ],
+     [
+      -80.540552,
+      43.4712273
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297264,
+   "properties": {
+    "osm_id": 182297264,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541115,
+      43.4720427
+     ],
+     [
+      -80.5410995,
+      43.4720202
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297266,
+   "properties": {
+    "osm_id": 182297266,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405808,
+      43.4712063
+     ],
+     [
+      -80.5405408,
+      43.4711484
+     ],
+     [
+      -80.5405178,
+      43.4711568
+     ],
+     [
+      -80.540505,
+      43.4711383
+     ],
+     [
+      -80.5404533,
+      43.4710634
+     ],
+     [
+      -80.5403144,
+      43.4708622
+     ],
+     [
+      -80.5402476,
+      43.4708865
+     ],
+     [
+      -80.5397021,
+      43.4710849
+     ],
+     [
+      -80.5396212,
+      43.4711143
+     ],
+     [
+      -80.5395755,
+      43.4710481
+     ],
+     [
+      -80.5394914,
+      43.4710786
+     ],
+     [
+      -80.5393043,
+      43.4708076
+     ],
+     [
+      -80.5392716,
+      43.4707602
+     ],
+     [
+      -80.5391103,
+      43.4708189
+     ],
+     [
+      -80.5389944,
+      43.470651
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297267,
+   "properties": {
+    "osm_id": 182297267,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "1",
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5402347,
+      43.4709023
+     ],
+     [
+      -80.5399646,
+      43.4705111
+     ],
+     [
+      -80.5400082,
+      43.4704952
+     ],
+     [
+      -80.5398767,
+      43.4703047
+     ],
+     [
+      -80.5398449,
+      43.4703163
+     ],
+     [
+      -80.5397992,
+      43.47025
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297268,
+   "properties": {
+    "osm_id": 182297268,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410995,
+      43.4720202
+     ],
+     [
+      -80.5410667,
+      43.4719727
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297269,
+   "properties": {
+    "osm_id": 182297269,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410667,
+      43.4719727
+     ],
+     [
+      -80.5410485,
+      43.4719464
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297270,
+   "properties": {
+    "osm_id": 182297270,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5406045,
+      43.4713033
+     ],
+     [
+      -80.5406391,
+      43.4712907
+     ],
+     [
+      -80.5406258,
+      43.4712714
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297271,
+   "properties": {
+    "osm_id": 182297271,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410485,
+      43.4719464
+     ],
+     [
+      -80.5410314,
+      43.4719216
+     ],
+     [
+      -80.5410127,
+      43.4718946
+     ],
+     [
+      -80.5406045,
+      43.4713033
+     ],
+     [
+      -80.5405887,
+      43.4712805
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297272,
+   "properties": {
+    "osm_id": 182297272,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411754,
+      43.4721302
+     ],
+     [
+      -80.541174,
+      43.4721281
+     ],
+     [
+      -80.541115,
+      43.4720427
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297424,
+   "properties": {
+    "osm_id": 182297424,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415014,
+      43.4720212
+     ],
+     [
+      -80.5414511,
+      43.4719469
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182297427,
+   "properties": {
+    "osm_id": 182297427,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "3",
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5416365,
+      43.4722207
+     ],
+     [
+      -80.5415014,
+      43.4720212
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182921023,
+   "properties": {
+    "osm_id": 182921023,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5439495,
+      43.4717987
+     ],
+     [
+      -80.5439152,
+      43.4717489
+     ],
+     [
+      -80.544001,
+      43.4717177
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 182950662,
+   "properties": {
+    "osm_id": 182950662,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5396891,
+      43.4715806
+     ],
+     [
+      -80.5397183,
+      43.4715449
+     ],
+     [
+      -80.5397666,
+      43.4715138
+     ],
+     [
+      -80.5399148,
+      43.4714603
+     ],
+     [
+      -80.5403164,
+      43.4713152
+     ],
+     [
+      -80.5403306,
+      43.4713077
+     ],
+     [
+      -80.5403379,
+      43.4712977
+     ],
+     [
+      -80.5403412,
+      43.4712513
+     ],
+     [
+      -80.5403432,
+      43.4712238
+     ],
+     [
+      -80.5403442,
+      43.4711989
+     ],
+     [
+      -80.5403606,
+      43.4711908
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 183247348,
+   "properties": {
+    "osm_id": 183247348,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-4",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434694,
+      43.4720508
+     ],
+     [
+      -80.5433272,
+      43.4721026
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 184317865,
+   "properties": {
+    "osm_id": 184317865,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5393043,
+      43.4708076
+     ],
+     [
+      -80.5393376,
+      43.4707944
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942847,
+   "properties": {
+    "osm_id": 186942847,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5440303,
+      43.471707
+     ],
+     [
+      -80.544001,
+      43.4717177
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942850,
+   "properties": {
+    "osm_id": 186942850,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437363,
+      43.4718739
+     ],
+     [
+      -80.543976,
+      43.4717868
+     ],
+     [
+      -80.5440634,
+      43.471755
+     ],
+     [
+      -80.5440974,
+      43.4717426
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942854,
+   "properties": {
+    "osm_id": 186942854,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434833,
+      43.4720457
+     ],
+     [
+      -80.5435153,
+      43.4720341
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942863,
+   "properties": {
+    "osm_id": 186942863,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5440303,
+      43.471707
+     ],
+     [
+      -80.5440521,
+      43.4717385
+     ],
+     [
+      -80.5440634,
+      43.471755
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942874,
+   "properties": {
+    "osm_id": 186942874,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5436557,
+      43.4717749
+     ],
+     [
+      -80.5436494,
+      43.4717772
+     ],
+     [
+      -80.5436906,
+      43.471837
+     ],
+     [
+      -80.5436991,
+      43.4718339
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942878,
+   "properties": {
+    "osm_id": 186942878,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5436991,
+      43.4718339
+     ],
+     [
+      -80.5437272,
+      43.4718747
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942883,
+   "properties": {
+    "osm_id": 186942883,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.54412,
+      43.4720456
+     ],
+     [
+      -80.5436431,
+      43.472219
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942884,
+   "properties": {
+    "osm_id": 186942884,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411923,
+      43.4704676
+     ],
+     [
+      -80.5411195,
+      43.470494
+     ],
+     [
+      -80.540987,
+      43.4705421
+     ],
+     [
+      -80.5409614,
+      43.4705513
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942891,
+   "properties": {
+    "osm_id": 186942891,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434694,
+      43.4720508
+     ],
+     [
+      -80.5434833,
+      43.4720457
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 186942893,
+   "properties": {
+    "osm_id": 186942893,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5436125,
+      43.4717123
+     ],
+     [
+      -80.5436557,
+      43.4717749
+     ],
+     [
+      -80.5436655,
+      43.4717714
+     ],
+     [
+      -80.5437363,
+      43.4718739
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187142980,
+   "properties": {
+    "osm_id": 187142980,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5402476,
+      43.4708865
+     ],
+     [
+      -80.5401537,
+      43.4707504
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187709344,
+   "properties": {
+    "osm_id": 187709344,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405341,
+      43.4690219
+     ],
+     [
+      -80.5404772,
+      43.4690416
+     ],
+     [
+      -80.5404256,
+      43.4690601
+     ],
+     [
+      -80.540193,
+      43.4691435
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187709365,
+   "properties": {
+    "osm_id": 187709365,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5403552,
+      43.4693777
+     ],
+     [
+      -80.540193,
+      43.4691435
+     ],
+     [
+      -80.5401854,
+      43.4691318
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187712344,
+   "properties": {
+    "osm_id": 187712344,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5412334,
+      43.4687843
+     ],
+     [
+      -80.5412686,
+      43.4687727
+     ],
+     [
+      -80.541509,
+      43.4686937
+     ],
+     [
+      -80.5415281,
+      43.4687217
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187712346,
+   "properties": {
+    "osm_id": 187712346,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5423927,
+      43.4686659
+     ],
+     [
+      -80.5424679,
+      43.4687798
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714493,
+   "properties": {
+    "osm_id": 187714493,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405579,
+      43.4698866
+     ],
+     [
+      -80.5406946,
+      43.4700708
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714495,
+   "properties": {
+    "osm_id": 187714495,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405869,
+      43.4703968
+     ],
+     [
+      -80.5405451,
+      43.4704886
+     ],
+     [
+      -80.5405058,
+      43.4704822
+     ],
+     [
+      -80.5404602,
+      43.4704647
+     ],
+     [
+      -80.5404119,
+      43.4704335
+     ],
+     [
+      -80.5403743,
+      43.4703966
+     ],
+     [
+      -80.5403636,
+      43.4703615
+     ],
+     [
+      -80.5403609,
+      43.4703245
+     ],
+     [
+      -80.5403717,
+      43.4702798
+     ],
+     [
+      -80.5403904,
+      43.4702486
+     ],
+     [
+      -80.5405064,
+      43.4702817
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714498,
+   "properties": {
+    "osm_id": 187714498,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5406946,
+      43.4700708
+     ],
+     [
+      -80.5407034,
+      43.4700829
+     ],
+     [
+      -80.5407794,
+      43.4701879
+     ],
+     [
+      -80.5408673,
+      43.4703197
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714499,
+   "properties": {
+    "osm_id": 187714499,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410787,
+      43.4702463
+     ],
+     [
+      -80.5408673,
+      43.4703197
+     ],
+     [
+      -80.540723,
+      43.4703468
+     ],
+     [
+      -80.5406719,
+      43.470366
+     ],
+     [
+      -80.5405869,
+      43.4703968
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714501,
+   "properties": {
+    "osm_id": 187714501,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5406719,
+      43.470366
+     ],
+     [
+      -80.5406858,
+      43.4703834
+     ],
+     [
+      -80.5406429,
+      43.4704015
+     ],
+     [
+      -80.5406326,
+      43.4704089
+     ],
+     [
+      -80.5406265,
+      43.4704219
+     ],
+     [
+      -80.5406233,
+      43.470433
+     ],
+     [
+      -80.5406292,
+      43.4704511
+     ],
+     [
+      -80.5406548,
+      43.4704942
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714502,
+   "properties": {
+    "osm_id": 187714502,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.540723,
+      43.4703468
+     ],
+     [
+      -80.5406473,
+      43.4702326
+     ],
+     [
+      -80.5407794,
+      43.4701879
+     ],
+     [
+      -80.5409855,
+      43.4701117
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714503,
+   "properties": {
+    "osm_id": 187714503,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5406473,
+      43.4702326
+     ],
+     [
+      -80.5405064,
+      43.4702817
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187714504,
+   "properties": {
+    "osm_id": 187714504,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.540723,
+      43.4703468
+     ],
+     [
+      -80.5407909,
+      43.4704448
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187719547,
+   "properties": {
+    "osm_id": 187719547,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5416371,
+      43.4685789
+     ],
+     [
+      -80.5415465,
+      43.4684441
+     ],
+     [
+      -80.5415308,
+      43.4684286
+     ],
+     [
+      -80.5415099,
+      43.4684122
+     ],
+     [
+      -80.5414853,
+      43.4683995
+     ],
+     [
+      -80.5414563,
+      43.4683873
+     ],
+     [
+      -80.5414301,
+      43.4683834
+     ],
+     [
+      -80.5414002,
+      43.4683824
+     ],
+     [
+      -80.54137,
+      43.4683884
+     ],
+     [
+      -80.5413154,
+      43.4684054
+     ],
+     [
+      -80.5412089,
+      43.4684422
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 187720691,
+   "properties": {
+    "osm_id": 187720691,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5404772,
+      43.4690416
+     ],
+     [
+      -80.5405372,
+      43.4691286
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703105,
+   "properties": {
+    "osm_id": 188703105,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5453021,
+      43.4713387
+     ],
+     [
+      -80.5452967,
+      43.4713536
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703107,
+   "properties": {
+    "osm_id": 188703107,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.545487,
+      43.4718899
+     ],
+     [
+      -80.5454081,
+      43.471872
+     ],
+     [
+      -80.5454248,
+      43.4718292
+     ],
+     [
+      -80.5455272,
+      43.4715653
+     ],
+     [
+      -80.5455802,
+      43.4714287
+     ],
+     [
+      -80.5452908,
+      43.4713691
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703110,
+   "properties": {
+    "osm_id": 188703110,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5454081,
+      43.471872
+     ],
+     [
+      -80.5453679,
+      43.4718817
+     ],
+     [
+      -80.5453384,
+      43.4718953
+     ],
+     [
+      -80.5453062,
+      43.4719226
+     ],
+     [
+      -80.5452848,
+      43.4719518
+     ],
+     [
+      -80.5452645,
+      43.4719702
+     ],
+     [
+      -80.5452363,
+      43.471981
+     ],
+     [
+      -80.5452133,
+      43.4719853
+     ],
+     [
+      -80.5451854,
+      43.4719896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703111,
+   "properties": {
+    "osm_id": 188703111,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5454704,
+      43.4718394
+     ],
+     [
+      -80.5454248,
+      43.4718292
+     ],
+     [
+      -80.5453696,
+      43.4718168
+     ],
+     [
+      -80.5451618,
+      43.4717702
+     ],
+     [
+      -80.5451435,
+      43.471773
+     ],
+     [
+      -80.545122,
+      43.4717785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703112,
+   "properties": {
+    "osm_id": 188703112,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5453164,
+      43.4713021
+     ],
+     [
+      -80.5453084,
+      43.4713224
+     ],
+     [
+      -80.5453021,
+      43.4713387
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703114,
+   "properties": {
+    "osm_id": 188703114,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5452967,
+      43.4713536
+     ],
+     [
+      -80.5452942,
+      43.471361
+     ],
+     [
+      -80.5452908,
+      43.4713691
+     ],
+     [
+      -80.545122,
+      43.4717785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703115,
+   "properties": {
+    "osm_id": 188703115,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429994,
+      43.4717487
+     ],
+     [
+      -80.5425721,
+      43.4711258
+     ],
+     [
+      -80.5424228,
+      43.4711811
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703116,
+   "properties": {
+    "osm_id": 188703116,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "3",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424228,
+      43.4711811
+     ],
+     [
+      -80.5423097,
+      43.4712223
+     ],
+     [
+      -80.5422978,
+      43.4712051
+     ],
+     [
+      -80.5419409,
+      43.4713353
+     ],
+     [
+      -80.5418896,
+      43.471354
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 188703117,
+   "properties": {
+    "osm_id": 188703117,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5450045,
+      43.4720935
+     ],
+     [
+      -80.5450561,
+      43.4720691
+     ],
+     [
+      -80.5450911,
+      43.4720529
+     ],
+     [
+      -80.5451386,
+      43.4720297
+     ],
+     [
+      -80.5451735,
+      43.4720053
+     ],
+     [
+      -80.5451854,
+      43.4719896
+     ],
+     [
+      -80.5451972,
+      43.4719741
+     ],
+     [
+      -80.5452013,
+      43.4719637
+     ],
+     [
+      -80.5452094,
+      43.4719429
+     ],
+     [
+      -80.545215,
+      43.4719099
+     ],
+     [
+      -80.545215,
+      43.4718778
+     ],
+     [
+      -80.5452089,
+      43.4718541
+     ],
+     [
+      -80.5451877,
+      43.4718241
+     ],
+     [
+      -80.5451608,
+      43.4717987
+     ],
+     [
+      -80.545122,
+      43.4717785
+     ],
+     [
+      -80.5450711,
+      43.4717638
+     ],
+     [
+      -80.545024,
+      43.4717591
+     ],
+     [
+      -80.5449745,
+      43.471759
+     ],
+     [
+      -80.5449294,
+      43.4717669
+     ],
+     [
+      -80.5448657,
+      43.4717849
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 189317460,
+   "properties": {
+    "osm_id": 189317460,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428659,
+      43.4680019
+     ],
+     [
+      -80.5428368,
+      43.4679612
+     ],
+     [
+      -80.542716,
+      43.4677918
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 189317693,
+   "properties": {
+    "osm_id": 189317693,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "3",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5439495,
+      43.4717987
+     ],
+     [
+      -80.54412,
+      43.4720456
+     ],
+     [
+      -80.5442645,
+      43.4722549
+     ],
+     [
+      -80.5437876,
+      43.4724283
+     ],
+     [
+      -80.5437379,
+      43.4724464
+     ],
+     [
+      -80.5437584,
+      43.4724761
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265312476,
+   "properties": {
+    "osm_id": 265312476,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5454262,
+      43.4718383
+     ],
+     [
+      -80.5453667,
+      43.471825
+     ],
+     [
+      -80.5453696,
+      43.4718168
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265312477,
+   "properties": {
+    "osm_id": 265312477,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437363,
+      43.4718739
+     ],
+     [
+      -80.5434713,
+      43.4719703
+     ],
+     [
+      -80.5434417,
+      43.471981
+     ],
+     [
+      -80.543423,
+      43.4719539
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265312479,
+   "properties": {
+    "osm_id": 265312479,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5454147,
+      43.4718684
+     ],
+     [
+      -80.5454262,
+      43.4718383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265312481,
+   "properties": {
+    "osm_id": 265312481,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5454898,
+      43.4718845
+     ],
+     [
+      -80.5454147,
+      43.4718684
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265314065,
+   "properties": {
+    "osm_id": 265314065,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5457016,
+      43.4716022
+     ],
+     [
+      -80.5455272,
+      43.4715653
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 265314066,
+   "properties": {
+    "osm_id": 265314066,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": null,
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5397992,
+      43.47025
+     ],
+     [
+      -80.5397224,
+      43.4701389
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 268467671,
+   "properties": {
+    "osm_id": 268467671,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5455426,
+      43.4738368
+     ],
+     [
+      -80.5455272,
+      43.4738627
+     ],
+     [
+      -80.5455235,
+      43.473876
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 280830431,
+   "properties": {
+    "osm_id": 280830431,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5457554,
+      43.4730956
+     ],
+     [
+      -80.5457145,
+      43.4731138
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 280830433,
+   "properties": {
+    "osm_id": 280830433,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5455272,
+      43.4738627
+     ],
+     [
+      -80.5452146,
+      43.4737976
+     ],
+     [
+      -80.5452932,
+      43.4736043
+     ],
+     [
+      -80.5452806,
+      43.4735821
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 280830437,
+   "properties": {
+    "osm_id": 280830437,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5457145,
+      43.4731138
+     ],
+     [
+      -80.5455722,
+      43.4731743
+     ],
+     [
+      -80.5456778,
+      43.4733267
+     ],
+     [
+      -80.5453121,
+      43.4734661
+     ],
+     [
+      -80.5453876,
+      43.4735729
+     ],
+     [
+      -80.5452932,
+      43.4736043
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284110130,
+   "properties": {
+    "osm_id": 284110130,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5404256,
+      43.4690601
+     ],
+     [
+      -80.5404215,
+      43.4690535
+     ],
+     [
+      -80.5404203,
+      43.4690516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284350755,
+   "properties": {
+    "osm_id": 284350755,
+    "name": null,
+    "highway": "construction",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5380128,
+      43.470326
+     ],
+     [
+      -80.5380373,
+      43.4703321
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284350763,
+   "properties": {
+    "osm_id": 284350763,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5453084,
+      43.4713224
+     ],
+     [
+      -80.5450905,
+      43.4712792
+     ],
+     [
+      -80.5450706,
+      43.4713261
+     ],
+     [
+      -80.545027,
+      43.4713166
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284350764,
+   "properties": {
+    "osm_id": 284350764,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5452942,
+      43.471361
+     ],
+     [
+      -80.5454257,
+      43.4713882
+     ],
+     [
+      -80.5454298,
+      43.4713772
+     ],
+     [
+      -80.5453402,
+      43.4713583
+     ],
+     [
+      -80.5453445,
+      43.4713472
+     ],
+     [
+      -80.5453021,
+      43.4713387
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561701,
+   "properties": {
+    "osm_id": 284561701,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422767,
+      43.4732021
+     ],
+     [
+      -80.5422421,
+      43.473152
+     ],
+     [
+      -80.5422368,
+      43.4731443
+     ],
+     [
+      -80.5422104,
+      43.473106
+     ],
+     [
+      -80.5421718,
+      43.4730501
+     ],
+     [
+      -80.54217,
+      43.4730475
+     ],
+     [
+      -80.5421224,
+      43.4729785
+     ],
+     [
+      -80.5420911,
+      43.4729332
+     ],
+     [
+      -80.5420731,
+      43.4729072
+     ],
+     [
+      -80.5420337,
+      43.4728501
+     ],
+     [
+      -80.5420128,
+      43.4728199
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561702,
+   "properties": {
+    "osm_id": 284561702,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5426691,
+      43.4730594
+     ],
+     [
+      -80.5426345,
+      43.4730093
+     ],
+     [
+      -80.5426068,
+      43.4729691
+     ],
+     [
+      -80.5426024,
+      43.4729628
+     ],
+     [
+      -80.5425633,
+      43.4729061
+     ],
+     [
+      -80.5425252,
+      43.472851
+     ],
+     [
+      -80.5424829,
+      43.4727896
+     ],
+     [
+      -80.5424655,
+      43.4727645
+     ],
+     [
+      -80.5424261,
+      43.4727074
+     ],
+     [
+      -80.5424034,
+      43.4726746
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561703,
+   "properties": {
+    "osm_id": 284561703,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5426068,
+      43.4729691
+     ],
+     [
+      -80.5426479,
+      43.4729541
+     ],
+     [
+      -80.5426701,
+      43.4729461
+     ],
+     [
+      -80.5428474,
+      43.4728816
+     ],
+     [
+      -80.5429522,
+      43.4728435
+     ],
+     [
+      -80.5430265,
+      43.4728165
+     ],
+     [
+      -80.5430639,
+      43.4728029
+     ],
+     [
+      -80.5431732,
+      43.4727631
+     ],
+     [
+      -80.5432097,
+      43.4727499
+     ],
+     [
+      -80.5432828,
+      43.4727233
+     ],
+     [
+      -80.543275,
+      43.472712
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561704,
+   "properties": {
+    "osm_id": 284561704,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425252,
+      43.472851
+     ],
+     [
+      -80.5425168,
+      43.4729231
+     ],
+     [
+      -80.5425116,
+      43.4729398
+     ],
+     [
+      -80.5425041,
+      43.4729561
+     ],
+     [
+      -80.5424925,
+      43.4729761
+     ],
+     [
+      -80.5424808,
+      43.4729897
+     ],
+     [
+      -80.5424676,
+      43.473003
+     ],
+     [
+      -80.5424566,
+      43.4730109
+     ],
+     [
+      -80.5424519,
+      43.4730145
+     ],
+     [
+      -80.5424404,
+      43.4730199
+     ],
+     [
+      -80.542413,
+      43.4730328
+     ],
+     [
+      -80.5423689,
+      43.4730474
+     ],
+     [
+      -80.5423413,
+      43.4730514
+     ],
+     [
+      -80.5423155,
+      43.473052
+     ],
+     [
+      -80.5422865,
+      43.4730498
+     ],
+     [
+      -80.5422374,
+      43.4730359
+     ],
+     [
+      -80.5421921,
+      43.4730152
+     ],
+     [
+      -80.5421224,
+      43.4729785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561705,
+   "properties": {
+    "osm_id": 284561705,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415817,
+      43.4722715
+     ],
+     [
+      -80.5417758,
+      43.4725527
+     ],
+     [
+      -80.5418127,
+      43.4726061
+     ],
+     [
+      -80.5418715,
+      43.4726913
+     ],
+     [
+      -80.5418888,
+      43.4727163
+     ],
+     [
+      -80.541905,
+      43.4727398
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561706,
+   "properties": {
+    "osm_id": 284561706,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428194,
+      43.4727669
+     ],
+     [
+      -80.5428045,
+      43.4727449
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561707,
+   "properties": {
+    "osm_id": 284561707,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418363,
+      43.4730677
+     ],
+     [
+      -80.541822,
+      43.4730456
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561708,
+   "properties": {
+    "osm_id": 284561708,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418144,
+      43.472712
+     ],
+     [
+      -80.5418102,
+      43.4727059
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561709,
+   "properties": {
+    "osm_id": 284561709,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429522,
+      43.4728435
+     ],
+     [
+      -80.5429444,
+      43.4728322
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561710,
+   "properties": {
+    "osm_id": 284561710,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.542856,
+      43.4728939
+     ],
+     [
+      -80.5428474,
+      43.4728816
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561711,
+   "properties": {
+    "osm_id": 284561711,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418684,
+      43.4731136
+     ],
+     [
+      -80.5418538,
+      43.4730919
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561712,
+   "properties": {
+    "osm_id": 284561712,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418327,
+      43.4727054
+     ],
+     [
+      -80.5418285,
+      43.4726993
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561713,
+   "properties": {
+    "osm_id": 284561713,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425369,
+      43.4727848
+     ],
+     [
+      -80.5425288,
+      43.4727729
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561714,
+   "properties": {
+    "osm_id": 284561714,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5431732,
+      43.4727631
+     ],
+     [
+      -80.5431654,
+      43.4727518
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561715,
+   "properties": {
+    "osm_id": 284561715,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;-1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419929,
+      43.4727099
+     ],
+     [
+      -80.5419236,
+      43.4727351
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561716,
+   "properties": {
+    "osm_id": 284561716,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418155,
+      43.4730356
+     ],
+     [
+      -80.5418105,
+      43.4730278
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561717,
+   "properties": {
+    "osm_id": 284561717,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428311,
+      43.4727843
+     ],
+     [
+      -80.5428261,
+      43.4727769
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561718,
+   "properties": {
+    "osm_id": 284561718,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420557,
+      43.4729588
+     ],
+     [
+      -80.5420486,
+      43.4729486
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561719,
+   "properties": {
+    "osm_id": 284561719,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424791,
+      43.4727503
+     ],
+     [
+      -80.5424566,
+      43.4727176
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561720,
+   "properties": {
+    "osm_id": 284561720,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5427884,
+      43.4727205
+     ],
+     [
+      -80.5427724,
+      43.4726985
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561721,
+   "properties": {
+    "osm_id": 284561721,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418761,
+      43.473125
+     ],
+     [
+      -80.5418804,
+      43.4731315
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561722,
+   "properties": {
+    "osm_id": 284561722,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5432637,
+      43.4727528
+     ],
+     [
+      -80.5432319,
+      43.4727644
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561723,
+   "properties": {
+    "osm_id": 284561723,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421918,
+      43.4731058
+     ],
+     [
+      -80.5421686,
+      43.4730722
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561724,
+   "properties": {
+    "osm_id": 284561724,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420587,
+      43.4729124
+     ],
+     [
+      -80.5420533,
+      43.4729047
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561725,
+   "properties": {
+    "osm_id": 284561725,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425288,
+      43.4727729
+     ],
+     [
+      -80.5424829,
+      43.4727896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561726,
+   "properties": {
+    "osm_id": 284561726,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5426177,
+      43.4729503
+     ],
+     [
+      -80.5425941,
+      43.4729161
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561727,
+   "properties": {
+    "osm_id": 284561727,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5427651,
+      43.4726885
+     ],
+     [
+      -80.5427599,
+      43.4726814
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561728,
+   "properties": {
+    "osm_id": 284561728,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430639,
+      43.4728029
+     ],
+     [
+      -80.5430561,
+      43.4727916
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561729,
+   "properties": {
+    "osm_id": 284561729,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420533,
+      43.4729047
+     ],
+     [
+      -80.542032,
+      43.4728738
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561730,
+   "properties": {
+    "osm_id": 284561730,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420486,
+      43.4729486
+     ],
+     [
+      -80.5420911,
+      43.4729332
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561731,
+   "properties": {
+    "osm_id": 284561731,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422553,
+      43.4723798
+     ],
+     [
+      -80.5422644,
+      43.4723765
+     ],
+     [
+      -80.5422755,
+      43.4723724
+     ],
+     [
+      -80.5423249,
+      43.4723545
+     ],
+     [
+      -80.542434,
+      43.4725125
+     ],
+     [
+      -80.5424753,
+      43.4725723
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561732,
+   "properties": {
+    "osm_id": 284561732,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5432097,
+      43.4727499
+     ],
+     [
+      -80.5432222,
+      43.4727679
+     ],
+     [
+      -80.5432319,
+      43.4727644
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561733,
+   "properties": {
+    "osm_id": 284561733,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428118,
+      43.472782
+     ],
+     [
+      -80.5428261,
+      43.4727769
+     ],
+     [
+      -80.5428194,
+      43.4727669
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561734,
+   "properties": {
+    "osm_id": 284561734,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541822,
+      43.4730456
+     ],
+     [
+      -80.5418155,
+      43.4730356
+     ],
+     [
+      -80.5418285,
+      43.4730311
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561735,
+   "properties": {
+    "osm_id": 284561735,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418308,
+      43.4730785
+     ],
+     [
+      -80.5418411,
+      43.473075
+     ],
+     [
+      -80.5418363,
+      43.4730677
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561739,
+   "properties": {
+    "osm_id": 284561739,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541905,
+      43.4727398
+     ],
+     [
+      -80.5419117,
+      43.4727495
+     ],
+     [
+      -80.5419181,
+      43.4727587
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561742,
+   "properties": {
+    "osm_id": 284561742,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425633,
+      43.4729061
+     ],
+     [
+      -80.5426266,
+      43.4728831
+     ],
+     [
+      -80.5426045,
+      43.4728512
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561743,
+   "properties": {
+    "osm_id": 284561743,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5426177,
+      43.4729503
+     ],
+     [
+      -80.5426215,
+      43.4729559
+     ],
+     [
+      -80.5426024,
+      43.4729628
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561745,
+   "properties": {
+    "osm_id": 284561745,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428045,
+      43.4727449
+     ],
+     [
+      -80.5427993,
+      43.4727373
+     ],
+     [
+      -80.5428085,
+      43.472734
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561747,
+   "properties": {
+    "osm_id": 284561747,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421718,
+      43.4730501
+     ],
+     [
+      -80.5421116,
+      43.473072
+     ],
+     [
+      -80.5420885,
+      43.4730386
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561749,
+   "properties": {
+    "osm_id": 284561749,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418902,
+      43.47312
+     ],
+     [
+      -80.5418761,
+      43.473125
+     ],
+     [
+      -80.5418684,
+      43.4731136
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561751,
+   "properties": {
+    "osm_id": 284561751,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418538,
+      43.4730919
+     ],
+     [
+      -80.5418485,
+      43.4730839
+     ],
+     [
+      -80.5418373,
+      43.4730878
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561752,
+   "properties": {
+    "osm_id": 284561752,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424842,
+      43.4727576
+     ],
+     [
+      -80.5425304,
+      43.4727409
+     ],
+     [
+      -80.5425524,
+      43.4727727
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561754,
+   "properties": {
+    "osm_id": 284561754,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5427724,
+      43.4726985
+     ],
+     [
+      -80.5427651,
+      43.4726885
+     ],
+     [
+      -80.5427518,
+      43.4726937
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561756,
+   "properties": {
+    "osm_id": 284561756,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422104,
+      43.473106
+     ],
+     [
+      -80.5421956,
+      43.4731114
+     ],
+     [
+      -80.5421918,
+      43.4731058
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561757,
+   "properties": {
+    "osm_id": 284561757,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422085,
+      43.4727866
+     ],
+     [
+      -80.5421704,
+      43.4727314
+     ],
+     [
+      -80.5421229,
+      43.4726626
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561759,
+   "properties": {
+    "osm_id": 284561759,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420813,
+      43.4724816
+     ],
+     [
+      -80.5418651,
+      43.4721685
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561760,
+   "properties": {
+    "osm_id": 284561760,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424791,
+      43.4727503
+     ],
+     [
+      -80.5424842,
+      43.4727576
+     ],
+     [
+      -80.5424655,
+      43.4727645
+     ],
+     [
+      -80.5424269,
+      43.4727785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561761,
+   "properties": {
+    "osm_id": 284561761,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418715,
+      43.4726913
+     ],
+     [
+      -80.5418327,
+      43.4727054
+     ],
+     [
+      -80.5418144,
+      43.472712
+     ],
+     [
+      -80.5417916,
+      43.4727203
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561762,
+   "properties": {
+    "osm_id": 284561762,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424879,
+      43.4730387
+     ],
+     [
+      -80.5424782,
+      43.4730422
+     ],
+     [
+      -80.5424703,
+      43.4730308
+     ],
+     [
+      -80.5424566,
+      43.4730109
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561763,
+   "properties": {
+    "osm_id": 284561763,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424502,
+      43.4730532
+     ],
+     [
+      -80.5424608,
+      43.4730493
+     ],
+     [
+      -80.5424525,
+      43.4730373
+     ],
+     [
+      -80.5424404,
+      43.4730199
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561765,
+   "properties": {
+    "osm_id": 284561765,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420731,
+      43.4729072
+     ],
+     [
+      -80.5420587,
+      43.4729124
+     ],
+     [
+      -80.5420129,
+      43.472929
+     ],
+     [
+      -80.5420353,
+      43.4729615
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561767,
+   "properties": {
+    "osm_id": 284561767,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429151,
+      43.4729699
+     ],
+     [
+      -80.5428858,
+      43.4729274
+     ],
+     [
+      -80.5428804,
+      43.4729294
+     ],
+     [
+      -80.542856,
+      43.4728939
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561769,
+   "properties": {
+    "osm_id": 284561769,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422746,
+      43.4725704
+     ],
+     [
+      -80.5421867,
+      43.4724432
+     ],
+     [
+      -80.5419706,
+      43.4721301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561772,
+   "properties": {
+    "osm_id": 284561772,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.54193,
+      43.4727799
+     ],
+     [
+      -80.5419159,
+      43.4727595
+     ],
+     [
+      -80.5419181,
+      43.4727587
+     ],
+     [
+      -80.5419987,
+      43.4727294
+     ],
+     [
+      -80.5420154,
+      43.4727233
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561774,
+   "properties": {
+    "osm_id": 284561774,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422421,
+      43.473152
+     ],
+     [
+      -80.5423188,
+      43.4731241
+     ],
+     [
+      -80.5425639,
+      43.473035
+     ],
+     [
+      -80.5426345,
+      43.4730093
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561777,
+   "properties": {
+    "osm_id": 284561777,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421515,
+      43.4728073
+     ],
+     [
+      -80.5421134,
+      43.4727521
+     ],
+     [
+      -80.5420659,
+      43.4726833
+     ],
+     [
+      -80.5420486,
+      43.4726582
+     ],
+     [
+      -80.5419577,
+      43.4725265
+     ],
+     [
+      -80.5419356,
+      43.4724946
+     ],
+     [
+      -80.5417415,
+      43.4722134
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561780,
+   "properties": {
+    "osm_id": 284561780,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420813,
+      43.4724816
+     ],
+     [
+      -80.5419577,
+      43.4725265
+     ],
+     [
+      -80.5419132,
+      43.4725427
+     ],
+     [
+      -80.5418912,
+      43.4725108
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561782,
+   "properties": {
+    "osm_id": 284561782,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422368,
+      43.4731443
+     ],
+     [
+      -80.5422024,
+      43.4731568
+     ],
+     [
+      -80.5421729,
+      43.4731676
+     ],
+     [
+      -80.5421788,
+      43.4731762
+     ],
+     [
+      -80.5421503,
+      43.4731865
+     ],
+     [
+      -80.5419897,
+      43.4732449
+     ],
+     [
+      -80.5419927,
+      43.4732493
+     ],
+     [
+      -80.5419794,
+      43.4732541
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284561786,
+   "properties": {
+    "osm_id": 284561786,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5423003,
+      43.4725981
+     ],
+     [
+      -80.5422611,
+      43.4726124
+     ],
+     [
+      -80.5421229,
+      43.4726626
+     ],
+     [
+      -80.5420659,
+      43.4726833
+     ],
+     [
+      -80.5419929,
+      43.4727099
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284673786,
+   "properties": {
+    "osm_id": 284673786,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419356,
+      43.4724946
+     ],
+     [
+      -80.5418912,
+      43.4725108
+     ],
+     [
+      -80.5417758,
+      43.4725527
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284673789,
+   "properties": {
+    "osm_id": 284673789,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421729,
+      43.4731676
+     ],
+     [
+      -80.5421682,
+      43.4731608
+     ],
+     [
+      -80.5421396,
+      43.4731711
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 284673791,
+   "properties": {
+    "osm_id": 284673791,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430265,
+      43.4728165
+     ],
+     [
+      -80.543035,
+      43.4728288
+     ],
+     [
+      -80.5430471,
+      43.4728463
+     ],
+     [
+      -80.5431637,
+      43.4728039
+     ],
+     [
+      -80.5431938,
+      43.4727929
+     ],
+     [
+      -80.5431732,
+      43.4727631
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 285125440,
+   "properties": {
+    "osm_id": 285125440,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.542802,
+      43.4727248
+     ],
+     [
+      -80.5427938,
+      43.472728
+     ],
+     [
+      -80.5427884,
+      43.4727205
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 285125444,
+   "properties": {
+    "osm_id": 285125444,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424134,
+      43.4726035
+     ],
+     [
+      -80.5423994,
+      43.4725833
+     ],
+     [
+      -80.5423965,
+      43.4725844
+     ],
+     [
+      -80.5423934,
+      43.4725854
+     ],
+     [
+      -80.5423313,
+      43.4726081
+     ],
+     [
+      -80.5423009,
+      43.4726192
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 350394209,
+   "properties": {
+    "osm_id": 350394209,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420128,
+      43.4728199
+     ],
+     [
+      -80.5419999,
+      43.4728246
+     ],
+     [
+      -80.5419784,
+      43.4728324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 350394214,
+   "properties": {
+    "osm_id": 350394214,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424261,
+      43.4727074
+     ],
+     [
+      -80.5422085,
+      43.4727866
+     ],
+     [
+      -80.5421515,
+      43.4728073
+     ],
+     [
+      -80.5420337,
+      43.4728501
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 364274039,
+   "properties": {
+    "osm_id": 364274039,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437,
+      43.4704413
+     ],
+     [
+      -80.5436905,
+      43.4704252
+     ],
+     [
+      -80.5437246,
+      43.4702664
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368669671,
+   "properties": {
+    "osm_id": 368669671,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5407436,
+      43.4700679
+     ],
+     [
+      -80.5407034,
+      43.4700829
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368669673,
+   "properties": {
+    "osm_id": 368669673,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5408673,
+      43.4703197
+     ],
+     [
+      -80.5409211,
+      43.4704059
+     ],
+     [
+      -80.5409611,
+      43.4703936
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682710,
+   "properties": {
+    "osm_id": 368682710,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410375,
+      43.4688408
+     ],
+     [
+      -80.5412334,
+      43.4687843
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682713,
+   "properties": {
+    "osm_id": 368682713,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541935,
+      43.468826
+     ],
+     [
+      -80.5420502,
+      43.4687855
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682714,
+   "properties": {
+    "osm_id": 368682714,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541935,
+      43.468826
+     ],
+     [
+      -80.5419145,
+      43.4687955
+     ],
+     [
+      -80.5417799,
+      43.4686033
+     ],
+     [
+      -80.541509,
+      43.4686937
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682715,
+   "properties": {
+    "osm_id": 368682715,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "-1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419145,
+      43.4687955
+     ],
+     [
+      -80.5415643,
+      43.4689196
+     ],
+     [
+      -80.5415792,
+      43.46894
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682716,
+   "properties": {
+    "osm_id": 368682716,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415643,
+      43.4689196
+     ],
+     [
+      -80.5415549,
+      43.4689066
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682721,
+   "properties": {
+    "osm_id": 368682721,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415356,
+      43.4689301
+     ],
+     [
+      -80.5415643,
+      43.4689196
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682722,
+   "properties": {
+    "osm_id": 368682722,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419289,
+      43.4690233
+     ],
+     [
+      -80.5417141,
+      43.4687058
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368682723,
+   "properties": {
+    "osm_id": 368682723,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5414002,
+      43.4683824
+     ],
+     [
+      -80.5417148,
+      43.4682758
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368776167,
+   "properties": {
+    "osm_id": 368776167,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421228,
+      43.4682962
+     ],
+     [
+      -80.542156,
+      43.468343
+     ],
+     [
+      -80.5421361,
+      43.4683498
+     ],
+     [
+      -80.5422562,
+      43.4685238
+     ],
+     [
+      -80.5422897,
+      43.4685114
+     ],
+     [
+      -80.54254,
+      43.4684188
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368776169,
+   "properties": {
+    "osm_id": 368776169,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425614,
+      43.4684428
+     ],
+     [
+      -80.54254,
+      43.4684188
+     ],
+     [
+      -80.5424211,
+      43.4682468
+     ],
+     [
+      -80.5423899,
+      43.4681962
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368776171,
+   "properties": {
+    "osm_id": 368776171,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.542156,
+      43.468343
+     ],
+     [
+      -80.5424211,
+      43.4682468
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368776172,
+   "properties": {
+    "osm_id": 368776172,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5424211,
+      43.4682468
+     ],
+     [
+      -80.542787,
+      43.4681164
+     ],
+     [
+      -80.5428806,
+      43.4680831
+     ],
+     [
+      -80.5429247,
+      43.4680672
+     ],
+     [
+      -80.5429685,
+      43.4680514
+     ],
+     [
+      -80.54298,
+      43.4679161
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 368776173,
+   "properties": {
+    "osm_id": 368776173,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.54254,
+      43.4684188
+     ],
+     [
+      -80.5429057,
+      43.4682888
+     ],
+     [
+      -80.5428481,
+      43.4682051
+     ],
+     [
+      -80.542787,
+      43.4681164
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816267,
+   "properties": {
+    "osm_id": 383816267,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421409,
+      43.4682543
+     ],
+     [
+      -80.542126,
+      43.4682483
+     ],
+     [
+      -80.5421091,
+      43.4682545
+     ],
+     [
+      -80.5420855,
+      43.468263
+     ],
+     [
+      -80.5420684,
+      43.4682693
+     ],
+     [
+      -80.542074,
+      43.4682777
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816275,
+   "properties": {
+    "osm_id": 383816275,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421353,
+      43.4682884
+     ],
+     [
+      -80.5421228,
+      43.4682962
+     ],
+     [
+      -80.5421114,
+      43.4683004
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816280,
+   "properties": {
+    "osm_id": 383816280,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421353,
+      43.4682884
+     ],
+     [
+      -80.5421091,
+      43.4682545
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816284,
+   "properties": {
+    "osm_id": 383816284,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421114,
+      43.4683004
+     ],
+     [
+      -80.5420855,
+      43.468263
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816286,
+   "properties": {
+    "osm_id": 383816286,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421228,
+      43.4682962
+     ],
+     [
+      -80.5420908,
+      43.4682499
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383816289,
+   "properties": {
+    "osm_id": 383816289,
+    "name": "EV1 to HH Walkway",
+    "highway": "steps",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420273,
+      43.4681573
+     ],
+     [
+      -80.542013,
+      43.4681337
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913802,
+   "properties": {
+    "osm_id": 383913802,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5432102,
+      43.4682211
+     ],
+     [
+      -80.5433072,
+      43.4681912
+     ],
+     [
+      -80.5434927,
+      43.4681338
+     ],
+     [
+      -80.5435536,
+      43.4681152
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913803,
+   "properties": {
+    "osm_id": 383913803,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.54298,
+      43.4679161
+     ],
+     [
+      -80.5432998,
+      43.4678168
+     ],
+     [
+      -80.5433517,
+      43.4678934
+     ],
+     [
+      -80.5434927,
+      43.4681338
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913804,
+   "properties": {
+    "osm_id": 383913804,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5435142,
+      43.4678265
+     ],
+     [
+      -80.5433517,
+      43.4678934
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913806,
+   "properties": {
+    "osm_id": 383913806,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5434927,
+      43.4681338
+     ],
+     [
+      -80.5435203,
+      43.4681808
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913807,
+   "properties": {
+    "osm_id": 383913807,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5433072,
+      43.4681912
+     ],
+     [
+      -80.5433488,
+      43.4682435
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913808,
+   "properties": {
+    "osm_id": 383913808,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425518,
+      43.4687526
+     ],
+     [
+      -80.5425783,
+      43.4687966
+     ],
+     [
+      -80.5427212,
+      43.4690085
+     ],
+     [
+      -80.5428047,
+      43.4691307
+     ],
+     [
+      -80.5428375,
+      43.4691807
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913809,
+   "properties": {
+    "osm_id": 383913809,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425783,
+      43.4687966
+     ],
+     [
+      -80.5424976,
+      43.4688239
+     ],
+     [
+      -80.5424679,
+      43.4687798
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913810,
+   "properties": {
+    "osm_id": 383913810,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429166,
+      43.469092
+     ],
+     [
+      -80.5428047,
+      43.4691307
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913811,
+   "properties": {
+    "osm_id": 383913811,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.543069,
+      43.4688866
+     ],
+     [
+      -80.5428407,
+      43.4689602
+     ],
+     [
+      -80.5427212,
+      43.4690085
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913812,
+   "properties": {
+    "osm_id": 383913812,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437919,
+      43.469665
+     ],
+     [
+      -80.5437081,
+      43.4696476
+     ],
+     [
+      -80.5436331,
+      43.4695357
+     ],
+     [
+      -80.5431607,
+      43.4696984
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913813,
+   "properties": {
+    "osm_id": 383913813,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5441464,
+      43.47065
+     ],
+     [
+      -80.5434144,
+      43.4709162
+     ],
+     [
+      -80.5433623,
+      43.4708407
+     ],
+     [
+      -80.5429875,
+      43.4709769
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913814,
+   "properties": {
+    "osm_id": 383913814,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.543469,
+      43.4709954
+     ],
+     [
+      -80.5434144,
+      43.4709162
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913815,
+   "properties": {
+    "osm_id": 383913815,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5439068,
+      43.4715702
+     ],
+     [
+      -80.5437981,
+      43.4714144
+     ],
+     [
+      -80.543742,
+      43.4713331
+     ],
+     [
+      -80.54371,
+      43.4713448
+     ],
+     [
+      -80.5436042,
+      43.4711914
+     ],
+     [
+      -80.5435328,
+      43.4710879
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913816,
+   "properties": {
+    "osm_id": 383913816,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5444851,
+      43.4711646
+     ],
+     [
+      -80.5444388,
+      43.4711815
+     ],
+     [
+      -80.5442399,
+      43.4712538
+     ],
+     [
+      -80.5437981,
+      43.4714144
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913817,
+   "properties": {
+    "osm_id": 383913817,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5445751,
+      43.471379
+     ],
+     [
+      -80.5444388,
+      43.4711815
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913818,
+   "properties": {
+    "osm_id": 383913818,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5442399,
+      43.4712538
+     ],
+     [
+      -80.544078,
+      43.4710192
+     ],
+     [
+      -80.5436042,
+      43.4711914
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913819,
+   "properties": {
+    "osm_id": 383913819,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5444301,
+      43.4722848
+     ],
+     [
+      -80.5443145,
+      43.4723269
+     ],
+     [
+      -80.5442645,
+      43.4722549
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913820,
+   "properties": {
+    "osm_id": 383913820,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5436431,
+      43.472219
+     ],
+     [
+      -80.5435153,
+      43.4720341
+     ],
+     [
+      -80.5434713,
+      43.4719703
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913821,
+   "properties": {
+    "osm_id": 383913821,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437876,
+      43.4724283
+     ],
+     [
+      -80.5436431,
+      43.472219
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913823,
+   "properties": {
+    "osm_id": 383913823,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5417128,
+      43.4716062
+     ],
+     [
+      -80.541702,
+      43.4715907
+     ],
+     [
+      -80.5418417,
+      43.4715398
+     ],
+     [
+      -80.5417486,
+      43.4714054
+     ],
+     [
+      -80.5418896,
+      43.471354
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913825,
+   "properties": {
+    "osm_id": 383913825,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419409,
+      43.4713353
+     ],
+     [
+      -80.5419184,
+      43.4713028
+     ],
+     [
+      -80.5414479,
+      43.4706203
+     ],
+     [
+      -80.5413125,
+      43.4704239
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913826,
+   "properties": {
+    "osm_id": 383913826,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411923,
+      43.4704676
+     ],
+     [
+      -80.5413125,
+      43.4704239
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913827,
+   "properties": {
+    "osm_id": 383913827,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5408784,
+      43.4705715
+     ],
+     [
+      -80.5409334,
+      43.4706513
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913828,
+   "properties": {
+    "osm_id": 383913828,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5409614,
+      43.4705513
+     ],
+     [
+      -80.5409085,
+      43.4705715
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913829,
+   "properties": {
+    "osm_id": 383913829,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5409312,
+      43.470579
+     ],
+     [
+      -80.5409533,
+      43.4706111
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913830,
+   "properties": {
+    "osm_id": 383913830,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5409378,
+      43.4706159
+     ],
+     [
+      -80.5409168,
+      43.4705838
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 383913831,
+   "properties": {
+    "osm_id": 383913831,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5405579,
+      43.4698866
+     ],
+     [
+      -80.5404954,
+      43.4697982
+     ],
+     [
+      -80.5405167,
+      43.4697914
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 574196261,
+   "properties": {
+    "osm_id": 574196261,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5433443,
+      43.4676053
+     ],
+     [
+      -80.5433892,
+      43.4676175
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 574226618,
+   "properties": {
+    "osm_id": 574226618,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5472937,
+      43.4688016
+     ],
+     [
+      -80.547214,
+      43.4687944
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 626283189,
+   "properties": {
+    "osm_id": 626283189,
+    "name": "E6 Bridge",
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5389848,
+      43.4731374
+     ],
+     [
+      -80.5390896,
+      43.4730966
+     ],
+     [
+      -80.5392332,
+      43.473056
+     ],
+     [
+      -80.5393241,
+      43.4730211
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 627301694,
+   "properties": {
+    "osm_id": 627301694,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429472,
+      43.4681048
+     ],
+     [
+      -80.5429247,
+      43.4680672
+     ],
+     [
+      -80.5428659,
+      43.4680019
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 662770701,
+   "properties": {
+    "osm_id": 662770701,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5414479,
+      43.4706203
+     ],
+     [
+      -80.5416371,
+      43.4705516
+     ],
+     [
+      -80.5420732,
+      43.4703933
+     ],
+     [
+      -80.5420555,
+      43.4703676
+     ],
+     [
+      -80.5420692,
+      43.4703626
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 662770703,
+   "properties": {
+    "osm_id": 662770703,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5416057,
+      43.4705094
+     ],
+     [
+      -80.5416371,
+      43.4705516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 709513124,
+   "properties": {
+    "osm_id": 709513124,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "building_passage",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": "yes"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5359276,
+      43.4654426
+     ],
+     [
+      -80.5361312,
+      43.4655352
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 710344450,
+   "properties": {
+    "osm_id": 710344450,
+    "name": null,
+    "highway": "service",
+    "tunnel": "building_passage",
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5389719,
+      43.4760653
+     ],
+     [
+      -80.5387354,
+      43.4761587
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 726382515,
+   "properties": {
+    "osm_id": 726382515,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5486949,
+      43.4752694
+     ],
+     [
+      -80.5486739,
+      43.4752385
+     ],
+     [
+      -80.5486879,
+      43.4752335
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 726382516,
+   "properties": {
+    "osm_id": 726382516,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5492118,
+      43.4750866
+     ],
+     [
+      -80.5492304,
+      43.475114
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 726382517,
+   "properties": {
+    "osm_id": 726382517,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5490747,
+      43.4751337
+     ],
+     [
+      -80.5490635,
+      43.4751172
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 726382526,
+   "properties": {
+    "osm_id": 726382526,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.547868,
+      43.4755634
+     ],
+     [
+      -80.5482882,
+      43.4754147
+     ],
+     [
+      -80.5486949,
+      43.4752694
+     ],
+     [
+      -80.5490747,
+      43.4751337
+     ],
+     [
+      -80.5491841,
+      43.4750965
+     ],
+     [
+      -80.5492118,
+      43.4750866
+     ],
+     [
+      -80.5492513,
+      43.4750726
+     ],
+     [
+      -80.549266,
+      43.4750113
+     ],
+     [
+      -80.5494263,
+      43.47495
+     ],
+     [
+      -80.5494173,
+      43.474937
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 732492294,
+   "properties": {
+    "osm_id": 732492294,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "building_passage",
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5353798,
+      43.4707161
+     ],
+     [
+      -80.5352212,
+      43.4705729
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491418,
+   "properties": {
+    "osm_id": 757491418,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5432637,
+      43.4727528
+     ],
+     [
+      -80.5432498,
+      43.4727327
+     ],
+     [
+      -80.543372,
+      43.4726885
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491419,
+   "properties": {
+    "osm_id": 757491419,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420604,
+      43.4720975
+     ],
+     [
+      -80.5420591,
+      43.4720956
+     ],
+     [
+      -80.5420433,
+      43.4720727
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491420,
+   "properties": {
+    "osm_id": 757491420,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5415817,
+      43.4722715
+     ],
+     [
+      -80.5415798,
+      43.4722688
+     ],
+     [
+      -80.5415646,
+      43.4722468
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491422,
+   "properties": {
+    "osm_id": 757491422,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5412776,
+      43.4718242
+     ],
+     [
+      -80.5412682,
+      43.4718106
+     ],
+     [
+      -80.5412517,
+      43.4717867
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491425,
+   "properties": {
+    "osm_id": 757491425,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410485,
+      43.4719464
+     ],
+     [
+      -80.541051,
+      43.4719455
+     ],
+     [
+      -80.5411765,
+      43.4721272
+     ],
+     [
+      -80.541174,
+      43.4721281
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491431,
+   "properties": {
+    "osm_id": 757491431,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541427,
+      43.4720397
+     ],
+     [
+      -80.5414172,
+      43.4720254
+     ],
+     [
+      -80.5414271,
+      43.4720218
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491436,
+   "properties": {
+    "osm_id": 757491436,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5412989,
+      43.4718164
+     ],
+     [
+      -80.541306,
+      43.4718268
+     ],
+     [
+      -80.5414379,
+      43.4720178
+     ],
+     [
+      -80.5414271,
+      43.4720218
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491442,
+   "properties": {
+    "osm_id": 757491442,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410911,
+      43.4719122
+     ],
+     [
+      -80.5411045,
+      43.4719073
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491443,
+   "properties": {
+    "osm_id": 757491443,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410749,
+      43.4719057
+     ],
+     [
+      -80.5410817,
+      43.4719156
+     ],
+     [
+      -80.5410911,
+      43.4719122
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491444,
+   "properties": {
+    "osm_id": 757491444,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411045,
+      43.4719073
+     ],
+     [
+      -80.541147,
+      43.4718919
+     ],
+     [
+      -80.5411358,
+      43.4718757
+     ],
+     [
+      -80.5411521,
+      43.4718698
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491446,
+   "properties": {
+    "osm_id": 757491446,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5411624,
+      43.4718661
+     ],
+     [
+      -80.541153,
+      43.4718525
+     ],
+     [
+      -80.5411481,
+      43.4718453
+     ],
+     [
+      -80.5410456,
+      43.4718826
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491447,
+   "properties": {
+    "osm_id": 757491447,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5412948,
+      43.471771
+     ],
+     [
+      -80.5413207,
+      43.4718085
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491460,
+   "properties": {
+    "osm_id": 757491460,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5426701,
+      43.4729461
+     ],
+     [
+      -80.5426623,
+      43.4729348
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491461,
+   "properties": {
+    "osm_id": 757491461,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422755,
+      43.4723724
+     ],
+     [
+      -80.5422694,
+      43.4723635
+     ],
+     [
+      -80.5422544,
+      43.4723418
+     ],
+     [
+      -80.5422189,
+      43.4722904
+     ],
+     [
+      -80.5421601,
+      43.4722052
+     ],
+     [
+      -80.5421489,
+      43.4722092
+     ],
+     [
+      -80.5421398,
+      43.4722126
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491496,
+   "properties": {
+    "osm_id": 757491496,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5418127,
+      43.4726061
+     ],
+     [
+      -80.5417006,
+      43.4726469
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491508,
+   "properties": {
+    "osm_id": 757491508,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420486,
+      43.4726582
+     ],
+     [
+      -80.5420239,
+      43.4726672
+     ],
+     [
+      -80.5419756,
+      43.4726847
+     ],
+     [
+      -80.5418888,
+      43.4727163
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491509,
+   "properties": {
+    "osm_id": 757491509,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.542434,
+      43.4725125
+     ],
+     [
+      -80.5423735,
+      43.4725345
+     ],
+     [
+      -80.5423644,
+      43.4725378
+     ],
+     [
+      -80.5422746,
+      43.4725704
+     ],
+     [
+      -80.5422407,
+      43.4725828
+     ],
+     [
+      -80.5422611,
+      43.4726124
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491510,
+   "properties": {
+    "osm_id": 757491510,
+    "name": null,
+    "highway": "steps",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0;-1",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5423003,
+      43.4725981
+     ],
+     [
+      -80.5423617,
+      43.4725758
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 757491511,
+   "properties": {
+    "osm_id": 757491511,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420239,
+      43.4726672
+     ],
+     [
+      -80.5420065,
+      43.472642
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 815045355,
+   "properties": {
+    "osm_id": 815045355,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5437232,
+      43.4715102
+     ],
+     [
+      -80.5434981,
+      43.4711749
+     ],
+     [
+      -80.5434501,
+      43.4711002
+     ],
+     [
+      -80.5434984,
+      43.4710811
+     ],
+     [
+      -80.5435224,
+      43.4710729
+     ],
+     [
+      -80.54391,
+      43.470933
+     ],
+     [
+      -80.5439339,
+      43.4709249
+     ],
+     [
+      -80.5439099,
+      43.4708901
+     ],
+     [
+      -80.5440512,
+      43.4708391
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 834531799,
+   "properties": {
+    "osm_id": 834531799,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5429425,
+      43.4681731
+     ],
+     [
+      -80.5428481,
+      43.4682051
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 834781409,
+   "properties": {
+    "osm_id": 834781409,
+    "name": null,
+    "highway": "service",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410116,
+      43.470576
+     ],
+     [
+      -80.5410387,
+      43.4706125
+     ],
+     [
+      -80.5411093,
+      43.4707189
+     ],
+     [
+      -80.5412179,
+      43.4709394
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 887720021,
+   "properties": {
+    "osm_id": 887720021,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5423965,
+      43.4725844
+     ],
+     [
+      -80.5423915,
+      43.472577
+     ],
+     [
+      -80.5423644,
+      43.4725378
+     ],
+     [
+      -80.5422553,
+      43.4723798
+     ],
+     [
+      -80.5421398,
+      43.4722126
+     ],
+     [
+      -80.5420604,
+      43.4720975
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 887720022,
+   "properties": {
+    "osm_id": 887720022,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5420604,
+      43.4720975
+     ],
+     [
+      -80.5419706,
+      43.4721301
+     ],
+     [
+      -80.5418651,
+      43.4721685
+     ],
+     [
+      -80.5417415,
+      43.4722134
+     ],
+     [
+      -80.5415817,
+      43.4722715
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 887720023,
+   "properties": {
+    "osm_id": 887720023,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.541905,
+      43.4727398
+     ],
+     [
+      -80.5417878,
+      43.4727824
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 887720024,
+   "properties": {
+    "osm_id": 887720024,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5421867,
+      43.4724432
+     ],
+     [
+      -80.5420813,
+      43.4724816
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 887720025,
+   "properties": {
+    "osm_id": 887720025,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "0",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5419929,
+      43.4727099
+     ],
+     [
+      -80.5419756,
+      43.4726847
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 966826461,
+   "properties": {
+    "osm_id": 966826461,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5482882,
+      43.4754147
+     ],
+     [
+      -80.5482541,
+      43.4754943
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 983281506,
+   "properties": {
+    "osm_id": 983281506,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": "yes",
+    "layer": "1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5450054,
+      43.4720948
+     ],
+     [
+      -80.5444417,
+      43.4723015
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 991517402,
+   "properties": {
+    "osm_id": 991517402,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5451811,
+      43.4723389
+     ],
+     [
+      -80.5452523,
+      43.4723016
+     ],
+     [
+      -80.5453846,
+      43.4722085
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 991517403,
+   "properties": {
+    "osm_id": 991517403,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5450561,
+      43.4720691
+     ],
+     [
+      -80.5452523,
+      43.4723016
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 991517404,
+   "properties": {
+    "osm_id": 991517404,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5448657,
+      43.4717849
+     ],
+     [
+      -80.5448501,
+      43.471762
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1216582208,
+   "properties": {
+    "osm_id": 1216582208,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5422897,
+      43.4685114
+     ],
+     [
+      -80.542305,
+      43.4685357
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1220002470,
+   "properties": {
+    "osm_id": 1220002470,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5428644,
+      43.468997
+     ],
+     [
+      -80.5428407,
+      43.4689602
+     ],
+     [
+      -80.5428181,
+      43.4689253
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1221675346,
+   "properties": {
+    "osm_id": 1221675346,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5495723,
+      43.4723677
+     ],
+     [
+      -80.5495184,
+      43.47227
+     ],
+     [
+      -80.5494387,
+      43.4721823
+     ],
+     [
+      -80.5494174,
+      43.4720464
+     ],
+     [
+      -80.5493517,
+      43.471963
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1274851781,
+   "properties": {
+    "osm_id": 1274851781,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.550901,
+      43.4714961
+     ],
+     [
+      -80.550756,
+      43.471282
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1377385013,
+   "properties": {
+    "osm_id": 1377385013,
+    "name": null,
+    "highway": "service",
+    "tunnel": "building_passage",
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5397049,
+      43.4775395
+     ],
+     [
+      -80.539977,
+      43.4774423
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1421784996,
+   "properties": {
+    "osm_id": 1421784996,
+    "name": null,
+    "highway": "footway",
+    "tunnel": "yes",
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5430866,
+      43.4697613
+     ],
+     [
+      -80.5430393,
+      43.4696979
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1488890716,
+   "properties": {
+    "osm_id": 1488890716,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5505379,
+      43.4720738
+     ],
+     [
+      -80.5505935,
+      43.4720545
+     ],
+     [
+      -80.5506543,
+      43.4720415
+     ],
+     [
+      -80.5507124,
+      43.4720272
+     ],
+     [
+      -80.5507616,
+      43.4720129
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1499739779,
+   "properties": {
+    "osm_id": 1499739779,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5496498,
+      43.4718406
+     ],
+     [
+      -80.549766,
+      43.4718019
+     ],
+     [
+      -80.5498703,
+      43.4717598
+     ],
+     [
+      -80.5499508,
+      43.4716896
+     ],
+     [
+      -80.5499562,
+      43.4715859
+     ],
+     [
+      -80.5500733,
+      43.471529
+     ],
+     [
+      -80.5502516,
+      43.4714565
+     ],
+     [
+      -80.5504375,
+      43.471396
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1499739780,
+   "properties": {
+    "osm_id": 1499739780,
+    "name": null,
+    "highway": "footway",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5507217,
+      43.4717377
+     ],
+     [
+      -80.5508423,
+      43.4717013
+     ],
+     [
+      -80.5508582,
+      43.4716919
+     ],
+     [
+      -80.5508818,
+      43.471678
+     ],
+     [
+      -80.5509195,
+      43.4716596
+     ],
+     [
+      -80.5509502,
+      43.4716446
+     ],
+     [
+      -80.5509719,
+      43.4716341
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1536366492,
+   "properties": {
+    "osm_id": 1536366492,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": null,
+    "level": "2",
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5425721,
+      43.4711258
+     ],
+     [
+      -80.5427313,
+      43.4710692
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1539947334,
+   "properties": {
+    "osm_id": 1539947334,
+    "name": null,
+    "highway": "corridor",
+    "tunnel": null,
+    "bridge": null,
+    "layer": "-1",
+    "level": null,
+    "covered": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5531049,
+      43.4710773
+     ],
+     [
+      -80.5525583,
+      43.4711156
+     ],
+     [
+      -80.5520758,
+      43.4711494
+     ],
+     [
+      -80.5517842,
+      43.4711955
+     ]
+    ]
+   }
+  }
+ ]
+}
