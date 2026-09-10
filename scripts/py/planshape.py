@@ -18,7 +18,7 @@ CLOSE_R = 4        # ~ a door opening
 KEEP_FRAC = 0.06   # extra components kept if at least this fraction of the main mass
 
 
-def rasterise(polylines, res=RES, pad=3):
+def rasterise(polylines, res=RES, pad=12):   # > CLOSE_R, or the mass touches the edge and contours open
     pts = np.array([p for pl in polylines for p in pl], dtype=float)
     x0, y0 = pts.min(0)
     x1, y1 = pts.max(0)
@@ -48,7 +48,15 @@ def mass(img, close_r=CLOSE_R, keep_frac=KEEP_FRAC):
 
 
 def outline(polylines, res=RES):
-    """-> (shapely polygon in plan units, filled-area in plan units^2)."""
+    """-> (shapely polygon in plan units, filled-area in plan units^2).
+
+    Contour rings from a raster frequently self-touch at one-pixel pinches,
+    which shapely calls invalid. Dropping those threw away the floor plate on
+    27 of the first 46 levels audited; make_valid keeps the polygon instead.
+    The raster is padded so the mass never touches the border, where
+    find_contours would otherwise return only a fragment.
+    """
+    from shapely.validation import make_valid
     img, (ox, oy, r) = rasterise(polylines, res)
     m = mass(img)
     polys = []
@@ -57,8 +65,11 @@ def outline(polylines, res=RES):
             continue
         ring = [(ox + x * r, oy + y * r) for y, x in c]
         p = Polygon(ring)
-        if p.is_valid and p.area > 0:
-            polys.append(p)
+        if not p.is_valid:
+            p = make_valid(p)
+        # make_valid may hand back a collection; keep its polygonal parts
+        parts = [p] if p.geom_type == 'Polygon' else [g for g in getattr(p, 'geoms', []) if g.geom_type == 'Polygon']
+        polys += [g for g in parts if g.area > 0]
     if not polys:
         raise ValueError('no outline')
     poly = unary_union(polys)

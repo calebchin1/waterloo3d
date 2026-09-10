@@ -2,15 +2,15 @@
  "code": "EV3",
  "source": "057EV3_01FLR.pdf",
  "level": 0.0,
- "scale": 0.05205,
- "rotationDeg": 121.651,
- "mirror": true,
- "tx": -6506883.888,
- "ty": 4806473.609,
- "iou": 0.744,
- "margin": 0.0002,
+ "scale": 0.050538,
+ "rotationDeg": 300.38,
+ "mirror": false,
+ "tx": -6506917.529,
+ "ty": 4806454.19,
+ "iou": 0.7474,
+ "margin": 0.0055,
  "siteScore": null,
- "residualM": 3.29,
+ "residualM": 3.01,
  "method": "needs-review",
  "levels": {
   "057EV3_01FLR.pdf": {
@@ -26,32 +26,38 @@
   "057EV3_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    2.94,
-    3.0
+    -15.06,
+    -15.0
    ],
    "dx": 0.0,
    "dy": 0.0,
-   "score": 1.0
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "057EV3_03FLR.pdf": {
-   "rotDeg": 180.0,
+   "rotDeg": 0.0,
    "pivot": [
-    -6.0,
-    -2.88
+    -24.0,
+    -20.88
    ],
-   "dx": 1230.94,
-   "dy": 779.88,
-   "score": 0.983
+   "dx": -11.06,
+   "dy": 1.88,
+   "score": 0.985,
+   "trusted": true,
+   "inFootprint": 1.0
   },
   "057EV3_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    -5.76,
-    -6.0
+    -23.76,
+    -24.0
    ],
    "dx": 8.7,
    "dy": 9.0,
-   "score": 1.0
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 1.0
   }
  }
 }

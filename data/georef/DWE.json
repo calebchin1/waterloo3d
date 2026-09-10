@@ -2,15 +2,15 @@
  "code": "DWE",
  "source": "001DWE_01FLR.pdf",
  "level": 0.0,
- "scale": 0.148331,
- "rotationDeg": 26.622,
+ "scale": 0.148442,
+ "rotationDeg": 26.626,
  "mirror": false,
- "tx": -6506633.64,
- "ty": 4806555.603,
- "iou": 0.8891,
- "margin": 0.2822,
+ "tx": -6506633.703,
+ "ty": 4806555.503,
+ "iou": 0.8914,
+ "margin": 0.478,
  "siteScore": 0.0,
- "residualM": 1.66,
+ "residualM": 1.65,
  "method": "auto",
  "levels": {
   "001DWE_01FLR.pdf": {
@@ -26,22 +26,26 @@
   "001DWE_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    27.84,
-    78.12
+    9.84,
+    60.12
    ],
    "dx": -9.44,
    "dy": 54.72,
-   "score": 0.955
+   "score": 0.956,
+   "trusted": true,
+   "inFootprint": 0.972
   },
   "001DWE_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    15.12,
-    153.0
+    -2.88,
+    135.0
    ],
    "dx": -18.72,
    "dy": -18.16,
-   "score": 0.945
+   "score": 0.945,
+   "trusted": true,
+   "inFootprint": 0.93
   }
  }
 }

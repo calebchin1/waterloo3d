@@ -23,12 +23,17 @@ export function visible(links: FeatureCollection<LineString, LinkProps>, f: Filt
 }
 
 /** deck.gl layers: a 3D tube per link, plus a faint ground shadow under tunnels/bridges for depth cue. */
+/** A pure z translation for deck's LNGLAT layers: applied in world space before
+ *  projection, so it shifts geometry without rebuilding it. */
+export const zMatrix = (z: number) => new Float64Array([1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, z, 1]);
+
 export function buildLayers(
   links: FeatureCollection<LineString, LinkProps>,
   f: Filters,
   onClick: (l: Link, coord: [number, number]) => void,
   onHover: (l: Link | null) => void,
   dim = 1,
+  zShift = 0,
 ): Layer[] {
   const data = visible(links, f);
   const color = (l: Link, alpha = 255): [number, number, number, number] => {
@@ -45,10 +50,12 @@ export function buildLayers(
       getColor: (l) => color(l, 70),
       getWidth: (l) => width(l) * 1.4,
       widthUnits: 'meters', widthMinPixels: 1, capRounded: true, jointRounded: true,
+      modelMatrix: zMatrix(zShift),
       updateTriggers: { getColor: [f.highlight, dim], getWidth: [f.highlight] },
     }),
     new PathLayer<Link>({
       id: 'links',
+      modelMatrix: zMatrix(zShift),
       data,
       getPath: (l) => l.geometry.coordinates.map(([x, y]) => [x, y, l.properties.z_m] as [number, number, number]),
       getColor: (l) => color(l),
@@ -89,6 +96,7 @@ const STAIR_RUN_MAX_M = 9;     // a flight, not a whole stairwell block
 const STAIR_WIDE_MAX_M = 4.5;
 
 export interface IndoorView { code: string; level: number }
+const SHOW_SPINE = false;
 
 /** Wall polylines -> one thin quad per segment, ready to extrude. A quad is
  *  cheaper and more predictable than trying to extrude an open path. */
@@ -103,9 +111,13 @@ function wallQuads(walls: [number, number][][], z: number): { poly: P3[] }[] {
       if (len < 0.05) continue;
       const nx = (-dy / len) * half, ny = (dx / len) * half;
       const ox = nx / MX, oy = ny / MY;
+      // extend by half a thickness along the segment so consecutive quads
+      // overlap at corners instead of leaving a wedge notch
+      const ex = (dx / len) * half / MX, ey = (dy / len) * half / MY;
+      const ax = x1 - ex, ay = y1 - ey, bx = x2 + ex, by = y2 + ey;
       out.push({ poly: [
-        [x1 + ox, y1 + oy, z], [x2 + ox, y2 + oy, z],
-        [x2 - ox, y2 - oy, z], [x1 - ox, y1 - oy, z],
+        [ax + ox, ay + oy, z], [bx + ox, by + oy, z],
+        [bx - ox, by - oy, z], [ax - ox, ay - oy, z],
       ] });
     }
   }
@@ -142,17 +154,11 @@ function stairSteps(s: Shaft, z: number, rise: number): { poly: P3[]; h: number 
   return out;
 }
 
-// Wall quads are expensive to rebuild and there are thousands per floor, so they
-// are cached per level and per z shift (the shift only changes while walking).
 const memo = new Map<string, { poly: P3[] }[]>();
-function wallsFor(code: string, l: IndoorLevel, z: number) {
-  const key = `${code}:${l.level}:${z.toFixed(1)}`;
+function wallsFor(code: string, l: IndoorLevel) {
+  const key = `${code}:${l.level}`;
   let g = memo.get(key);
-  if (!g) {
-    if (memo.size > 40) memo.clear();
-    g = wallQuads(l.walls, z);
-    memo.set(key, g);
-  }
+  if (!g) { g = wallQuads(l.walls, l.elevM); memo.set(key, g); }
   return g;
 }
 
@@ -160,12 +166,16 @@ function wallsFor(code: string, l: IndoorLevel, z: number) {
  *  half-megabyte building file never becomes 62 of them on screen. */
 export function buildIndoorLayers(d: Indoor, view: IndoorView, span = 1, zShift = 0): Layer[] {
   const wallH = Math.min(WALL_MAX_M, Math.max(2.4, d.floorHeightM - 0.4));
-  const levels = d.levels.filter((l) => Math.abs(l.level - view.level) <= span);
+  // Only the storey underfoot and, faintly, the one below it: a ghosted floor
+  // *above* (often larger, or a misregistered flattened plan) reads as a second building.
+  const levels = d.levels.filter((l) => l.level <= view.level && view.level - l.level <= span);
+  const sorted = [...d.levels].sort((a, b) => a.level - b.level);
   const out: Layer[] = [];
+  const mm = zMatrix(zShift);
   for (const l of levels) {
     const active = l.level === view.level;
-    const fade = active ? 1 : 0.2;
-    const z = l.elevM + zShift;
+    const fade = active ? 1 : 0.12;
+    const z = l.elevM;
     const a = (v: number) => Math.round(v * fade);
     const id = `${d.code}-${l.level}`;
 
@@ -179,31 +189,37 @@ export function buildIndoorLayers(d: Indoor, view: IndoorView, span = 1, zShift 
         getPolygon: (p: [number, number][]) => p.map(([x, y]) => [x, y, z - SLAB_THICK_M] as P3),
         getFillColor: [SLAB[0], SLAB[1], SLAB[2], a(250)],
         extruded: true, getElevation: SLAB_THICK_M + 0.04, material: false,
+        modelMatrix: mm, updateTriggers: { getFillColor: [active] },
       }));
     }
     out.push(new SolidPolygonLayer<Room>({
       id: `in-rooms-${id}`,
       data: l.rooms,
-      getPolygon: (r) => r.poly.map(([x, y]) => [x, y, z + 0.02] as P3),
+      getPolygon: (r) => r.poly.map(([x, y]) => [x, y, z + 0.07] as P3),
       getFillColor: (r) => [ROOM[0], ROOM[1], ROOM[2], a(r.no ? 190 : 130)],
       extruded: false, material: false, pickable: active,
+      modelMatrix: mm, updateTriggers: { getFillColor: [active] },
     }));
     out.push(new SolidPolygonLayer<{ poly: P3[] }>({
       id: `in-walls-${id}`,
-      data: wallsFor(d.code, l, z),
+      data: wallsFor(d.code, l),
       getPolygon: (w) => w.poly,
       getFillColor: [WALL[0], WALL[1], WALL[2], a(active ? 235 : 120)],
       extruded: true, getElevation: wallH, material: true,
+      modelMatrix: mm, updateTriggers: { getFillColor: [active] },
     }));
 
     if (!active) continue;
 
-    const rise = d.floorHeightM;
+    // Flights climb to the *next* level actually present, not a nominal storey:
+    // a mezzanine is half a storey up, and the top floor has nowhere to go.
+    const above = sorted.find((x) => x.level > l.level);
+    const rise = above ? above.elevM - l.elevM : 0;
     const shafts: { s: Shaft; kind: 'stair' | 'elevator' }[] = [
       ...l.stairs.map((s) => ({ s, kind: 'stair' as const })),
       ...l.elevators.map((s) => ({ s, kind: 'elevator' as const })),
     ];
-    const steps = shafts.filter((x) => x.kind === 'stair').flatMap((x) => stairSteps(x.s, z, rise));
+    const steps = rise > 0 ? shafts.filter((x) => x.kind === 'stair').flatMap((x) => stairSteps(x.s, z, rise)) : [];
     if (steps.length) {
       out.push(new SolidPolygonLayer<{ poly: P3[]; h: number }>({
         id: `in-steps-${id}`,
@@ -211,7 +227,7 @@ export function buildIndoorLayers(d: Indoor, view: IndoorView, span = 1, zShift 
         getPolygon: (s) => s.poly,
         getFillColor: [STAIR[0], STAIR[1], STAIR[2], 210],
         getElevation: (s) => s.h,
-        extruded: true, material: true,
+        extruded: true, material: true, modelMatrix: mm,
       }));
     }
     const lifts = shafts.filter((x) => x.kind === 'elevator');
@@ -224,17 +240,21 @@ export function buildIndoorLayers(d: Indoor, view: IndoorView, span = 1, zShift 
           return [[ax, ay, z], [bx, ay, z], [bx, by, z], [ax, by, z]] as P3[];
         },
         getFillColor: [ELEV[0], ELEV[1], ELEV[2], 190],
-        getElevation: rise, extruded: true, material: true,
+        getElevation: rise || d.floorHeightM, extruded: true, material: true, modelMatrix: mm,
       }));
     }
 
-    out.push(new PathLayer<IndoorLevel['edges'][number]>({
-      id: `in-spine-${id}`,
-      data: l.edges,
-      getPath: (e) => e.path.map(([x, y]) => [x, y, z + 0.06] as P3),
-      getColor: [255, 214, 10, 70],
-      getWidth: 0.3, widthUnits: 'meters', widthMinPixels: 1,
-    }));
+    // The corridor skeleton is a debug view: on every floor it reads as a
+    // yellow web of routes running through walls. Dev builds only.
+    if (import.meta.env.DEV && SHOW_SPINE) {
+      out.push(new PathLayer<IndoorLevel['edges'][number]>({
+        id: `in-spine-${id}`,
+        data: l.edges,
+        getPath: (e) => e.path.map(([x, y]) => [x, y, z + 0.09] as P3),
+        getColor: [255, 214, 10, 70],
+        getWidth: 0.3, widthUnits: 'meters', widthMinPixels: 1, modelMatrix: mm,
+      }));
+    }
     out.push(new TextLayer<Room>({
       id: `in-labels-${id}`,
       data: l.rooms.filter((r) => r.no),
@@ -247,7 +267,7 @@ export function buildIndoorLayers(d: Indoor, view: IndoorView, span = 1, zShift 
       getSize: 11, sizeUnits: 'pixels', sizeMinPixels: 8, sizeMaxPixels: 15,
       getColor: [240, 245, 252, 235],
       outlineWidth: 2, outlineColor: [10, 14, 20, 200], fontSettings: { sdf: true },
-      characterSet: 'auto', billboard: true,
+      characterSet: 'auto', billboard: true, modelMatrix: mm,
     }));
   }
   return out;

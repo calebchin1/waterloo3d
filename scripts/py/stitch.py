@@ -27,6 +27,10 @@ GAP_PX = 4             # 0.4 m; joins the two flights of one stairwell. Tried 2 
                        # stop neighbouring stairwells merging, and floors then stopped
                        # overlapping at all; the renderer clamps oversized flights instead
 MIN_SHAFT_M2 = 1.5
+MAX_SHAFT_M2 = 40.0    # a stairwell; a tiered lecture theatre is 250
+MAX_SHAFT_SIDE_M = 9.0
+SPLIT_R_PX = 3         # erosion used to break merged stairwells apart
+MAX_NODE_DIST_M = 6.0  # a shaft links to a level only through a node this close (E3 linked 87 m away)
 RISE_FACTOR = 1.8      # a stair costs more than its plan length
 ELEV_WAIT_M = 12.0     # elevator cost as an equivalent walking distance
 
@@ -47,6 +51,32 @@ def find_shafts(tf, levels, kind):
         W.draw(fr, pls, union)
     lab, n = ndi.label(closing(union, disk(GAP_PX)))
     px2 = fr.px * fr.px
+
+    # The stair layer also carries tiered seating, ramps and running tracks
+    # (RCH lecture theatre 252 m², PAC gym 39×47 m). Anything far larger than a
+    # stairwell is opened to split merged wells, and whatever is still oversized
+    # is dropped rather than drawn as a hall-sized flight of steps.
+    from skimage.morphology import opening
+    relab = np.zeros_like(lab)
+    nxt = 1
+    for i in range(1, n + 1):
+        m = lab == i
+        ys, xs = np.nonzero(m)
+        big = (float(m.sum()) * px2 > MAX_SHAFT_M2
+               or (xs.max() - xs.min()) * fr.px > MAX_SHAFT_SIDE_M
+               or (ys.max() - ys.min()) * fr.px > MAX_SHAFT_SIDE_M)
+        parts = ndi.label(opening(m, disk(SPLIT_R_PX)))[0] if big else m.astype(int)
+        for j in range(1, int(parts.max()) + 1):
+            q = parts == j
+            qy, qx = np.nonzero(q)
+            if not len(qx):
+                continue
+            if (float(q.sum()) * px2 > MAX_SHAFT_M2
+                    or (qx.max() - qx.min()) * fr.px > MAX_SHAFT_SIDE_M
+                    or (qy.max() - qy.min()) * fr.px > MAX_SHAFT_SIDE_M):
+                continue
+            relab[q] = nxt; nxt += 1
+    lab, n = relab, nxt - 1
 
     shafts, keep = [], {}
     for i in range(1, n + 1):
@@ -79,10 +109,14 @@ def find_shafts(tf, levels, kind):
             cen = fr.to_m([[ys.mean(), xs.mean()]])[0]
             node = None
             if len(nodes):
-                node = int(np.hypot(*(nodes - cen).T).argmin())
+                dd = np.hypot(*(nodes - cen).T)
+                node = int(dd.argmin())
+                if dd[node] > MAX_NODE_DIST_M:      # nearest corridor is not this shaft's
+                    continue
             by_id[sid]['levels'].append({'level': lv['level'], 'node': node,
                                          'c': [round(float(cen[0]), 2), round(float(cen[1]), 2)],
                                          'areaM2': round(float(m.sum()) * px2, 1)})
+    shafts = [sh for sh in shafts if sh['levels']]
     return shafts, keep
 
 

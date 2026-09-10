@@ -2,15 +2,15 @@
  "code": "PAS",
  "source": "030PAS_01FLR.pdf",
  "level": 0.0,
- "scale": 0.081188,
- "rotationDeg": 30.28,
+ "scale": 0.081447,
+ "rotationDeg": 30.274,
  "mirror": false,
- "tx": -6506818.424,
- "ty": 4806284.945,
- "iou": 0.7188,
- "margin": 0.0016,
+ "tx": -6506818.452,
+ "ty": 4806284.813,
+ "iou": 0.7189,
+ "margin": 0.0064,
  "siteScore": null,
- "residualM": 4.35,
+ "residualM": 4.34,
  "method": "needs-review",
  "levels": {
   "030PAS_01FLR.pdf": {
@@ -26,32 +26,36 @@
   "030PAS_02FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    131.28,
-    29.4
+    113.28,
+    11.4
    ],
-   "dx": -115.4,
-   "dy": 1042.36,
-   "score": 0.641
+   "dx": -65.4,
+   "dy": 1156.36,
+   "score": 0.646,
+   "trusted": true,
+   "inFootprint": 1.0
   },
   "030PAS_03FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    273.6,
-    87.36
+    255.6,
+    69.36
    ],
-   "dx": -145.72,
-   "dy": 912.4,
-   "score": 0.547
+   "dx": -249.72,
+   "dy": 766.4,
+   "score": 0.551,
+   "trusted": false
   },
   "030PAS_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    513.24,
-    160.08
+    495.24,
+    142.08
    ],
-   "dx": -387.36,
-   "dy": 53.68,
-   "score": 0.482
+   "dx": -451.36,
+   "dy": -32.32,
+   "score": 0.484,
+   "trusted": false
   }
  }
 }

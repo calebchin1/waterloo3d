@@ -2,16 +2,16 @@
  "code": "B1",
  "source": "007B1_01FLR.pdf",
  "level": 0.0,
- "scale": 0.072598,
- "rotationDeg": 309.841,
+ "scale": 0.168587,
+ "rotationDeg": 297.572,
  "mirror": false,
- "tx": -6506904.572,
- "ty": 4806761.317,
- "iou": 0.4066,
- "margin": 0.0024,
+ "tx": -6506925.689,
+ "ty": 4806774.821,
+ "iou": 0.68,
+ "margin": 0.0631,
  "siteScore": null,
- "residualM": 7.05,
- "method": "needs-review",
+ "residualM": 5.26,
+ "method": "auto",
  "levels": {
   "007B1_01FLR.pdf": {
    "rotDeg": 0.0,
@@ -24,24 +24,27 @@
    "score": 1.0
   },
   "007B1_02FLR.pdf": {
-   "rotDeg": 180.0,
-   "pivot": [
-    64.2,
-    53.16
-   ],
-   "dx": 667.92,
-   "dy": 334.84,
-   "score": 0.485
-  },
-  "007B1_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    184.8,
-    56.28
+    46.2,
+    35.16
    ],
-   "dx": -216.68,
-   "dy": -48.28,
-   "score": 0.612
+   "dx": 59.92,
+   "dy": -37.16,
+   "score": 0.491,
+   "trusted": false
+  },
+  "007B1_03FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    166.8,
+    38.28
+   ],
+   "dx": 667.32,
+   "dy": 395.72,
+   "score": 0.616,
+   "trusted": false,
+   "inFootprint": 0.495
   }
  }
 }

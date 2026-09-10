@@ -2,15 +2,15 @@
  "code": "CPH",
  "source": "029CPH_01FLR.pdf",
  "level": 0.0,
- "scale": 0.109781,
- "rotationDeg": 118.424,
+ "scale": 0.109864,
+ "rotationDeg": 118.335,
  "mirror": false,
- "tx": -6506494.987,
- "ty": 4806719.981,
- "iou": 0.7814,
- "margin": 0.0876,
+ "tx": -6506494.792,
+ "ty": 4806719.954,
+ "iou": 0.7822,
+ "margin": 0.1401,
  "siteScore": 0.002,
- "residualM": 2.43,
+ "residualM": 2.44,
  "method": "auto",
  "levels": {
   "029CPH_01FLR.pdf": {
@@ -26,32 +26,38 @@
   "029CPH_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    13.2,
-    98.52
+    -4.8,
+    80.52
    ],
    "dx": -2.12,
    "dy": 0.12,
-   "score": 0.989
+   "score": 0.99,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "029CPH_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    14.28,
-    99.36
+    -3.72,
+    81.36
    ],
    "dx": -1.2,
    "dy": -0.72,
-   "score": 0.967
+   "score": 0.968,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "029CPH_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    20.52,
-    99.24
+    2.52,
+    81.24
    ],
    "dx": -1.44,
    "dy": -0.6,
-   "score": 0.934
+   "score": 0.935,
+   "trusted": true,
+   "inFootprint": 0.997
   }
  }
 }

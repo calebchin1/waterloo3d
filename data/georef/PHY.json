@@ -2,15 +2,15 @@
  "code": "PHY",
  "source": "004PHY_01FLR.pdf",
  "level": 0.0,
- "scale": 0.080854,
- "rotationDeg": 117.471,
+ "scale": 0.081199,
+ "rotationDeg": 117.468,
  "mirror": false,
- "tx": -6506703.141,
- "ty": 4806709.271,
- "iou": 0.5088,
- "margin": 0.0001,
+ "tx": -6506702.831,
+ "ty": 4806708.929,
+ "iou": 0.509,
+ "margin": 0.009,
  "siteScore": null,
- "residualM": 7.79,
+ "residualM": 7.81,
  "method": "needs-review",
  "levels": {
   "004PHY_01FLR.pdf": {
@@ -26,32 +26,37 @@
   "004PHY_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    13.92,
-    13.32
+    -4.08,
+    -4.68
    ],
-   "dx": 2.06,
-   "dy": -5.16,
-   "score": 0.989
+   "dx": 4.06,
+   "dy": -3.16,
+   "score": 0.989,
+   "trusted": true,
+   "inFootprint": 0.868
   },
   "004PHY_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    164.28,
-    21.0
+    146.28,
+    3.0
    ],
-   "dx": 95.7,
-   "dy": -14.84,
-   "score": 0.472
+   "dx": -112.3,
+   "dy": -12.84,
+   "score": 0.476,
+   "trusted": false
   },
   "004PHY_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    6.42,
-    6.6
+    -11.58,
+    -11.4
    ],
-   "dx": 1.56,
-   "dy": -2.44,
-   "score": 0.996
+   "dx": -2.44,
+   "dy": 1.56,
+   "score": 0.996,
+   "trusted": true,
+   "inFootprint": 0.541
   }
  }
 }

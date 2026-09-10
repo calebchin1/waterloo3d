@@ -1,5 +1,7 @@
-// First-person flythrough along a route: the camera walks at eye height,
-// following the path and rising with it through stairs and onto upper floors.
+// Chase-camera flythrough along a route: MapLibre's camera sits ~10 m above and
+// ~45 m behind the walker at this zoom/pitch (its distance is fixed by zoom),
+// following the path; the scene itself slides down by the walker's elevation
+// (main.ts zShift) so stairs and upper floors read without moving the camera.
 import type { Segment } from './graph';
 import { MX, MY } from './metric';
 
@@ -42,7 +44,7 @@ export function buildFrames(segs: Segment[]): Frame[] {
     return {
       ...f,
       bearing: ((Math.atan2(sx, sy) * 180) / Math.PI + 360) % 360,
-      pitch: Math.max(64, Math.min(88, 77 - climb * 40)),
+      pitch: Math.max(70, Math.min(85, 82 - climb * 40)),   // map maxPitch is 85
       t: frames.length > 1 ? i / (frames.length - 1) : 0,
     };
   });
@@ -53,9 +55,8 @@ export interface Player {
   readonly playing: boolean; readonly frame: number; readonly frames: Frame[];
 }
 
-const EYE_M = 1.6;
 const BACK_M = 5;
-const ZOOM = 20.6;
+const ZOOM = 21.3;   // with pitch ~82 the camera sits ~4 m over the floor, below wall tops-ish
 
 export function createPlayer(
   map: import('maplibre-gl').Map,

@@ -8,7 +8,7 @@ import { buildAdjacency, route, summarise, type GraphData, type Segment } from '
 import { toSteps, type Step } from './steps';
 import { routeLayers, routeBounds } from './route';
 import { createPlayer, type Player } from './pov';
-import { getIndoor, loadIndoor, markReady, nodeId, rooms, type Indoor } from './indoor';
+import { getIndoor, levelForZ, loadIndoor, markReady, nodeId, rooms, type Indoor } from './indoor';
 
 const HOME = { center: [-80.5421, 43.4701] as [number, number], zoom: 16.35, pitch: 58, bearing: -18 };
 const isMobile = () => matchMedia('(max-width: 720px)').matches;
@@ -24,7 +24,7 @@ const map = new maplibregl.Map({
   container: 'map',
   style,
   ...HOME,
-  maxPitch: 80,
+  maxPitch: 85,
   attributionControl: false,
 });
 map.on('error', (e) => console.error('[map]', e.error ?? e));
@@ -58,7 +58,7 @@ function refresh() {
   const inside = indoorView ? getIndoor(indoorView.code) : undefined;
   overlay.setProps({
     layers: [
-      ...buildLayers(links, filters, showPopup, (l) => { map.getCanvas().style.cursor = l ? 'pointer' : ''; }, dim),
+      ...buildLayers(links, filters, showPopup, (l) => { map.getCanvas().style.cursor = l ? 'pointer' : ''; }, dim, zShift),
       // While walking, only the storey underfoot draws: the faded neighbours
       // are useful for orientation from outside but are just haze at eye level.
       ...(inside ? buildIndoorLayers(inside, indoorView!, player ? 0 : 1, zShift) : []),
@@ -208,6 +208,7 @@ map.on('load', async () => {
     pov.hidden = true; document.body.classList.remove('pov-active', 'underground');
     setIndoorView(null);
     setBuildingOpacity(xray ? 0.35 : 0.92);
+    refresh();   // setIndoorView is a no-op when already null, and the route is still in POV widths
     if (currentRoute) map.fitBounds(routeBounds(currentRoute), { padding: fitPadding(), pitch: 58, bearing: -18, duration: 900 });
   }
   function startWalk() {
@@ -220,25 +221,31 @@ map.on('load', async () => {
     player = createPlayer(map, currentRoute, (f, i) => {
       povSeek.value = String(Math.round(f.t * 1000));
       document.body.classList.toggle('underground', f.z < -0.5);
-      // Only re-shift when the storey changes: the shift rebuilds several
-      // thousand wall quads, so doing it per frame would stutter.
-      const cur = currentRoute![f.segIndex];
-      const curLvl = cur.kind === 'vertical' ? cur.toLevel : cur.level;
-      const bld = cur.building ? getIndoor(cur.building) : undefined;
-      const wantShift = bld && curLvl !== undefined
-        ? -(bld.levels.find((x) => x.level === curLvl)?.elevM ?? 0) : 0;
-      const shifted = Math.abs(wantShift - zShift) > 0.05;
+      // The shift is a modelMatrix translation now, so it can follow the walker
+      // every frame: climbing a stair is the floor sinking continuously away.
+      const wantShift = -f.z;
+      const shifted = Math.abs(wantShift - zShift) > 0.02;
       if (shifted) zShift = wantShift;
       if (f.segIndex !== lastSeg) {
         lastSeg = f.segIndex;
         const step = [...currentSteps].reverse().find((s) => s.index <= f.segIndex && s.kind !== 'start' && s.kind !== 'end') ?? currentSteps[0];
         povStep.innerHTML = step.text;
         activeSeg = f.segIndex;
-        // Open the floor the walker is actually standing on.
+        // Open the floor the walker is actually standing on. On a stair going
+        // up, that is the level being left (its flight is the one underfoot);
+        // going down it is the level being reached.
         const seg = currentRoute![f.segIndex];
-        const lvl = seg.kind === 'vertical' ? seg.toLevel : seg.level;
-        setIndoorView(seg.building && lvl !== undefined && getIndoor(seg.building)
-          ? { code: seg.building, level: lvl } : null);
+        const up = seg.kind === 'vertical' && (seg.toLevel ?? 0) > (seg.level ?? 0);
+        const lvl = seg.kind === 'vertical' ? (up ? seg.level : seg.toLevel) : seg.level;
+        if (seg.building && lvl !== undefined && getIndoor(seg.building)) {
+          setIndoorView({ code: seg.building, level: lvl });
+        } else if (seg.kind === 'indoor' && seg.link && getIndoor(seg.to)) {
+          // On a bridge or tunnel the building being entered stays open at the
+          // floor the link arrives on, instead of both ends vanishing mid-air.
+          const d = getIndoor(seg.to)!;
+          const arrive = levelForZ(d, seg.link.z_m);
+          setIndoorView(arrive ? { code: seg.to, level: arrive.level } : null);
+        } else setIndoorView(null);
         refresh();
       } else if (shifted) refresh();
       void i;
@@ -299,7 +306,9 @@ map.on('load', async () => {
       // Indoor files are fetched per building, so the first solve may still be
       // using the synthetic clique. Load what this route touches and re-solve.
       void withIndoor([from, to, ...segs.flatMap((s) => [s.from, s.to])]).then((gained) => {
-        if (!gained || currentRoute !== segs) return;
+        // Never swap the route under a running walk: the player indexes the
+        // old segment array and the re-solved one has a different length.
+        if (!gained || currentRoute !== segs || player) return;
         const better = solve(to);
         if (!better) return;
         show(better);

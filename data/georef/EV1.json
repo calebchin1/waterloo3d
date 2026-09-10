@@ -2,15 +2,15 @@
  "code": "EV1",
  "source": "010EV1_01FLR.pdf",
  "level": 0.0,
- "scale": 0.130914,
- "rotationDeg": 26.521,
+ "scale": 0.131977,
+ "rotationDeg": 26.474,
  "mirror": false,
- "tx": -6506847.396,
- "ty": 4806390.138,
- "iou": 0.9312,
- "margin": 0.0189,
- "siteScore": 0.147,
- "residualM": 1.3,
+ "tx": -6506847.057,
+ "ty": 4806389.705,
+ "iou": 0.9278,
+ "margin": 0.0159,
+ "siteScore": 0.15,
+ "residualM": 1.2,
  "method": "needs-review",
  "levels": {
   "010EV1_01FLR.pdf": {
@@ -26,22 +26,26 @@
   "010EV1_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    55.44,
-    131.28
+    37.44,
+    113.28
    ],
    "dx": -7.8,
    "dy": 8.12,
-   "score": 0.934
+   "score": 0.934,
+   "trusted": true,
+   "inFootprint": 0.981
   },
   "010EV1_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    55.44,
-    131.28
+    37.44,
+    113.28
    ],
    "dx": -7.8,
    "dy": 8.12,
-   "score": 0.955
+   "score": 0.963,
+   "trusted": true,
+   "inFootprint": 0.98
   }
  }
 }

@@ -91,20 +91,27 @@ function addIndoor(adj: Adj, code: string, d: Indoor) {
   }
 }
 
+const MAX_ANCHOR_M = 25;      // a longer stub is a misplaced plan, not a corridor
+
 /** Join a campus node (building centroid, outdoor door, tunnel portal) to the
- *  indoor node it actually lands on. */
+ *  indoor node it actually lands on — one level only. Anchoring the centroid
+ *  to every level looked like a way to reach floors whose ground plan is a
+ *  fragment, but it made the centroid a free elevator: DC→MC 4055 went
+ *  "1st Floor corridor → 4th Floor corridor" with no stairs in between. */
 function anchor(adj: Adj, id: string, n: GNode, d: Indoor, z: number | null) {
-  const lvl = z == null ? levelOf(d, 0) ?? d.levels[0] : levelForZ(d, z);
-  if (!lvl) return;
-  const near = nearestNode(lvl, n.c);
-  if (!near) return;
-  const iid = nodeId(d.code, lvl.level, near.i);
-  const m = Math.max(2, near.m);
-  const c = lvl.nodes[near.i];
-  const coords: [number, number, number][] = [[n.c[0], n.c[1], lvl.elevM], [c[0], c[1], lvl.elevM]];
-  const seg: Segment = { kind: 'walk', building: d.code, level: lvl.level, from: n.b, to: n.b, coords, m };
-  push(adj, id, iid, m, m, undefined, seg);
-  push(adj, iid, id, m, m, undefined, { ...seg, coords: [...coords].reverse() });
+  const targets = [levelForZ(d, z ?? 0)];
+  for (const lvl of targets) {
+    if (!lvl) continue;
+    const near = nearestNode(lvl, n.c);
+    if (!near || near.m > MAX_ANCHOR_M) continue;
+    const iid = nodeId(d.code, lvl.level, near.i);
+    const m = Math.max(2, near.m);
+    const c = lvl.nodes[near.i];
+    const coords: [number, number, number][] = [[n.c[0], n.c[1], lvl.elevM], [c[0], c[1], lvl.elevM]];
+    const seg: Segment = { kind: 'walk', building: d.code, level: lvl.level, from: n.b, to: n.b, coords, m };
+    push(adj, id, iid, m, m, undefined, seg);
+    push(adj, iid, id, m, m, undefined, { ...seg, coords: [...coords].reverse() });
+  }
 }
 
 /** Adjacency with indoor floors spliced in where available, the intra-building

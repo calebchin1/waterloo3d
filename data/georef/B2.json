@@ -1,19 +1,43 @@
 {
  "code": "B2",
- "source": "013B2_01FLR.pdf",
- "level": 0.0,
- "scale": 0.131994,
- "rotationDeg": 24.783,
+ "source": "013B2_03FLR.pdf",
+ "level": 2.0,
+ "scale": 0.0948,
+ "rotationDeg": 213.946,
  "mirror": false,
- "tx": -6506939.798,
- "ty": 4806666.442,
- "iou": 0.8808,
- "margin": 0.0065,
- "siteScore": 0.746,
- "residualM": 1.48,
+ "tx": -6506912.127,
+ "ty": 4806789.958,
+ "iou": 0.485,
+ "margin": 0.0083,
+ "siteScore": null,
+ "residualM": 6.82,
  "method": "needs-review",
  "levels": {
   "013B2_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    43.44,
+    28.32
+   ],
+   "dx": 0.04,
+   "dy": 0.0,
+   "score": 0.775,
+   "trusted": true,
+   "inFootprint": 0.999
+  },
+  "013B2_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    43.44,
+    28.32
+   ],
+   "dx": 0.04,
+   "dy": 0.0,
+   "score": 0.738,
+   "trusted": true,
+   "inFootprint": 1.0
+  },
+  "013B2_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
     0,
@@ -22,26 +46,6 @@
    "dx": 0.0,
    "dy": 0.0,
    "score": 1.0
-  },
-  "013B2_02FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    61.44,
-    46.32
-   ],
-   "dx": 0.0,
-   "dy": 0.0,
-   "score": 0.949
-  },
-  "013B2_03FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    45.48,
-    46.32
-   ],
-   "dx": -0.04,
-   "dy": 0.0,
-   "score": 0.753
   }
  }
 }

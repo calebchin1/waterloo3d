@@ -22,7 +22,8 @@ import georef as G
 import planshape
 
 RES = 2.0            # plan units per pixel for the correlation
-MIN_SCORE = 0.45     # overlap below this is not trusted (DC 2nd floor 0.52 was borderline-wrong)
+MIN_IN_FOOTPRINT = 0.5
+MIN_SCORE = 0.60     # E2's correct shifts scored 0.65-0.80; PAS/PHY/TC at 0.47-0.55 stacked floors at the wrong size
 ALL_CLASSES = ('wall', 'door', 'room_no', 'space', 'window', 'column', 'stair',
                'elevator', 'fixture', 'other', 'unlayered')
 
@@ -86,6 +87,8 @@ def run(code):
     corpus = [r for r in json.load(open(os.path.join(G.PLANS, '_corpus.json')))['plans']
               if r['code'] == code and r['level'] is not None]
     ref_file = tf['source']
+    fp = G.footprint(code)
+    fpbuf = fp.buffer(6.0) if fp is not None else None
     ref, ref_o = mass_of(ref_file)
     if ref is None:
         return None
@@ -98,8 +101,20 @@ def run(code):
         if tgt is None:
             continue
         s = register(ref, ref_o, tgt, tgt_o)
-        if s['score'] < MIN_SCORE:
-            s['trusted'] = False
+        s['trusted'] = s['score'] >= MIN_SCORE
+        # A shift that lands the floor's walls outside the building is wrong no
+        # matter how well the sheets correlate (E5 5th/6th floors, rot 180 at 0.62).
+        if s['trusted'] and fp is not None:
+            probe = dict(tf, levels={r['file']: dict(s, trusted=True)})
+            d = json.load(open(os.path.join(G.BUILD, r['file'].replace('.pdf', '.json'))))
+            walls = d['classes'].get('wall') or d['classes'].get('unlayered') or []
+            pts = np.vstack(G.level_tfm(probe, r['file'])(walls)) if walls else None
+            if pts is not None and len(pts):
+                from shapely import contains_xy
+                frac = float(np.count_nonzero(contains_xy(fpbuf, pts[::5, 0], pts[::5, 1]))) / len(pts[::5])
+                s['inFootprint'] = round(frac, 3)
+                if frac < MIN_IN_FOOTPRINT:
+                    s['trusted'] = False
         levels[r['file']] = s
     tf['levels'] = levels
     json.dump(tf, open(p, 'w'), indent=1)

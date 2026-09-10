@@ -2,36 +2,40 @@
  "code": "STC",
  "source": "054STC_01FLR.pdf",
  "level": 0.0,
- "scale": 0.052363,
- "rotationDeg": 113.136,
+ "scale": 0.052555,
+ "rotationDeg": 113.309,
  "mirror": false,
- "tx": -6506861.206,
- "ty": 4806704.658,
- "iou": 0.7675,
+ "tx": -6506861.046,
+ "ty": 4806704.891,
+ "iou": 0.7677,
  "margin": 0.0059,
  "siteScore": null,
- "residualM": 2.24,
+ "residualM": 2.22,
  "method": "needs-review",
  "levels": {
   "054STC_MBFLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    2.94,
-    6.84
+    -15.06,
+    -11.16
    ],
-   "dx": 8.2,
-   "dy": 1217.22,
-   "score": 0.986
+   "dx": 2.2,
+   "dy": 1243.22,
+   "score": 0.986,
+   "trusted": true,
+   "inFootprint": 0.982
   },
   "054STC_B1FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    2.94,
-    6.84
+    -15.06,
+    -11.16
    ],
-   "dx": 8.2,
-   "dy": 1217.22,
-   "score": 0.986
+   "dx": 2.2,
+   "dy": 1243.22,
+   "score": 0.986,
+   "trusted": true,
+   "inFootprint": 0.996
   },
   "054STC_01FLR.pdf": {
    "rotDeg": 0.0,
@@ -46,42 +50,50 @@
   "054STC_02FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    3.0,
-    6.9
+    -15.0,
+    -11.1
    ],
-   "dx": 8.14,
-   "dy": 1217.16,
-   "score": 0.986
+   "dx": 2.14,
+   "dy": 1243.16,
+   "score": 0.986,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "054STC_03FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    3.0,
-    6.9
+    -15.0,
+    -11.1
    ],
-   "dx": 8.14,
-   "dy": 1217.16,
-   "score": 0.986
+   "dx": 2.14,
+   "dy": 1243.16,
+   "score": 0.986,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "054STC_04FLR.pdf": {
    "rotDeg": 270.0,
    "pivot": [
-    3.0,
-    6.9
+    -15.0,
+    -11.1
    ],
-   "dx": 8.14,
-   "dy": 1217.16,
-   "score": 0.986
+   "dx": 2.14,
+   "dy": 1243.16,
+   "score": 0.986,
+   "trusted": true,
+   "inFootprint": 0.999
   },
   "054STC_05FLR.pdf": {
-   "rotDeg": 270.0,
+   "rotDeg": 90.0,
    "pivot": [
-    -5.76,
-    1.2
+    -23.76,
+    -16.8
    ],
-   "dx": 6.9,
-   "dy": 1224.86,
-   "score": 1.0
+   "dx": 830.9,
+   "dy": -7.14,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 1.0
   }
  }
 }

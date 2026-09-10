@@ -116,16 +116,31 @@ def plan_points(code):
     cand = [r for r in corpus if r['code'] == code and r['level'] is not None]
     if not cand:
         raise SystemExit(f'{code}: no plans')
-    cand.sort(key=lambda r: (r['level'] != 0.0, abs(r['level'])))
+    # Reference floor: the one with the most wall geometry (a fragmentary ground
+    # floor fitted E3 at IoU 0.12), ground floor preferred when it is close.
+    def wall_len(r):
+        p = os.path.join(BUILD, r['file'].replace('.pdf', '.json'))
+        if not os.path.exists(p):
+            return 0.0
+        d = json.load(open(p))
+        pls = d['classes'].get('wall') or d['classes'].get('unlayered') or []
+        return float(sum(np.hypot(*np.diff(np.array(pl, float), axis=0).T).sum() for pl in pls if len(pl) > 1))
+    lens = {r['file']: wall_len(r) for r in cand}
+    top = max(lens.values() or [0])
+    cand.sort(key=lambda r: (not (r['level'] == 0.0 and lens[r['file']] >= 0.7 * top), -lens[r['file']]))
     for rec in cand:
         p = os.path.join(BUILD, rec['file'].replace('.pdf', '.json'))
         if not os.path.exists(p):
             continue
         d = json.load(open(p))
+        # Structural classes only: title blocks, key maps and sheet borders sit
+        # in `other`/`title`/`site`, and with them in the mass the fit locks onto
+        # the border rectangle instead of the building (AL, C2).
         pls = []
-        for k in ('wall', 'door', 'room_no', 'space', 'window', 'column', 'stair',
-                  'elevator', 'fixture', 'other', 'unlayered'):
+        for k in ('wall', 'door', 'window', 'column', 'stair', 'elevator', 'room_no', 'space'):
             pls += d['classes'].get(k, [])
+        if not pls:
+            pls = d['classes'].get('unlayered', [])
         if not pls:
             continue
         img, (ox, oy, r) = planshape.rasterise(pls)
@@ -235,9 +250,13 @@ def fit(code):
     # Rotation seed from the two rectilinear grids, not a blind sweep.
     fp_ang = dominant_angle(poly_segments(fp))
     plan_ang = dominant_angle(plan_segments(plan_wall_polylines(rec)))
+    # No mirrored candidates: a floor plan is never drawn reflected relative to
+    # the world, and every mirror=True fit audited (AL, E3, E6) put the title
+    # text backwards on the map. Near-symmetric outlines had been scoring the
+    # reflection a hair higher.
     seeds = []
-    for mirror in (False, True):
-        base = fp_ang - (-plan_ang if mirror else plan_ang)
+    for mirror in (False,):
+        base = fp_ang - plan_ang
         for k in range(4):
             seeds.append((mirror, base + 90 * k))
 

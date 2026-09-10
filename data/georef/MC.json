@@ -1,19 +1,63 @@
 {
  "code": "MC",
- "source": "017MC_01FLR.pdf",
- "level": 0.0,
- "scale": 0.14067,
- "rotationDeg": 296.848,
+ "source": "017MC_05FLR.pdf",
+ "level": 4.0,
+ "scale": 0.075737,
+ "rotationDeg": 117.218,
  "mirror": false,
- "tx": -6507038.088,
- "ty": 4806942.824,
- "iou": 0.8128,
- "margin": 0.0195,
- "siteScore": 0.002,
- "residualM": 3.95,
+ "tx": -6506888.277,
+ "ty": 4806852.729,
+ "iou": 0.8995,
+ "margin": 0.0014,
+ "siteScore": null,
+ "residualM": 1.51,
  "method": "needs-review",
  "levels": {
   "017MC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    71.16,
+    38.4
+   ],
+   "dx": -173.76,
+   "dy": 35.3,
+   "score": 0.548,
+   "trusted": false
+  },
+  "017MC_02FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    31.56,
+    37.32
+   ],
+   "dx": 1059.84,
+   "dy": 690.38,
+   "score": 0.543,
+   "trusted": false
+  },
+  "017MC_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    36.84,
+    39.96
+   ],
+   "dx": 24.56,
+   "dy": -166.26,
+   "score": 0.533,
+   "trusted": false
+  },
+  "017MC_04FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    33.12,
+    39.12
+   ],
+   "dx": 482.28,
+   "dy": 944.58,
+   "score": 0.539,
+   "trusted": false
+  },
+  "017MC_05FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
     0,
@@ -23,55 +67,16 @@
    "dy": 0.0,
    "score": 1.0
   },
-  "017MC_02FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    49.56,
-    55.32
-   ],
-   "dx": 1.6,
-   "dy": 1.08,
-   "score": 0.981
-  },
-  "017MC_03FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    54.84,
-    57.96
-   ],
-   "dx": 26.32,
-   "dy": -5.56,
-   "score": 0.937
-  },
-  "017MC_04FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    51.12,
-    57.12
-   ],
-   "dx": 56.04,
-   "dy": 1.28,
-   "score": 0.92
-  },
-  "017MC_05FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    5.4,
-    5.7
-   ],
-   "dx": 87.76,
-   "dy": -49.3,
-   "score": 0.542
-  },
   "017MC_06FLR.pdf": {
-   "rotDeg": 0.0,
+   "rotDeg": 270.0,
    "pivot": [
-    51.6,
-    56.64
+    33.6,
+    38.64
    ],
-   "dx": 29.56,
-   "dy": -6.24,
-   "score": 0.9
+   "dx": 299.8,
+   "dy": 999.06,
+   "score": 0.558,
+   "trusted": false
   }
  }
 }

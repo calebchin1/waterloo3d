@@ -20,6 +20,7 @@ OUT = os.path.join(G.ROOT, 'public', 'data', 'indoor')
 WALL_SIMPLIFY_M = 0.30
 EDGE_SIMPLIFY_M = 0.50
 MIN_WALL_M = 0.45
+WALL_CLIP_M = 8.0      # walls with no point within this of the OSM footprint are dropped
 
 
 def dm(v):
@@ -78,6 +79,12 @@ def emit(code):
     origin = [round(ox / G.MX, 7), round(oy / G.MY, 7)]
 
     tfm_for = lambda file: G.level_tfm(tf, file)
+    fp = G.footprint(code)
+    keep = None
+    if fp is not None:
+        from shapely import contains_xy
+        fpbuf = fp.buffer(WALL_CLIP_M)
+        keep = lambda pl: bool(contains_xy(fpbuf, pl[:, 0], pl[:, 1]).any())
 
     corpus = {r['file']: r for r in json.load(open(os.path.join(G.PLANS, '_corpus.json')))['plans']}
     shaft_bbox = {sh['id']: sh['bbox'] for sh in doc.get('shafts', [])}
@@ -88,6 +95,10 @@ def emit(code):
         walls = []
         for pl in tfm(plan['classes'].get('wall') or plan['classes'].get('unlayered') or []):
             if len(pl) < 2:
+                continue
+            # a polyline entirely outside the building is a title-block or key-map
+            # stroke; the audits found them standing on the grass 40-60 m away
+            if keep is not None and not keep(pl):
                 continue
             q = simplify(pl, WALL_SIMPLIFY_M)
             if float(np.hypot(*np.diff(q, axis=0).T).sum()) < MIN_WALL_M:

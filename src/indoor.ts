@@ -111,18 +111,19 @@ export function levelOf(d: Indoor, level: number): IndoorLevel | undefined {
 /** Level whose elevation best matches a link's z_m — how a tunnel or bridge
  *  portal finds the floor it actually arrives on. */
 export function levelForZ(d: Indoor, z: number): IndoorLevel | undefined {
-  // A mezzanine or a stub floor can sit closest in elevation while having a
-  // few dozen square metres of corridor; a portal anchored there is 100 m from
-  // anything. Only full-sized floors are candidates unless nothing else exists.
-  const maxArea = Math.max(...d.levels.map((l) => l.areaM2));
-  const full = d.levels.filter((l) => l.areaM2 >= 0.25 * maxArea);
+  // Only floors with a real corridor network are candidates: a flattened plan
+  // can have the most area and no usable nodes, and a mezzanine can sit
+  // closest in elevation with a dozen. DC's bridges were landing on a level
+  // with no stairs, 40-49 m from anything.
+  const usable = d.levels.filter((l) => l.nodes.length >= MIN_USABLE_NODES);
   let best: IndoorLevel | undefined, bd = Infinity;
-  for (const l of (full.length ? full : d.levels)) {
+  for (const l of (usable.length ? usable : d.levels)) {
     const dd = Math.abs(l.elevM - z);
     if (dd < bd) { bd = dd; best = l; }
   }
   return best;
 }
+export const MIN_USABLE_NODES = 30;
 
 const metres = (a: number[], b: number[]) => Math.hypot((a[0] - b[0]) * MX, (a[1] - b[1]) * MY);
 

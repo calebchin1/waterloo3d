@@ -1,19 +1,91 @@
 {
  "code": "PSE",
- "source": "067E7_01FLR.pdf",
- "level": 0.0,
- "scale": 0.090509,
- "rotationDeg": 115.297,
- "mirror": true,
- "tx": -6506574.758,
- "ty": 4807046.219,
- "iou": 0.5677,
- "margin": 0.0212,
+ "source": "067E7_07FLR.pdf",
+ "level": 6.0,
+ "scale": 0.103697,
+ "rotationDeg": 297.512,
+ "mirror": false,
+ "tx": -6506658.024,
+ "ty": 4807005.279,
+ "iou": 0.4933,
+ "margin": 0.0726,
  "siteScore": 0.0,
- "residualM": 4.12,
+ "residualM": 5.99,
  "method": "needs-review",
  "levels": {
   "067E7_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.28,
+    20.64
+   ],
+   "dx": 0.0,
+   "dy": -1.04,
+   "score": 0.95,
+   "trusted": true,
+   "inFootprint": 0.871
+  },
+  "067E7_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.28,
+    20.64
+   ],
+   "dx": 0.0,
+   "dy": -1.04,
+   "score": 0.972,
+   "trusted": true,
+   "inFootprint": 0.956
+  },
+  "067E7_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.28,
+    20.64
+   ],
+   "dx": 0.0,
+   "dy": -1.04,
+   "score": 0.961,
+   "trusted": true,
+   "inFootprint": 0.969
+  },
+  "067E7_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.28,
+    20.64
+   ],
+   "dx": 0.0,
+   "dy": -1.04,
+   "score": 0.96,
+   "trusted": true,
+   "inFootprint": 0.965
+  },
+  "067E7_05FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.28,
+    20.88
+   ],
+   "dx": 0.0,
+   "dy": -1.28,
+   "score": 0.955,
+   "trusted": true,
+   "inFootprint": 0.961
+  },
+  "067E7_06FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    38.16,
+    20.64
+   ],
+   "dx": 0.12,
+   "dy": -1.04,
+   "score": 0.964,
+   "trusted": true,
+   "inFootprint": 0.908
+  },
+  "067E7_07FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
     0,
@@ -22,66 +94,6 @@
    "dx": 0.0,
    "dy": 0.0,
    "score": 1.0
-  },
-  "067E7_02FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.28,
-    38.64
-   ],
-   "dx": 0.0,
-   "dy": 0.0,
-   "score": 0.953
-  },
-  "067E7_03FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.28,
-    38.64
-   ],
-   "dx": 0.0,
-   "dy": 0.0,
-   "score": 0.958
-  },
-  "067E7_04FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.28,
-    38.64
-   ],
-   "dx": 0.0,
-   "dy": 0.0,
-   "score": 0.963
-  },
-  "067E7_05FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.28,
-    38.88
-   ],
-   "dx": 0.0,
-   "dy": -0.24,
-   "score": 0.958
-  },
-  "067E7_06FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.16,
-    38.64
-   ],
-   "dx": 0.12,
-   "dy": 0.0,
-   "score": 0.95
-  },
-  "067E7_07FLR.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    56.28,
-    39.6
-   ],
-   "dx": 0.0,
-   "dy": -2.96,
-   "score": 0.951
   }
  }
 }

@@ -2,26 +2,28 @@
  "code": "NH",
  "source": "031NH_01FLR.pdf",
  "level": 0.0,
- "scale": 0.12409,
- "rotationDeg": 25.005,
+ "scale": 0.124235,
+ "rotationDeg": 25.004,
  "mirror": false,
- "tx": -6506912.944,
- "ty": 4806564.256,
- "iou": 0.8311,
- "margin": 0.3227,
+ "tx": -6506913.076,
+ "ty": 4806564.197,
+ "iou": 0.8309,
+ "margin": 0.3229,
  "siteScore": null,
- "residualM": 1.82,
+ "residualM": 1.81,
  "method": "auto",
  "levels": {
   "031NH_B1FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    4.62,
-    4.92
+    -13.38,
+    -13.08
    ],
-   "dx": 21.06,
-   "dy": 33.31,
-   "score": 0.648
+   "dx": 3.06,
+   "dy": -18.69,
+   "score": 0.656,
+   "trusted": true,
+   "inFootprint": 0.817
   },
   "031NH_01FLR.pdf": {
    "rotDeg": 0.0,
@@ -36,22 +38,26 @@
   "031NH_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    15.24,
-    45.9
+    -2.76,
+    27.9
    ],
    "dx": 14.44,
    "dy": 24.33,
-   "score": 0.827
+   "score": 0.831,
+   "trusted": true,
+   "inFootprint": 0.854
   },
   "031NH_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    56.45,
-    107.49
+    38.45,
+    89.49
    ],
    "dx": -38.77,
    "dy": -53.26,
-   "score": 0.794
+   "score": 0.797,
+   "trusted": true,
+   "inFootprint": 0.889
   }
  }
 }

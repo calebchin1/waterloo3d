@@ -2,26 +2,28 @@
  "code": "TC",
  "source": "045TC_01FLR.pdf",
  "level": 0.0,
- "scale": 0.062781,
- "rotationDeg": 214.414,
+ "scale": 0.062503,
+ "rotationDeg": 30.091,
  "mirror": false,
- "tx": -6506713.37,
- "ty": 4806580.659,
- "iou": 0.4063,
- "margin": 0.0137,
+ "tx": -6506727.159,
+ "ty": 4806478.017,
+ "iou": 0.4329,
+ "margin": 0.0431,
  "siteScore": null,
- "residualM": 5.87,
+ "residualM": 6.22,
  "method": "needs-review",
  "levels": {
   "045TC_B1FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    54.9,
-    59.58
+    36.9,
+    41.58
    ],
    "dx": -2.0,
    "dy": 0.0,
-   "score": 0.876
+   "score": 0.876,
+   "trusted": true,
+   "inFootprint": 0.744
   },
   "045TC_01FLR.pdf": {
    "rotDeg": 0.0,
@@ -36,22 +38,26 @@
   "045TC_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    45.84,
-    86.28
+    27.84,
+    68.28
    ],
    "dx": 9.06,
    "dy": 9.3,
-   "score": 0.814
+   "score": 0.821,
+   "trusted": true,
+   "inFootprint": 0.982
   },
   "045TC_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    43.68,
-    84.24
+    25.68,
+    66.24
    ],
    "dx": 5.22,
-   "dy": 13.34,
-   "score": 0.812
+   "dy": 15.34,
+   "score": 0.82,
+   "trusted": true,
+   "inFootprint": 0.985
   }
  }
 }

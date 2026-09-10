@@ -35,6 +35,7 @@ MIN_CLEAR = 0.25      # m; a door opening is ~0.9 m wide, so clearance ~0.45
 CORR_CLEAR = 1.00     # m; a skeleton node this clear of a wall reads as corridor
 SPUR_M = 2.0          # m; prune skeleton spurs shorter than this
 ENV_R = 8             # px closing radius that seals dashed walls into an envelope
+FOOTPRINT_MARGIN_M = 8.0  # plan geometry beyond the OSM footprint by more than this is not floor
 MIN_ROOM_M2 = 3.0
 SIMPLIFY_M = 0.35
 
@@ -233,10 +234,21 @@ def level_graph(code, rec, tf):
     # upper floors often draw corridor walls dashed, which leaks a wall-only
     # fill, whereas room numbers and fixtures blanket wherever the floor exists.
     env_src = []
-    for k in ('wall', 'door', 'room_no', 'space', 'window', 'column', 'stair',
-              'elevator', 'fixture', 'other', 'unlayered'):
+    for k in ('wall', 'door', 'room_no', 'space', 'window', 'column', 'stair', 'elevator'):
         env_src += tfm(cls.get(k, []))
+    if not env_src:
+        env_src = tfm(cls.get('unlayered', []))
     mass = ndi.binary_fill_holes(closing(draw(fr, env_src), disk(ENV_R)))
+    # Nothing outside the OSM footprint (+ margin) is floor: without this the
+    # skeleton loops through the sheet gutter, title block and key map.
+    fp = G.footprint(code)
+    if fp is not None:
+        from shapely import contains_xy
+        buf = fp.buffer(FOOTPRINT_MARGIN_M)
+        ys, xs = np.mgrid[0:fr.h, 0:fr.w]
+        pts = fr.to_m(np.column_stack([ys.ravel(), xs.ravel()]))
+        inside = contains_xy(buf, pts[:, 0], pts[:, 1]).reshape(fr.h, fr.w)
+        mass &= inside
     lab, n = ndi.label(mass)
     if n:
         sizes = ndi.sum(mass, lab, range(1, n + 1))

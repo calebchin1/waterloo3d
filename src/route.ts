@@ -2,6 +2,7 @@
 import { PathLayer } from '@deck.gl/layers';
 import type { Layer } from '@deck.gl/core';
 import type { Segment } from './graph';
+import { zMatrix } from './layers';
 
 export const ROUTE_COLOR: [number, number, number] = [255, 214, 10];
 const OUTDOOR_COLOR: [number, number, number] = [255, 255, 255];
@@ -13,24 +14,29 @@ export function routeLayers(segs: Segment[] | null, activeIndex: number | null, 
   // halo simply fills the screen, so it thins right down in POV.
   const halo = pov ? 2.6 : 11;
   const core = pov ? 0.5 : 1;
+  // Indoor segments sit at the storey elevation, which is *inside* the floor
+  // slab (top at +0.04); lift them clear or the depth test hides the route.
+  const lift = (s: Segment) => (s.kind === 'walk' || s.kind === 'vertical' ? 0.12 : 0);
+  const mm = zMatrix(zShift);
   return [
     new PathLayer<{ s: Segment; i: number }>({
       id: 'route-halo',
       data,
-      getPath: (d) => d.s.coords.map(([x, y, z]) => [x, y, z + zShift] as [number, number, number]),
+      getPath: (d) => d.s.coords.map(([x, y, z]) => [x, y, z + lift(d.s)] as [number, number, number]),
       getColor: (d) => [...(d.s.kind === 'outdoor' ? OUTDOOR_COLOR : ROUTE_COLOR), pov ? 40 : 70],
       getWidth: halo,
       widthUnits: 'meters', widthMinPixels: pov ? 2 : 6, capRounded: true, jointRounded: true,
-      updateTriggers: { getPath: [zShift] },
+      modelMatrix: mm,
     }),
     new PathLayer<{ s: Segment; i: number }>({
       id: 'route',
       data,
-      getPath: (d) => d.s.coords.map(([x, y, z]) => [x, y, z + zShift] as [number, number, number]),
+      getPath: (d) => d.s.coords.map(([x, y, z]) => [x, y, z + lift(d.s)] as [number, number, number]),
       getColor: (d) => [...(d.s.kind === 'outdoor' ? OUTDOOR_COLOR : ROUTE_COLOR), activeIndex === null || activeIndex === d.i ? 255 : 150],
       getWidth: (d) => core * (d.s.kind === 'intra' ? 2.5 : activeIndex === d.i ? 6 : 4.5),
       widthUnits: 'meters', widthMinPixels: pov ? 1.5 : 3, capRounded: true, jointRounded: true,
-      updateTriggers: { getColor: [activeIndex, pov], getWidth: [activeIndex, pov], getPath: [zShift] },
+      modelMatrix: mm,
+      updateTriggers: { getColor: [activeIndex, pov], getWidth: [activeIndex, pov] },
     }),
   ];
 }

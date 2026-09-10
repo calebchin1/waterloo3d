@@ -1,29 +1,43 @@
 {
  "code": "QNC",
- "source": "050QNC_01FLR.pdf",
- "level": 0.0,
- "scale": 0.075773,
- "rotationDeg": 204.479,
+ "source": "050QNC_0M_MEZ.pdf",
+ "level": 0.5,
+ "scale": 0.075977,
+ "rotationDeg": 204.449,
  "mirror": false,
- "tx": -6506930.449,
- "ty": 4806831.397,
- "iou": 0.7431,
- "margin": 0.0044,
- "siteScore": 0.0,
- "residualM": 4.88,
+ "tx": -6506930.059,
+ "ty": 4806831.594,
+ "iou": 0.7423,
+ "margin": 0.0116,
+ "siteScore": null,
+ "residualM": 4.91,
  "method": "needs-review",
  "levels": {
   "050QNC_0B_CON.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    6.72,
-    5.28
+    -11.28,
+    -12.72
    ],
-   "dx": -0.72,
-   "dy": 0.12,
-   "score": 0.999
+   "dx": -0.06,
+   "dy": 0.18,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.974
   },
   "050QNC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    -12.0,
+    -12.6
+   ],
+   "dx": -1.34,
+   "dy": 0.06,
+   "score": 0.999,
+   "trusted": true,
+   "inFootprint": 0.978
+  },
+  "050QNC_0M_MEZ.pdf": {
    "rotDeg": 0.0,
    "pivot": [
     0,
@@ -33,55 +47,53 @@
    "dy": 0.0,
    "score": 1.0
   },
-  "050QNC_0M_MEZ.pdf": {
-   "rotDeg": 0.0,
-   "pivot": [
-    6.66,
-    5.46
-   ],
-   "dx": -0.66,
-   "dy": -0.06,
-   "score": 0.999
-  },
   "050QNC_02FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    6.72,
-    5.52
+    -11.28,
+    -12.48
    ],
-   "dx": -0.72,
-   "dy": -0.12,
-   "score": 0.999
+   "dx": -0.06,
+   "dy": -0.06,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.942
   },
   "050QNC_03FLR.pdf": {
-   "rotDeg": 90.0,
+   "rotDeg": 270.0,
    "pivot": [
-    5.52,
-    6.72
+    -12.48,
+    -11.28
    ],
-   "dx": 1210.48,
-   "dy": -1.32,
-   "score": 0.999
+   "dx": 1.14,
+   "dy": 814.74,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.922
   },
   "050QNC_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    6.84,
-    5.52
+    -11.16,
+    -12.48
    ],
-   "dx": -0.84,
-   "dy": -0.12,
-   "score": 0.999
+   "dx": -0.18,
+   "dy": -0.06,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.954
   },
   "050QNC_05FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    6.84,
-    5.52
+    -11.16,
+    -12.48
    ],
-   "dx": -0.84,
-   "dy": -0.12,
-   "score": 0.999
+   "dx": -0.18,
+   "dy": -0.06,
+   "score": 1.0,
+   "trusted": true,
+   "inFootprint": 0.932
   }
  }
 }

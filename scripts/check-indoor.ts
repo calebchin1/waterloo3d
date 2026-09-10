@@ -107,9 +107,8 @@ for (const file of files) {
   for (const [id, nd] of Object.entries(graph.nodes)) {
     if (nd.b !== code || nd.kind === 'B') continue;
     const z = id.startsWith('P:') ? linkZ.get(id.slice(2, id.lastIndexOf(':'))) ?? 0 : 0;
-    // same rule as levelForZ in src/indoor.ts: full-sized floors only
-    const maxArea = Math.max(...d.levels.map((l) => l.areaM2));
-    const full = d.levels.filter((l) => l.areaM2 >= 0.25 * maxArea);
+    // same rule as levelForZ in src/indoor.ts: floors with a usable corridor network
+    const full = d.levels.filter((l) => l.nodes.length / 2 >= 30);
     let best = Infinity, bestLevel: RawLevel | null = null;
     for (const l of (full.length ? full : d.levels)) {
       const dz = Math.abs(l.elevM - z);

@@ -1,19 +1,43 @@
 {
  "code": "M3",
- "source": "056M3_01FLR.pdf",
- "level": 0.0,
- "scale": 0.103085,
- "rotationDeg": 296.599,
+ "source": "056M3_03FLR.pdf",
+ "level": 2.0,
+ "scale": 0.101764,
+ "rotationDeg": 118.728,
  "mirror": false,
- "tx": -6506996.719,
- "ty": 4807018.018,
- "iou": 0.9193,
- "margin": 0.0063,
+ "tx": -6506905.652,
+ "ty": 4806991.226,
+ "iou": 0.7436,
+ "margin": 0.0038,
  "siteScore": null,
- "residualM": 1.11,
+ "residualM": 4.46,
  "method": "needs-review",
  "levels": {
   "056M3_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.0,
+    1.92
+   ],
+   "dx": 1.64,
+   "dy": -0.06,
+   "score": 0.857,
+   "trusted": true,
+   "inFootprint": 1.0
+  },
+  "056M3_02FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    1.8,
+    6.0
+   ],
+   "dx": 783.84,
+   "dy": -4.14,
+   "score": 0.968,
+   "trusted": true,
+   "inFootprint": 0.924
+  },
+  "056M3_03FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
     0,
@@ -23,35 +47,17 @@
    "dy": 0.0,
    "score": 1.0
   },
-  "056M3_02FLR.pdf": {
-   "rotDeg": 90.0,
-   "pivot": [
-    19.8,
-    24.0
-   ],
-   "dx": 746.2,
-   "dy": -4.08,
-   "score": 0.886
-  },
-  "056M3_03FLR.pdf": {
-   "rotDeg": 180.0,
-   "pivot": [
-    95.64,
-    19.86
-   ],
-   "dx": 450.36,
-   "dy": 626.06,
-   "score": 0.852
-  },
   "056M3_04FLR.pdf": {
    "rotDeg": 0.0,
    "pivot": [
-    75.6,
-    3.84
+    57.6,
+    -14.16
    ],
-   "dx": 8.4,
-   "dy": 10.08,
-   "score": 0.859
+   "dx": -3.96,
+   "dy": -7.98,
+   "score": 0.934,
+   "trusted": true,
+   "inFootprint": 0.95
   }
  }
 }
