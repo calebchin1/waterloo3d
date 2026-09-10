@@ -1,0 +1,15 @@
+{
+ "code": "ERC",
+ "source": "048ERC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.086723,
+ "rotationDeg": 116.629,
+ "mirror": false,
+ "tx": -6506937.452,
+ "ty": 4807048.986,
+ "iou": 0.4735,
+ "margin": 0.0053,
+ "siteScore": null,
+ "residualM": 7.75,
+ "method": "needs-review"
+}

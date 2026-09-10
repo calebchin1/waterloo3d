@@ -1,0 +1,67 @@
+{
+ "code": "HH",
+ "source": "024HH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.145719,
+ "rotationDeg": 296.475,
+ "mirror": false,
+ "tx": -6506833.992,
+ "ty": 4806468.483,
+ "iou": 0.9186,
+ "margin": 0.0896,
+ "siteScore": null,
+ "residualM": 1.5,
+ "method": "auto",
+ "levels": {
+  "024HH_B1FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    18.66,
+    12.78
+   ],
+   "dx": -147.1,
+   "dy": 743.42,
+   "score": 0.579
+  },
+  "024HH_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "024HH_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    81.48,
+    35.4
+   ],
+   "dx": 0.08,
+   "dy": -5.2,
+   "score": 0.957
+  },
+  "024HH_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    -5.94,
+    -6.0
+   ],
+   "dx": -76.5,
+   "dy": 38.2,
+   "score": 0.579
+  },
+  "024HH_04FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    18.66,
+    12.78
+   ],
+   "dx": -147.1,
+   "dy": 743.42,
+   "score": 0.579
+  }
+ }
+}

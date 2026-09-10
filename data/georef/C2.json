@@ -1,0 +1,57 @@
+{
+ "code": "C2",
+ "source": "028C2_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.066637,
+ "rotationDeg": 26.464,
+ "mirror": false,
+ "tx": -6506873.707,
+ "ty": 4806851.003,
+ "iou": 0.8097,
+ "margin": 0.0088,
+ "siteScore": null,
+ "residualM": 2.0,
+ "method": "needs-review",
+ "levels": {
+  "028C2_B1FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    10.8,
+    9.9
+   ],
+   "dx": 0.0,
+   "dy": -0.06,
+   "score": 1.0
+  },
+  "028C2_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "028C2_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    10.86,
+    9.9
+   ],
+   "dx": -0.06,
+   "dy": -0.06,
+   "score": 1.0
+  },
+  "028C2_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    10.86,
+    9.9
+   ],
+   "dx": -0.06,
+   "dy": -0.06,
+   "score": 1.0
+  }
+ }
+}

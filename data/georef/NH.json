@@ -1,0 +1,57 @@
+{
+ "code": "NH",
+ "source": "031NH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.12409,
+ "rotationDeg": 25.005,
+ "mirror": false,
+ "tx": -6506912.944,
+ "ty": 4806564.256,
+ "iou": 0.8311,
+ "margin": 0.3227,
+ "siteScore": null,
+ "residualM": 1.82,
+ "method": "auto",
+ "levels": {
+  "031NH_B1FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    4.62,
+    4.92
+   ],
+   "dx": 21.06,
+   "dy": 33.31,
+   "score": 0.648
+  },
+  "031NH_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "031NH_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    15.24,
+    45.9
+   ],
+   "dx": 14.44,
+   "dy": 24.33,
+   "score": 0.827
+  },
+  "031NH_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    56.45,
+    107.49
+   ],
+   "dx": -38.77,
+   "dy": -53.26,
+   "score": 0.794
+  }
+ }
+}

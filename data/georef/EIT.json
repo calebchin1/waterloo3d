@@ -1,0 +1,87 @@
+{
+ "code": "EIT",
+ "source": "039EIT_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.108452,
+ "rotationDeg": 30.978,
+ "mirror": false,
+ "tx": -6506835.905,
+ "ty": 4806737.18,
+ "iou": 0.7678,
+ "margin": 0.0083,
+ "siteScore": 0.605,
+ "residualM": 3.1,
+ "method": "needs-review",
+ "levels": {
+  "039EIT_LLFLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    118.08,
+    71.16
+   ],
+   "dx": 15.4,
+   "dy": 219.76,
+   "score": 0.466
+  },
+  "039EIT_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "039EIT_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    125.04,
+    68.28
+   ],
+   "dx": -1.56,
+   "dy": 2.64,
+   "score": 0.886
+  },
+  "039EIT_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    107.4,
+    62.28
+   ],
+   "dx": -15.92,
+   "dy": 0.64,
+   "score": 0.852
+  },
+  "039EIT_04FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    103.44,
+    36.48
+   ],
+   "dx": 1054.04,
+   "dy": -323.56,
+   "score": 0.846
+  },
+  "039EIT_05FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    8.64,
+    8.4
+   ],
+   "dx": 292.84,
+   "dy": 1000.52,
+   "score": 0.565
+  },
+  "039EIT_06FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    10.32,
+    9.0
+   ],
+   "dx": 291.16,
+   "dy": 997.92,
+   "score": 0.566
+  }
+ }
+}

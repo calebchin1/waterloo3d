@@ -1,0 +1,47 @@
+{
+ "code": "SCH",
+ "source": "016SCH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.081268,
+ "rotationDeg": 25.649,
+ "mirror": false,
+ "tx": -6506663.319,
+ "ty": 4806521.845,
+ "iou": 0.8019,
+ "margin": 0.1113,
+ "siteScore": 0.0,
+ "residualM": 2.88,
+ "method": "auto",
+ "levels": {
+  "016SCH_B1FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    27.6,
+    38.88
+   ],
+   "dx": -20.52,
+   "dy": 2.08,
+   "score": 0.895
+  },
+  "016SCH_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "016SCH_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    63.48,
+    45.72
+   ],
+   "dx": 17.6,
+   "dy": 27.24,
+   "score": 0.937
+  }
+ }
+}

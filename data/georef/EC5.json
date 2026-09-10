@@ -1,0 +1,15 @@
+{
+ "code": "EC5",
+ "source": "066EC5_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.052786,
+ "rotationDeg": 24.153,
+ "mirror": true,
+ "tx": -6506628.856,
+ "ty": 4807251.298,
+ "iou": 0.6202,
+ "margin": 0.002,
+ "siteScore": null,
+ "residualM": 5.22,
+ "method": "needs-review"
+}

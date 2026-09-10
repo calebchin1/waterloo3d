@@ -1,0 +1,15 @@
+{
+ "code": "CIF",
+ "source": "042CIF_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.13901,
+ "rotationDeg": 298.069,
+ "mirror": false,
+ "tx": -6507404.562,
+ "ty": 4807290.787,
+ "iou": 0.4812,
+ "margin": 0.0019,
+ "siteScore": null,
+ "residualM": 13.82,
+ "method": "needs-review"
+}

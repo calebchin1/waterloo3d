@@ -1,0 +1,57 @@
+{
+ "code": "CPH",
+ "source": "029CPH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.109781,
+ "rotationDeg": 118.424,
+ "mirror": false,
+ "tx": -6506494.987,
+ "ty": 4806719.981,
+ "iou": 0.7814,
+ "margin": 0.0876,
+ "siteScore": 0.002,
+ "residualM": 2.43,
+ "method": "auto",
+ "levels": {
+  "029CPH_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "029CPH_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    13.2,
+    98.52
+   ],
+   "dx": -2.12,
+   "dy": 0.12,
+   "score": 0.989
+  },
+  "029CPH_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    14.28,
+    99.36
+   ],
+   "dx": -1.2,
+   "dy": -0.72,
+   "score": 0.967
+  },
+  "029CPH_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    20.52,
+    99.24
+   ],
+   "dx": -1.44,
+   "dy": -0.6,
+   "score": 0.934
+  }
+ }
+}

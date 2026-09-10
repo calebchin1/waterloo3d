@@ -1,0 +1,15 @@
+{
+ "code": "CMH",
+ "source": "068CMH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.058405,
+ "rotationDeg": 320.051,
+ "mirror": false,
+ "tx": -6506326.571,
+ "ty": 4806690.671,
+ "iou": 0.879,
+ "margin": 0.0004,
+ "siteScore": 0.0,
+ "residualM": 1.51,
+ "method": "needs-review"
+}

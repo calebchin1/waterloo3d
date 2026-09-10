@@ -1,0 +1,15 @@
+{
+ "code": "EC1",
+ "source": "062EC1_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.067128,
+ "rotationDeg": 150.762,
+ "mirror": false,
+ "tx": -6506598.459,
+ "ty": 4807332.772,
+ "iou": 0.5586,
+ "margin": 0.0051,
+ "siteScore": null,
+ "residualM": 6.48,
+ "method": "needs-review"
+}

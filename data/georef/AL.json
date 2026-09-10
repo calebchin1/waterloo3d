@@ -1,0 +1,47 @@
+{
+ "code": "AL",
+ "source": "009AL_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.0425,
+ "rotationDeg": 29.586,
+ "mirror": true,
+ "tx": -6506736.707,
+ "ty": 4806523.794,
+ "iou": 0.7225,
+ "margin": 0.0002,
+ "siteScore": null,
+ "residualM": 3.26,
+ "method": "needs-review",
+ "levels": {
+  "009AL_B1FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    194.92,
+    58.28
+   ],
+   "dx": 289.32,
+   "dy": 581.36,
+   "score": 0.509
+  },
+  "009AL_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "009AL_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    10.08,
+    8.94
+   ],
+   "dx": 0.16,
+   "dy": -1.3,
+   "score": 0.994
+  }
+ }
+}

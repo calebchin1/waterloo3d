@@ -4,7 +4,18 @@ export interface Step { text: string; caption?: string; seg: Segment; index: num
 
 const b = (s: string) => `<b>${s}</b>`;
 
-/** Human steps: consecutive intra segments in the same building collapse into one. */
+/** "1st Floor", "Basement", "Level 4" — matches how the plans are labelled. */
+export function levelName(level: number): string {
+  if (level === 0) return '1st Floor';
+  if (level === -1) return 'Basement';
+  if (level < 0) return `Level ${level}`;
+  if (!Number.isInteger(level)) return `Mezzanine (level ${level})`;
+  const n = level + 1;
+  const suffix = n % 10 === 1 && n % 100 !== 11 ? 'st' : n % 10 === 2 && n % 100 !== 12 ? 'nd' : n % 10 === 3 && n % 100 !== 13 ? 'rd' : 'th';
+  return `${n}${suffix} Floor`;
+}
+
+/** Human steps: consecutive intra or same-floor walk segments collapse into one. */
 export function toSteps(segs: Segment[], names: Map<string, string>): Step[] {
   const name = (c: string) => names.get(c) ? `${c} · ${names.get(c)}` : c;
   const steps: Step[] = [];
@@ -18,6 +29,22 @@ export function toSteps(segs: Segment[], names: Map<string, string>): Step[] {
       while (j + 1 < segs.length && segs[j + 1].kind === 'intra' && segs[j + 1].building === s.building) { j++; m += segs[j].m; }
       if (m >= 15) steps.push({ text: `Walk through ${b(s.building!)} (≈ ${Math.round(m / 5) * 5} m).`, seg: s, index: i, kind: 'intra' });
       i = j + 1; continue;
+    }
+    if (s.kind === 'walk') {
+      let m = s.m, j = i;
+      while (j + 1 < segs.length && segs[j + 1].kind === 'walk'
+             && segs[j + 1].building === s.building && segs[j + 1].level === s.level) { j++; m += segs[j].m; }
+      if (m >= 8) {
+        steps.push({ text: `Follow the corridor on ${b(`${s.building} ${levelName(s.level!)}`)} (≈ ${Math.round(m / 5) * 5} m).`,
+                     seg: s, index: i, kind: 'walk' });
+      }
+      i = j + 1; continue;
+    }
+    if (s.kind === 'vertical') {
+      const up = (s.toLevel ?? 0) > (s.level ?? 0);
+      const how = s.vertical === 'elevator' ? 'Take the elevator' : `Take the stairs ${up ? 'up' : 'down'}`;
+      steps.push({ text: `${how} to ${b(`${s.building} ${levelName(s.toLevel!)}`)}.`, seg: s, index: i, kind: 'vertical' });
+      i++; continue;
     }
     if (s.kind === 'indoor') {
       const l = s.link!;

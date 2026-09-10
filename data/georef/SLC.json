@@ -1,0 +1,57 @@
+{
+ "code": "SLC",
+ "source": "019SLC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.132149,
+ "rotationDeg": 258.907,
+ "mirror": false,
+ "tx": -6507087.283,
+ "ty": 4806965.756,
+ "iou": 0.6106,
+ "margin": 0.1215,
+ "siteScore": null,
+ "residualM": 6.98,
+ "method": "needs-review",
+ "levels": {
+  "019SLC_B1FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    10.56,
+    5.86
+   ],
+   "dx": 0.0,
+   "dy": 1.62,
+   "score": 0.938
+  },
+  "019SLC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "019SLC_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    35.76,
+    9.48
+   ],
+   "dx": -1.2,
+   "dy": 0.0,
+   "score": 0.931
+  },
+  "019SLC_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    36.0,
+    9.48
+   ],
+   "dx": 0.56,
+   "dy": 0.0,
+   "score": 0.962
+  }
+ }
+}

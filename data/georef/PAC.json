@@ -1,0 +1,47 @@
+{
+ "code": "PAC",
+ "source": "018PAC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.122087,
+ "rotationDeg": 251.712,
+ "mirror": false,
+ "tx": -6507128.073,
+ "ty": 4807008.77,
+ "iou": 0.8869,
+ "margin": 0.0829,
+ "siteScore": 0.989,
+ "residualM": 2.75,
+ "method": "auto",
+ "levels": {
+  "018PAC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "018PAC_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    206.64,
+    35.64
+   ],
+   "dx": 0.6,
+   "dy": -21.0,
+   "score": 0.928
+  },
+  "018PAC_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    237.36,
+    35.76
+   ],
+   "dx": 1.88,
+   "dy": -21.12,
+   "score": 0.923
+  }
+ }
+}

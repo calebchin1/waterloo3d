@@ -1,0 +1,15 @@
+{
+ "code": "COM",
+ "source": "015COM_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.122188,
+ "rotationDeg": 28.276,
+ "mirror": false,
+ "tx": -6506892.094,
+ "ty": 4807037.666,
+ "iou": 0.7883,
+ "margin": 0.0481,
+ "siteScore": 0.111,
+ "residualM": 1.98,
+ "method": "auto"
+}

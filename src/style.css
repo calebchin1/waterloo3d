@@ -127,3 +127,14 @@ body.pov-active #panel, body.pov-active #panel-toggle, body.pov-active .maplibre
   .pov-bar { top: 10px; }
   .pov-step { bottom: 16px; font-size: 14px; }
 }
+
+/* Room-number field: only shown once the destination building has floor plans. */
+.pick.room { margin-top: 6px; }
+.pick.room input {
+  width: 100%; box-sizing: border-box; padding: 9px 11px; border-radius: 9px;
+  background: var(--field, #11151d); color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.12); font: inherit;
+}
+.pick.room i { color: var(--muted, #8b95a7); font-style: normal; }
+#steps li.vertical .t::before { content: '⇅ '; color: #00d68f; }
+#steps li.walk .t::before { content: '→ '; color: #ffd60a; }

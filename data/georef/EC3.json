@@ -1,0 +1,15 @@
+{
+ "code": "EC3",
+ "source": "064EC3_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.044209,
+ "rotationDeg": 122.334,
+ "mirror": false,
+ "tx": -6506763.663,
+ "ty": 4807256.521,
+ "iou": 0.7662,
+ "margin": 0.0106,
+ "siteScore": null,
+ "residualM": 2.57,
+ "method": "needs-review"
+}

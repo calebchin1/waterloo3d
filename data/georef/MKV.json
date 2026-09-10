@@ -1,0 +1,15 @@
+{
+ "code": "MKV",
+ "source": "044MKV_00FLR.pdf",
+ "level": 0.0,
+ "scale": 0.128475,
+ "rotationDeg": 6.772,
+ "mirror": true,
+ "tx": -6507579.625,
+ "ty": 4806773.693,
+ "iou": 0.349,
+ "margin": 0.0007,
+ "siteScore": null,
+ "residualM": 8.25,
+ "method": "needs-review"
+}

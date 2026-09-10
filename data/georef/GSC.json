@@ -1,0 +1,15 @@
+{
+ "code": "GSC",
+ "source": "014GSC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.125994,
+ "rotationDeg": 29.27,
+ "mirror": false,
+ "tx": -6506887.055,
+ "ty": 4806961.742,
+ "iou": 0.8037,
+ "margin": 0.1223,
+ "siteScore": 0.002,
+ "residualM": 3.22,
+ "method": "auto"
+}

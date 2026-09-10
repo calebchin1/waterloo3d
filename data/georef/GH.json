@@ -1,0 +1,15 @@
+{
+ "code": "GH",
+ "source": "104GH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.025238,
+ "rotationDeg": 311.298,
+ "mirror": true,
+ "tx": -6506695.414,
+ "ty": 4806610.115,
+ "iou": 0.498,
+ "margin": 0.0356,
+ "siteScore": null,
+ "residualM": 2.03,
+ "method": "needs-review"
+}

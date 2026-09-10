@@ -1,0 +1,15 @@
+{
+ "code": "EC2",
+ "source": "063EC2_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.040236,
+ "rotationDeg": 23.931,
+ "mirror": true,
+ "tx": -6506698.65,
+ "ty": 4807148.14,
+ "iou": 0.7009,
+ "margin": 0.0001,
+ "siteScore": null,
+ "residualM": 3.28,
+ "method": "needs-review"
+}

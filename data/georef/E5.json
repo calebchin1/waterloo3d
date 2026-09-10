@@ -1,0 +1,77 @@
+{
+ "code": "E5",
+ "source": "053E5_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.101398,
+ "rotationDeg": 300.377,
+ "mirror": false,
+ "tx": -6506700.223,
+ "ty": 4806986.875,
+ "iou": 0.662,
+ "margin": 0.025,
+ "siteScore": 0.0,
+ "residualM": 7.42,
+ "method": "needs-review",
+ "levels": {
+  "053E5_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "053E5_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    53.04,
+    31.68
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 0.951
+  },
+  "053E5_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    44.16,
+    31.08
+   ],
+   "dx": -1.12,
+   "dy": -1.4,
+   "score": 0.948
+  },
+  "053E5_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    57.36,
+    30.72
+   ],
+   "dx": -4.32,
+   "dy": 0.96,
+   "score": 0.944
+  },
+  "053E5_05FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    12.9,
+    8.04
+   ],
+   "dx": 1230.14,
+   "dy": 779.64,
+   "score": 0.621
+  },
+  "053E5_06FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    10.62,
+    5.64
+   ],
+   "dx": 1202.42,
+   "dy": 778.04,
+   "score": 0.619
+  }
+ }
+}

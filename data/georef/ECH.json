@@ -1,0 +1,15 @@
+{
+ "code": "ECH",
+ "source": "036ECH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.111665,
+ "rotationDeg": 30.973,
+ "mirror": true,
+ "tx": -6506435.54,
+ "ty": 4807055.374,
+ "iou": 0.6939,
+ "margin": 0.0053,
+ "siteScore": null,
+ "residualM": 6.39,
+ "method": "needs-review"
+}

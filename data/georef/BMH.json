@@ -1,0 +1,15 @@
+{
+ "code": "BMH",
+ "source": "032BMH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.107556,
+ "rotationDeg": 25.103,
+ "mirror": false,
+ "tx": -6507115.695,
+ "ty": 4806982.59,
+ "iou": 0.5902,
+ "margin": 0.0181,
+ "siteScore": null,
+ "residualM": 5.73,
+ "method": "needs-review"
+}

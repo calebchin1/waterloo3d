@@ -1,0 +1,57 @@
+{
+ "code": "PHY",
+ "source": "004PHY_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.080854,
+ "rotationDeg": 117.471,
+ "mirror": false,
+ "tx": -6506703.141,
+ "ty": 4806709.271,
+ "iou": 0.5088,
+ "margin": 0.0001,
+ "siteScore": null,
+ "residualM": 7.79,
+ "method": "needs-review",
+ "levels": {
+  "004PHY_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "004PHY_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    13.92,
+    13.32
+   ],
+   "dx": 2.06,
+   "dy": -5.16,
+   "score": 0.989
+  },
+  "004PHY_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    164.28,
+    21.0
+   ],
+   "dx": 95.7,
+   "dy": -14.84,
+   "score": 0.472
+  },
+  "004PHY_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.42,
+    6.6
+   ],
+   "dx": 1.56,
+   "dy": -2.44,
+   "score": 0.996
+  }
+ }
+}

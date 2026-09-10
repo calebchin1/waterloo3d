@@ -1,0 +1,47 @@
+{
+ "code": "ML",
+ "source": "005ML_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.126382,
+ "rotationDeg": 27.322,
+ "mirror": false,
+ "tx": -6506869.412,
+ "ty": 4806457.646,
+ "iou": 0.876,
+ "margin": 0.0118,
+ "siteScore": 0.0,
+ "residualM": 1.07,
+ "method": "needs-review",
+ "levels": {
+  "005ML_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "005ML_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    50.04,
+    33.6
+   ],
+   "dx": 0.0,
+   "dy": -0.2,
+   "score": 0.95
+  },
+  "005ML_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    24.24,
+    34.56
+   ],
+   "dx": -4.2,
+   "dy": 0.84,
+   "score": 0.941
+  }
+ }
+}

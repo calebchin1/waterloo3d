@@ -1,0 +1,37 @@
+{
+ "code": "EV2",
+ "source": "034EV2_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.107557,
+ "rotationDeg": 294.516,
+ "mirror": false,
+ "tx": -6506919.458,
+ "ty": 4806437.554,
+ "iou": 0.7719,
+ "margin": 0.0611,
+ "siteScore": 0.57,
+ "residualM": 3.2,
+ "method": "auto",
+ "levels": {
+  "034EV2_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "034EV2_02FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    13.44,
+    30.0
+   ],
+   "dx": 421.08,
+   "dy": 731.12,
+   "score": 0.684
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "code": "UC",
+ "source": "027UC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.044774,
+ "rotationDeg": 211.615,
+ "mirror": true,
+ "tx": -6507254.632,
+ "ty": 4806914.597,
+ "iou": 0.5221,
+ "margin": 0.0054,
+ "siteScore": null,
+ "residualM": 3.16,
+ "method": "needs-review"
+}

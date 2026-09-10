@@ -1,0 +1,15 @@
+{
+ "code": "V1",
+ "source": "020V1_CC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.068109,
+ "rotationDeg": 30.488,
+ "mirror": false,
+ "tx": -6507452.536,
+ "ty": 4806782.951,
+ "iou": 0.6951,
+ "margin": 0.0004,
+ "siteScore": null,
+ "residualM": 4.91,
+ "method": "needs-review"
+}

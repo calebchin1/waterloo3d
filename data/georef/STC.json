@@ -1,0 +1,87 @@
+{
+ "code": "STC",
+ "source": "054STC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.052363,
+ "rotationDeg": 113.136,
+ "mirror": false,
+ "tx": -6506861.206,
+ "ty": 4806704.658,
+ "iou": 0.7675,
+ "margin": 0.0059,
+ "siteScore": null,
+ "residualM": 2.24,
+ "method": "needs-review",
+ "levels": {
+  "054STC_MBFLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    2.94,
+    6.84
+   ],
+   "dx": 8.2,
+   "dy": 1217.22,
+   "score": 0.986
+  },
+  "054STC_B1FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    2.94,
+    6.84
+   ],
+   "dx": 8.2,
+   "dy": 1217.22,
+   "score": 0.986
+  },
+  "054STC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "054STC_02FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    3.0,
+    6.9
+   ],
+   "dx": 8.14,
+   "dy": 1217.16,
+   "score": 0.986
+  },
+  "054STC_03FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    3.0,
+    6.9
+   ],
+   "dx": 8.14,
+   "dy": 1217.16,
+   "score": 0.986
+  },
+  "054STC_04FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    3.0,
+    6.9
+   ],
+   "dx": 8.14,
+   "dy": 1217.16,
+   "score": 0.986
+  },
+  "054STC_05FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    -5.76,
+    1.2
+   ],
+   "dx": 6.9,
+   "dy": 1224.86,
+   "score": 1.0
+  }
+ }
+}

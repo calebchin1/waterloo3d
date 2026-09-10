@@ -11,14 +11,25 @@ interface Opts {
   flyTo: (l: Link) => void;
   setXray: (on: boolean) => void;
   reset: () => void;
-  onRoute: (from: string, to: string, preferIndoor: boolean) => { segs: Segment[]; steps: Step[]; metres: number; minutes: number; indoorShare: number } | null;
+  onRoute: (from: string, to: string, preferIndoor: boolean, room: string) => RouteResult | null | 'pending';
+  /** Floor-plan availability for the destination building, for the room field. */
+  indoorFor: (code: string) => { rooms: number } | null;
   onClearRoute: () => void;
   onStepFocus: (seg: Segment, index: number) => void;
   onWalk: () => void;
   locate: () => Promise<string>; // resolves to building code
 }
 
-export interface UIHandle { setRoute(from: string, to: string): void; message(text: string): void; setSheet(state: 'peek' | 'half' | 'full'): void }
+export interface RouteResult { segs: Segment[]; steps: Step[]; metres: number; minutes: number; indoorShare: number }
+export interface UIHandle {
+  setRoute(from: string, to: string): void;
+  /** Re-render the panel after the route is re-solved over freshly loaded indoor data. */
+  setResult(r: RouteResult): void;
+  /** Re-check whether the destination building has floor plans. */
+  syncRoomField(): void;
+  message(text: string): void;
+  setSheet(state: 'peek' | 'half' | 'full'): void;
+}
 
 export function initUI(o: Opts): UIHandle {
   const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
@@ -96,11 +107,7 @@ export function initUI(o: Opts): UIHandle {
   }
   const result = $('#result'), msg = $('#route-msg'), stepsEl = $<HTMLOListElement>('#steps');
   const message = (text: string) => { msg.textContent = text; msg.hidden = !text; };
-  const run = () => {
-    if (!from.value || !to.value) return message('Pick a start and an end.');
-    if (from.value === to.value) return message('Start and end are the same building.');
-    const r = o.onRoute(from.value, to.value, $<HTMLInputElement>('#indoor').checked);
-    if (!r) { result.hidden = true; return message('No route found.'); }
+  const render = (r: RouteResult) => {
     message('');
     $('#r-min').textContent = String(Math.max(1, Math.round(r.minutes)));
     $('#r-m').textContent = String(r.metres);
@@ -113,6 +120,26 @@ export function initUI(o: Opts): UIHandle {
       return li;
     }));
     result.hidden = false;
+  };
+  const roomWrap = $('#room-wrap'), roomInput = $<HTMLInputElement>('#room');
+  const syncRoomField = () => {
+    const info = to.value ? o.indoorFor(to.value) : null;
+    roomWrap.hidden = !info;
+    if (info) {
+      $('#room-code').textContent = to.value;
+      $('#room-hint').textContent = `· ${info.rooms} numbered`;
+    } else roomInput.value = '';
+  };
+  to.addEventListener('change', syncRoomField);
+
+  const run = () => {
+    if (!from.value || !to.value) return message('Pick a start and an end.');
+    const room = roomWrap.hidden ? '' : roomInput.value.trim().toUpperCase();
+    if (from.value === to.value && !room) return message('Start and end are the same building.');
+    const r = o.onRoute(from.value, to.value, $<HTMLInputElement>('#indoor').checked, room);
+    if (r === 'pending') { message('Loading floor plans…'); return; }
+    if (!r) { result.hidden = true; return message('No route found.'); }
+    render(r);
     const url = new URL(location.href); url.searchParams.set('from', from.value); url.searchParams.set('to', to.value); history.replaceState(null, '', url);
     setSheet('half');
   };
@@ -129,7 +156,9 @@ export function initUI(o: Opts): UIHandle {
   });
 
   return {
-    setRoute(f, t) { from.value = f; to.value = t; run(); },
+    setRoute(f, t) { from.value = f; to.value = t; syncRoomField(); run(); },
+    syncRoomField,
+    setResult: render,
     message,
     setSheet,
   };

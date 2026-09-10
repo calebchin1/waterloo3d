@@ -12,7 +12,16 @@
     "check": "tsx scripts/check.ts",
     "build-data": "tsx scripts/build-connections.ts && tsx scripts/check.ts",
     "build-graph": "tsx scripts/build-graph.ts && tsx scripts/check-graph.ts",
-    "check-graph": "tsx scripts/check-graph.ts"
+    "check-graph": "tsx scripts/check-graph.ts",
+    "check-indoor": "tsx scripts/check-indoor.ts",
+    "check-all": "npm run check && npm run check-graph && npm run check-indoor",
+    "indoor:setup": "python3 -m venv .venv && .venv/bin/pip install -r scripts/py/requirements.txt",
+    "indoor:corpus": ".venv/bin/python scripts/py/corpus.py",
+    "indoor:extract": ".venv/bin/python scripts/py/extract.py --all",
+    "indoor:georef": ".venv/bin/python scripts/py/georef.py --all",
+    "indoor:build": ".venv/bin/python scripts/py/pipeline.py",
+    "indoor:qa": ".venv/bin/python scripts/py/qa.py",
+    "indoor:floorshift": ".venv/bin/python scripts/py/floorshift.py"
   },
   "dependencies": {
     "@deck.gl/core": "^9.4.0",

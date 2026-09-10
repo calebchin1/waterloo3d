@@ -1,0 +1,57 @@
+{
+ "code": "M3",
+ "source": "056M3_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.103085,
+ "rotationDeg": 296.599,
+ "mirror": false,
+ "tx": -6506996.719,
+ "ty": 4807018.018,
+ "iou": 0.9193,
+ "margin": 0.0063,
+ "siteScore": null,
+ "residualM": 1.11,
+ "method": "needs-review",
+ "levels": {
+  "056M3_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "056M3_02FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    19.8,
+    24.0
+   ],
+   "dx": 746.2,
+   "dy": -4.08,
+   "score": 0.886
+  },
+  "056M3_03FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    95.64,
+    19.86
+   ],
+   "dx": 450.36,
+   "dy": 626.06,
+   "score": 0.852
+  },
+  "056M3_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    75.6,
+    3.84
+   ],
+   "dx": 8.4,
+   "dy": 10.08,
+   "score": 0.859
+  }
+ }
+}

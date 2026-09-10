@@ -1,0 +1,15 @@
+{
+ "code": "EC4",
+ "source": "065EC4_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.067196,
+ "rotationDeg": 26.3,
+ "mirror": true,
+ "tx": -6506552.259,
+ "ty": 4807174.769,
+ "iou": 0.9314,
+ "margin": 0.0016,
+ "siteScore": null,
+ "residualM": 0.81,
+ "method": "needs-review"
+}

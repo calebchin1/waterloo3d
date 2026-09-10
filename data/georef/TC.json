@@ -1,0 +1,57 @@
+{
+ "code": "TC",
+ "source": "045TC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.062781,
+ "rotationDeg": 214.414,
+ "mirror": false,
+ "tx": -6506713.37,
+ "ty": 4806580.659,
+ "iou": 0.4063,
+ "margin": 0.0137,
+ "siteScore": null,
+ "residualM": 5.87,
+ "method": "needs-review",
+ "levels": {
+  "045TC_B1FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    54.9,
+    59.58
+   ],
+   "dx": -2.0,
+   "dy": 0.0,
+   "score": 0.876
+  },
+  "045TC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "045TC_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    45.84,
+    86.28
+   ],
+   "dx": 9.06,
+   "dy": 9.3,
+   "score": 0.814
+  },
+  "045TC_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    43.68,
+    84.24
+   ],
+   "dx": 5.22,
+   "dy": 13.34,
+   "score": 0.812
+  }
+ }
+}

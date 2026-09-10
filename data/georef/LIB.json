@@ -1,0 +1,15 @@
+{
+ "code": "LIB",
+ "source": "008LIB_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.069308,
+ "rotationDeg": 120.025,
+ "mirror": false,
+ "tx": -6506749.734,
+ "ty": 4806583.534,
+ "iou": 0.4664,
+ "margin": 0.0004,
+ "siteScore": null,
+ "residualM": 9.36,
+ "method": "needs-review"
+}

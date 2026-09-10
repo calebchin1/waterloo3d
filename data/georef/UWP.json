@@ -1,0 +1,15 @@
+{
+ "code": "UWP",
+ "source": "026UWP_COMMONS_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.042249,
+ "rotationDeg": 41.959,
+ "mirror": false,
+ "tx": -6506234.026,
+ "ty": 4806707.567,
+ "iou": 0.779,
+ "margin": 0.0002,
+ "siteScore": null,
+ "residualM": 1.5,
+ "method": "needs-review"
+}

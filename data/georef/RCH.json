@@ -1,0 +1,47 @@
+{
+ "code": "RCH",
+ "source": "011RCH_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.123271,
+ "rotationDeg": 206.207,
+ "mirror": true,
+ "tx": -6506753.833,
+ "ty": 4806691.738,
+ "iou": 0.8913,
+ "margin": 0.012,
+ "siteScore": 0.0,
+ "residualM": 1.85,
+ "method": "needs-review",
+ "levels": {
+  "011RCH_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "011RCH_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    166.44,
+    130.08
+   ],
+   "dx": -9.0,
+   "dy": -8.12,
+   "score": 0.96
+  },
+  "011RCH_03FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    166.44,
+    144.6
+   ],
+   "dx": -7.0,
+   "dy": -8.64,
+   "score": 0.942
+  }
+ }
+}

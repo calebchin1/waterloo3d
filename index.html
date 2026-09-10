@@ -27,6 +27,7 @@
             <button type="button" id="swap" aria-label="Swap start and end">⇅</button>
             <label class="pick"><span>To</span><select id="to" required><option value="">Choose building…</option></select></label>
           </div>
+          <label class="pick room" hidden id="room-wrap"><span>Room in <b id="room-code"></b> <i id="room-hint"></i></span><input id="room" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 3021 — optional" /></label>
           <div class="row">
             <button type="button" id="locate" class="ghost">📍 Use my location</button>
             <label class="toggle small"><input type="checkbox" id="indoor" checked /> Prefer indoor</label>

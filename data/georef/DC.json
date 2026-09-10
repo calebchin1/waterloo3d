@@ -1,0 +1,57 @@
+{
+ "code": "DC",
+ "source": "037DC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.096507,
+ "rotationDeg": 26.646,
+ "mirror": false,
+ "tx": -6506803.619,
+ "ty": 4806873.612,
+ "iou": 0.6941,
+ "margin": 0.0012,
+ "siteScore": null,
+ "residualM": 2.75,
+ "method": "needs-review",
+ "levels": {
+  "037DC_B1FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    12.36,
+    12.6
+   ],
+   "dx": 762.6,
+   "dy": -11.24,
+   "score": 0.973
+  },
+  "037DC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "037DC_02FLR.pdf": {
+   "rotDeg": 270.0,
+   "pivot": [
+    63.36,
+    44.4
+   ],
+   "dx": -56.4,
+   "dy": 1044.96,
+   "score": 0.522
+  },
+  "037DC_03FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    12.18,
+    12.66
+   ],
+   "dx": 762.78,
+   "dy": -11.3,
+   "score": 0.973
+  }
+ }
+}

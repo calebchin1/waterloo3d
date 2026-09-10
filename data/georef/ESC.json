@@ -1,0 +1,57 @@
+{
+ "code": "ESC",
+ "source": "006ESC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.131424,
+ "rotationDeg": 116.676,
+ "mirror": true,
+ "tx": -6506841.014,
+ "ty": 4806919.569,
+ "iou": 0.8742,
+ "margin": 0.161,
+ "siteScore": 0.395,
+ "residualM": 2.05,
+ "method": "auto",
+ "levels": {
+  "006ESC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "006ESC_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    70.92,
+    84.72
+   ],
+   "dx": 0.36,
+   "dy": -0.44,
+   "score": 0.853
+  },
+  "006ESC_03FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    92.28,
+    25.8
+   ],
+   "dx": 1063.0,
+   "dy": 28.48,
+   "score": 0.689
+  },
+  "006ESC_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    49.32,
+    55.32
+   ],
+   "dx": 1.96,
+   "dy": -1.04,
+   "score": 0.693
+  }
+ }
+}

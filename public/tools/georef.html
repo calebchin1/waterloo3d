@@ -1,0 +1,162 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Georef fixer</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0f131a; color: #dfe6f0; font: 13px/1.4 system-ui, sans-serif; }
+  #bar { position: fixed; top: 0; left: 0; right: 0; display: flex; gap: 8px; align-items: center; padding: 8px 12px; background: #161b24; border-bottom: 1px solid #2a3140; flex-wrap: wrap; }
+  #bar input, #bar select, #bar button { font: inherit; padding: 5px 8px; border-radius: 6px; border: 1px solid #3a4252; background: #0f131a; color: inherit; }
+  #bar button.primary { background: #ffb703; color: #111; border-color: #ffb703; font-weight: 600; }
+  canvas { display: block; width: 100vw; height: 100vh; cursor: grab; }
+  #hint { position: fixed; bottom: 10px; left: 12px; color: #8b95a7; }
+  #msg { margin-left: auto; color: #ffd60a; }
+</style>
+<div id="bar">
+  <select id="code"></select>
+  <label>Level <select id="level"></select></label>
+  <button id="rot-l">⟲ 90°</button><button id="rot-r">⟳ 90°</button>
+  <button id="mirror">Mirror</button>
+  <button id="reset">Reset</button>
+  <button id="save" class="primary">Save to data/georef</button>
+  <span id="msg"></span>
+</div>
+<canvas id="c"></canvas>
+<div id="hint">drag: move · shift+drag: rotate · wheel: scale · alt+wheel: zoom view · yellow = OSM footprint, white = plan walls, green = stairs</div>
+<script>
+// Dev-only fixer for the automatic georeference. It draws the emitted indoor
+// walls (already in world coordinates) over the OSM footprint and lets you nudge
+// the whole building. The correction is composed with the stored transform and
+// POSTed to the Vite dev middleware, which writes data/georef/<CODE>.json with
+// method "manual". Re-run `npm run indoor:build -- <CODE>` afterwards.
+const LAT0 = 43.471, MX = 111320 * Math.cos(LAT0 * Math.PI / 180), MY = 110574;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const $ = (s) => document.querySelector(s);
+let index = {}, buildings = null, data = null, code = null, level = null;
+let fp = [];            // footprint rings in metres
+let walls = [], stairs = [], centre = [0, 0];
+let corr = { s: 1, th: 0, m: false, dx: 0, dy: 0 };   // correction about `centre`
+let view = { scale: 4, cx: 0, cy: 0 };                  // px per metre, pan
+
+const resize = () => { cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; draw(); };
+addEventListener('resize', resize);
+
+async function init() {
+  [index, buildings] = await Promise.all([
+    fetch('/data/indoor/_index.json').then((r) => r.json()),
+    fetch('/data/buildings.geojson').then((r) => r.json()),
+  ]);
+  const sel = $('#code');
+  for (const c of Object.keys(index)) { const o = document.createElement('option'); o.value = c; o.textContent = `${c} · ${index[c].georef}`; sel.append(o); }
+  sel.addEventListener('change', () => load(sel.value));
+  const q = new URLSearchParams(location.search).get('code');
+  if (q && index[q]) sel.value = q;
+  await load(sel.value);
+  resize();
+}
+
+async function load(c) {
+  code = c; data = await fetch(`/data/indoor/${c}.json`).then((r) => r.json());
+  corr = { s: 1, th: 0, m: false, dx: 0, dy: 0 };
+  fp = [];
+  for (const f of buildings.features) {
+    if (f.properties.code !== c) continue;
+    const g = f.geometry;
+    const rings = g.type === 'Polygon' ? [g.coordinates[0]] : g.coordinates.map((p) => p[0]);
+    for (const r of rings) fp.push(r.map(([x, y]) => [x * MX, y * MY]));
+  }
+  const ls = $('#level'); ls.replaceChildren();
+  for (const l of data.levels) { const o = document.createElement('option'); o.value = l.level; o.textContent = l.label; ls.append(o); }
+  ls.value = data.levels.find((l) => l.level === 0) ? 0 : data.levels[0].level;
+  ls.onchange = () => pickLevel(Number(ls.value));
+  pickLevel(Number(ls.value));
+  const all = walls.flat();
+  centre = [all.reduce((s, p) => s + p[0], 0) / all.length, all.reduce((s, p) => s + p[1], 0) / all.length];
+  const fpAll = fp.flat();
+  const fc = fpAll.length ? [fpAll.reduce((s, p) => s + p[0], 0) / fpAll.length, fpAll.reduce((s, p) => s + p[1], 0) / fpAll.length] : centre;
+  view = { scale: 4, cx: fc[0], cy: fc[1] };
+  msg(fp.length ? '' : 'no OSM footprint for this code');
+  draw();
+}
+
+function pickLevel(lv) {
+  level = data.levels.find((l) => l.level === lv);
+  const ox = data.origin[0] * MX, oy = data.origin[1] * MY;
+  const pairs = (f) => { const o = []; for (let i = 0; i < f.length; i += 2) o.push([ox + f[i] / 10, oy + f[i + 1] / 10]); return o; };
+  walls = level.walls.map(pairs);
+  stairs = level.stairs.map((s) => pairs(s.bbox));
+  draw();
+}
+
+function apply(p) {
+  const x0 = (corr.m ? -(p[0] - centre[0]) : p[0] - centre[0]), y0 = p[1] - centre[1];
+  const c = Math.cos(corr.th), s = Math.sin(corr.th);
+  return [centre[0] + corr.s * (c * x0 - s * y0) + corr.dx, centre[1] + corr.s * (s * x0 + c * y0) + corr.dy];
+}
+const toPx = ([x, y]) => [(x - view.cx) * view.scale * devicePixelRatio + cv.width / 2, cv.height / 2 - (y - view.cy) * view.scale * devicePixelRatio];
+
+function draw() {
+  ctx.fillStyle = '#0f131a'; ctx.fillRect(0, 0, cv.width, cv.height);
+  ctx.lineWidth = 1.5 * devicePixelRatio;
+  for (const r of fp) {
+    ctx.beginPath(); r.forEach((p, i) => { const q = toPx(p); i ? ctx.lineTo(...q) : ctx.moveTo(...q); });
+    ctx.closePath(); ctx.fillStyle = 'rgba(255,214,10,0.18)'; ctx.fill(); ctx.strokeStyle = '#ffd60a'; ctx.stroke();
+  }
+  ctx.strokeStyle = 'rgba(230,236,245,0.85)'; ctx.lineWidth = 1 * devicePixelRatio;
+  ctx.beginPath();
+  for (const w of walls) w.forEach((p, i) => { const q = toPx(apply(p)); i ? ctx.lineTo(...q) : ctx.moveTo(...q); });
+  ctx.stroke();
+  ctx.strokeStyle = '#00d68f'; ctx.lineWidth = 2 * devicePixelRatio;
+  for (const [a, b] of stairs) {
+    const p = [apply(a), apply([b[0], a[1]]), apply(b), apply([a[0], b[1]])].map(toPx);
+    ctx.beginPath(); p.forEach((q, i) => (i ? ctx.lineTo(...q) : ctx.moveTo(...q))); ctx.closePath(); ctx.stroke();
+  }
+}
+
+// ---- interaction
+let drag = null;
+cv.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY, shift: e.shiftKey, corr: { ...corr } }; cv.setPointerCapture(e.pointerId); });
+cv.addEventListener('pointermove', (e) => {
+  if (!drag) return;
+  const dx = (e.clientX - drag.x) / view.scale, dy = -(e.clientY - drag.y) / view.scale;
+  if (drag.shift) corr.th = drag.corr.th + (e.clientX - drag.x) * 0.004;
+  else { corr.dx = drag.corr.dx + dx; corr.dy = drag.corr.dy + dy; }
+  draw();
+});
+cv.addEventListener('pointerup', () => { drag = null; });
+cv.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const k = Math.exp(-e.deltaY * 0.0015);
+  if (e.altKey) view.scale *= k; else corr.s *= k;
+  draw();
+}, { passive: false });
+$('#rot-l').onclick = () => { corr.th += Math.PI / 2; draw(); };
+$('#rot-r').onclick = () => { corr.th -= Math.PI / 2; draw(); };
+$('#mirror').onclick = () => { corr.m = !corr.m; draw(); };
+$('#reset').onclick = () => { corr = { s: 1, th: 0, m: false, dx: 0, dy: 0 }; draw(); };
+function msg(t) { $('#msg').textContent = t; }
+
+// Compose the on-screen correction with the stored plan->world transform and
+// decompose the product back into (scale, rotation, mirror, tx, ty).
+$('#save').onclick = async () => {
+  const g = data.meta.georef;
+  if (g.tx == null) return msg('this building was emitted before tx/ty were recorded — re-run emit first');
+  const th0 = g.rotationDeg * Math.PI / 180, m0 = g.mirror ? -1 : 1;
+  // A0 = s0·R(th0)·diag(m0,1), world = A0·p + t0
+  const A0 = [[g.scale * m0 * Math.cos(th0), -g.scale * Math.sin(th0)], [g.scale * m0 * Math.sin(th0), g.scale * Math.cos(th0)]];
+  const t0 = [g.tx, g.ty];
+  // C = s·R(th)·diag(m,1) about centre, then + d
+  const mc = corr.m ? -1 : 1, c = Math.cos(corr.th), s = Math.sin(corr.th);
+  const C = [[corr.s * mc * c, -corr.s * s], [corr.s * mc * s, corr.s * c]];
+  const mul = (P, Q) => [[P[0][0] * Q[0][0] + P[0][1] * Q[1][0], P[0][0] * Q[0][1] + P[0][1] * Q[1][1]], [P[1][0] * Q[0][0] + P[1][1] * Q[1][0], P[1][0] * Q[0][1] + P[1][1] * Q[1][1]]];
+  const mv = (P, v) => [P[0][0] * v[0] + P[0][1] * v[1], P[1][0] * v[0] + P[1][1] * v[1]];
+  const A = mul(C, A0);
+  const ct = mv(C, [t0[0] - centre[0], t0[1] - centre[1]]);
+  const t = [centre[0] + ct[0] + corr.dx, centre[1] + ct[1] + corr.dy];
+  const det = A[0][0] * A[1][1] - A[0][1] * A[1][0];
+  const mirror = det < 0, scale = Math.sqrt(Math.abs(det));
+  const rot = Math.atan2(-A[0][1], A[1][1]) * 180 / Math.PI;
+  const body = { code, scale: +scale.toFixed(6), rotationDeg: +((rot % 360 + 360) % 360).toFixed(3), mirror, tx: +t[0].toFixed(3), ty: +t[1].toFixed(3) };
+  const r = await fetch('/__georef', { method: 'POST', body: JSON.stringify(body) }).then((r) => r.json()).catch((e) => ({ ok: false, error: String(e) }));
+  msg(r.ok ? `saved ${r.path} — now: npm run indoor:build -- ${code}` : `save failed: ${r.error}`);
+};
+init();
+</script>

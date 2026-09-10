@@ -1,0 +1,87 @@
+{
+ "code": "QNC",
+ "source": "050QNC_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.075773,
+ "rotationDeg": 204.479,
+ "mirror": false,
+ "tx": -6506930.449,
+ "ty": 4806831.397,
+ "iou": 0.7431,
+ "margin": 0.0044,
+ "siteScore": 0.0,
+ "residualM": 4.88,
+ "method": "needs-review",
+ "levels": {
+  "050QNC_0B_CON.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.72,
+    5.28
+   ],
+   "dx": -0.72,
+   "dy": 0.12,
+   "score": 0.999
+  },
+  "050QNC_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "050QNC_0M_MEZ.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.66,
+    5.46
+   ],
+   "dx": -0.66,
+   "dy": -0.06,
+   "score": 0.999
+  },
+  "050QNC_02FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.72,
+    5.52
+   ],
+   "dx": -0.72,
+   "dy": -0.12,
+   "score": 0.999
+  },
+  "050QNC_03FLR.pdf": {
+   "rotDeg": 90.0,
+   "pivot": [
+    5.52,
+    6.72
+   ],
+   "dx": 1210.48,
+   "dy": -1.32,
+   "score": 0.999
+  },
+  "050QNC_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.84,
+    5.52
+   ],
+   "dx": -0.84,
+   "dy": -0.12,
+   "score": 0.999
+  },
+  "050QNC_05FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    6.84,
+    5.52
+   ],
+   "dx": -0.84,
+   "dy": -0.12,
+   "score": 0.999
+  }
+ }
+}

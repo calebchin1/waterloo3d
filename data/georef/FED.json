@@ -1,0 +1,15 @@
+{
+ "code": "FED",
+ "source": "035FED_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.083983,
+ "rotationDeg": 314.128,
+ "mirror": true,
+ "tx": -6507314.983,
+ "ty": 4806962.243,
+ "iou": 0.6985,
+ "margin": 0.0037,
+ "siteScore": null,
+ "residualM": 4.51,
+ "method": "needs-review"
+}

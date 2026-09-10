@@ -1,0 +1,67 @@
+{
+ "code": "E6",
+ "source": "060E6_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.045082,
+ "rotationDeg": 117.866,
+ "mirror": true,
+ "tx": -6506511.313,
+ "ty": 4807015.052,
+ "iou": 0.9278,
+ "margin": 0.0003,
+ "siteScore": 0.0,
+ "residualM": 0.95,
+ "method": "needs-review",
+ "levels": {
+  "060E6_01FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    0,
+    0
+   ],
+   "dx": 0.0,
+   "dy": 0.0,
+   "score": 1.0
+  },
+  "060E6_02FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    8.88,
+    8.76
+   ],
+   "dx": 1211.36,
+   "dy": 762.64,
+   "score": 0.977
+  },
+  "060E6_03FLR.pdf": {
+   "rotDeg": 180.0,
+   "pivot": [
+    8.76,
+    8.76
+   ],
+   "dx": 1211.48,
+   "dy": 762.64,
+   "score": 0.977
+  },
+  "060E6_04FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    53.04,
+    37.32
+   ],
+   "dx": -22.8,
+   "dy": -31.92,
+   "score": 0.551
+  },
+  "060E6_05FLR.pdf": {
+   "rotDeg": 0.0,
+   "pivot": [
+    53.04,
+    36.84
+   ],
+   "dx": 193.2,
+   "dy": -37.44,
+   "score": 0.552
+  }
+ }
+}

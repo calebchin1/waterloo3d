@@ -1,0 +1,15 @@
+{
+ "code": "HS",
+ "source": "022HS_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.08448,
+ "rotationDeg": 9.966,
+ "mirror": false,
+ "tx": -6507140.058,
+ "ty": 4806656.203,
+ "iou": 0.776,
+ "margin": 0.2096,
+ "siteScore": 0.0,
+ "residualM": 1.11,
+ "method": "auto"
+}

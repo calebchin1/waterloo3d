@@ -1,0 +1,15 @@
+{
+ "code": "OPT",
+ "source": "033OPT_01FLR.pdf",
+ "level": 0.0,
+ "scale": 0.16146,
+ "rotationDeg": 298.749,
+ "mirror": false,
+ "tx": -6507186.218,
+ "ty": 4807358.346,
+ "iou": 0.7771,
+ "margin": 0.1869,
+ "siteScore": 0.0,
+ "residualM": 3.68,
+ "method": "auto"
+}

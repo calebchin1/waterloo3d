@@ -2,12 +2,13 @@ import './style.css';
 import type { MapLayerMouseEvent, Popup } from 'maplibre-gl';
 import { MapboxOverlay } from '@deck.gl/mapbox';
 import type { FeatureCollection, LineString } from 'geojson';
-import { buildLayers, type Filters, type Kind, type Link, type LinkProps } from './layers';
+import { buildLayers, buildIndoorLayers, type Filters, type IndoorView, type Kind, type Link, type LinkProps } from './layers';
 import { initUI } from './ui';
 import { buildAdjacency, route, summarise, type GraphData, type Segment } from './graph';
 import { toSteps, type Step } from './steps';
 import { routeLayers, routeBounds } from './route';
 import { createPlayer, type Player } from './pov';
+import { getIndoor, loadIndoor, markReady, nodeId, rooms, type Indoor } from './indoor';
 
 const HOME = { center: [-80.5421, 43.4701] as [number, number], zoom: 16.35, pitch: 58, bearing: -18 };
 const isMobile = () => matchMedia('(max-width: 720px)').matches;
@@ -43,15 +44,62 @@ let currentSteps: Step[] = [];
 let activeSeg: number | null = null;
 let player: Player | null = null;
 let xray = true;
+let indoorIndex: Record<string, { levels: number[]; labels: string[]; rooms: number }> = {};
+let indoorView: IndoorView | null = null;
+// deck.gl's overlay camera ignores MapLibre's centre elevation, so raising the
+// map camera to a fourth-floor corridor leaves deck drawing that corridor 14 m
+// overhead. Instead the whole scene slides down by the walker's own elevation
+// while the POV is running: the camera stays in its well-behaved ground-level
+// regime, and climbing stairs reads as the floor you left sinking away.
+let zShift = 0;
 
 function refresh() {
   const dim = currentRoute ? 0.25 : 1;
+  const inside = indoorView ? getIndoor(indoorView.code) : undefined;
   overlay.setProps({
     layers: [
       ...buildLayers(links, filters, showPopup, (l) => { map.getCanvas().style.cursor = l ? 'pointer' : ''; }, dim),
-      ...routeLayers(currentRoute, activeSeg),
+      // While walking, only the storey underfoot draws: the faded neighbours
+      // are useful for orientation from outside but are just haze at eye level.
+      ...(inside ? buildIndoorLayers(inside, indoorView!, player ? 0 : 1, zShift) : []),
+      ...routeLayers(currentRoute, activeSeg, !!player, zShift),
     ],
   });
+}
+
+/** Opened building shells go nearly transparent so the floor below reads; deck
+ *  draws over MapLibre rather than depth-sorting with it. */
+function setIndoorView(v: IndoorView | null) {
+  const changed = v?.code !== indoorView?.code || v?.level !== indoorView?.level;
+  indoorView = v;
+  if (!changed) return;
+  if (map.getLayer('buildings-3d')) {
+    map.setPaintProperty('buildings-3d', 'fill-extrusion-opacity',
+      v ? 0.05 : player ? 0.22 : xray ? 0.35 : 0.92);
+  }
+  refresh();
+}
+
+/** `I:` node id for a room number in a building, once its floors are loaded. */
+function findRoomNode(code: string, no: string): string | null {
+  const d = getIndoor(code);
+  if (!d) return null;
+  const want = no.replace(/\s+/g, '').toUpperCase();
+  for (const r of rooms(d)) {
+    if (r.no.toUpperCase() === want && r.node != null) return nodeId(code, r.level, r.node);
+  }
+  return null;
+}
+
+/** Pull in the indoor files for every building a route passes through, then
+ *  re-route over the real corridors instead of the synthetic clique. */
+async function withIndoor(codes: string[]): Promise<boolean> {
+  const want = [...new Set(codes)].filter((c) => indoorIndex[c] && !getIndoor(c));
+  if (!want.length) return false;
+  const loaded = await Promise.all(want.map((c) => loadIndoor(c)));
+  let any = false;
+  for (const d of loaded) if (d) { markReady(d as Indoor); any = true; }
+  return any;
 }
 
 function showPopup(l: Link, coord: [number, number]) {
@@ -88,12 +136,18 @@ function fitPadding() {
 const setBuildingOpacity = (v: number) => map.setPaintProperty('buildings-3d', 'fill-extrusion-opacity', v);
 
 map.on('load', async () => {
-  const [buildings, conn, g] = await Promise.all([
+  const [buildings, conn, g, idx] = await Promise.all([
     fetch('/data/buildings.geojson').then((r) => r.json()) as Promise<FeatureCollection>,
     fetch('/data/connections.geojson').then((r) => r.json()) as Promise<FeatureCollection<LineString, LinkProps>>,
     fetch('/data/graph.json').then((r) => r.json()) as Promise<GraphData>,
+    fetch('/data/indoor/_index.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
-  links = conn; graph = g;
+  links = conn; graph = g; indoorIndex = idx;
+  if (import.meta.env.DEV) (window as any).__indoor = {
+    get: getIndoor, index: () => indoorIndex, view: () => indoorView, route: () => currentRoute,
+    solve: (from: string, to: string, preferIndoor = true) =>
+      route(buildAdjacency(graph, links, { outdoorPenalty: preferIndoor ? 1.6 : 1 }), graph, links, from, to),
+  };
   const names = new Map<string, string>();
   for (const f of buildings.features) if (f.properties?.code) names.set(f.properties.code, f.properties.name ?? f.properties.code);
   const routable = Object.values(graph.nodes).filter((n) => n.kind === 'X').map((n) => ({ code: n.b, name: names.get(n.b) ?? n.b }));
@@ -150,7 +204,9 @@ map.on('load', async () => {
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function stopWalk() {
     player?.stop(); player = null;
+    zShift = 0;
     pov.hidden = true; document.body.classList.remove('pov-active', 'underground');
+    setIndoorView(null);
     setBuildingOpacity(xray ? 0.35 : 0.92);
     if (currentRoute) map.fitBounds(routeBounds(currentRoute), { padding: fitPadding(), pitch: 58, bearing: -18, duration: 900 });
   }
@@ -164,12 +220,27 @@ map.on('load', async () => {
     player = createPlayer(map, currentRoute, (f, i) => {
       povSeek.value = String(Math.round(f.t * 1000));
       document.body.classList.toggle('underground', f.z < -0.5);
+      // Only re-shift when the storey changes: the shift rebuilds several
+      // thousand wall quads, so doing it per frame would stutter.
+      const cur = currentRoute![f.segIndex];
+      const curLvl = cur.kind === 'vertical' ? cur.toLevel : cur.level;
+      const bld = cur.building ? getIndoor(cur.building) : undefined;
+      const wantShift = bld && curLvl !== undefined
+        ? -(bld.levels.find((x) => x.level === curLvl)?.elevM ?? 0) : 0;
+      const shifted = Math.abs(wantShift - zShift) > 0.05;
+      if (shifted) zShift = wantShift;
       if (f.segIndex !== lastSeg) {
         lastSeg = f.segIndex;
         const step = [...currentSteps].reverse().find((s) => s.index <= f.segIndex && s.kind !== 'start' && s.kind !== 'end') ?? currentSteps[0];
         povStep.innerHTML = step.text;
-        activeSeg = f.segIndex; refresh();
-      }
+        activeSeg = f.segIndex;
+        // Open the floor the walker is actually standing on.
+        const seg = currentRoute![f.segIndex];
+        const lvl = seg.kind === 'vertical' ? seg.toLevel : seg.level;
+        setIndoorView(seg.building && lvl !== undefined && getIndoor(seg.building)
+          ? { code: seg.building, level: lvl } : null);
+        refresh();
+      } else if (shifted) refresh();
       void i;
     }, () => { povPlay.textContent = '▶'; povStep.innerHTML = currentSteps[currentSteps.length - 1].text; });
     player.seek(0);
@@ -194,20 +265,55 @@ map.on('load', async () => {
     flyTo,
     setXray: (on) => { xray = on; setBuildingOpacity(on ? 0.35 : 0.92); },
     reset: () => { popup?.remove(); map.flyTo({ ...HOME, duration: 1200 }); },
-    onRoute: (from, to, preferIndoor) => {
-      const adj = buildAdjacency(graph, links, { outdoorPenalty: preferIndoor ? 1.6 : 1 });
-      const segs = route(adj, graph, links, from, to);
-      if (!segs) return null;
+    indoorFor: (code) => indoorIndex[code] ?? null,
+    onRoute: (from, to, preferIndoor, room) => {
+      const solve = (dst: string) => {
+        const adj = buildAdjacency(graph, links, { outdoorPenalty: preferIndoor ? 1.6 : 1 });
+        return route(adj, graph, links, from, dst);
+      };
+      const show = (r: Segment[]) => {
+        currentRoute = r; activeSeg = null; popup?.remove();
+        currentSteps = toSteps(r, names);
+        refresh();
+        map.fitBounds(routeBounds(r), { padding: fitPadding(), pitch: 58, bearing: -18, duration: 1000, maxZoom: 18.5 });
+      };
       if (player) stopWalk();
-      currentRoute = segs; activeSeg = null; popup?.remove();
-      currentSteps = toSteps(segs, names);
-      refresh();
-      map.fitBounds(routeBounds(segs), { padding: fitPadding(), pitch: 58, bearing: -18, duration: 1000, maxZoom: 18.5 });
+
+      // A room destination needs that building's floors before it can even be
+      // named, so this path is asynchronous from the start.
+      if (room) {
+        void withIndoor([from, to]).then(() => {
+          const dst = findRoomNode(to, room);
+          if (!dst) { ui.message(`No room ${room} in ${to}.`); return; }
+          const segs = solve(dst);
+          if (!segs) { ui.message('No route found.'); return; }
+          show(segs);
+          ui.setResult({ segs, steps: currentSteps, ...summarise(segs) });
+        });
+        return 'pending';
+      }
+
+      const segs = solve(to);
+      if (!segs) return null;
+      show(segs);
+      // Indoor files are fetched per building, so the first solve may still be
+      // using the synthetic clique. Load what this route touches and re-solve.
+      void withIndoor([from, to, ...segs.flatMap((s) => [s.from, s.to])]).then((gained) => {
+        if (!gained || currentRoute !== segs) return;
+        const better = solve(to);
+        if (!better) return;
+        show(better);
+        ui.setResult({ segs: better, steps: currentSteps, ...summarise(better) });
+      }, (e) => console.error('[indoor] load failed', e));
       return { segs, steps: currentSteps, ...summarise(segs) };
     },
     onClearRoute: () => { if (player) stopWalk(); currentRoute = null; activeSeg = null; refresh(); },
     onStepFocus: (seg, index) => {
-      activeSeg = index; refresh();
+      activeSeg = index;
+      const lvl = seg.kind === 'vertical' ? seg.toLevel : seg.level;
+      setIndoorView(seg.building && lvl !== undefined && getIndoor(seg.building)
+        ? { code: seg.building, level: lvl } : null);
+      refresh();
       const c = seg.coords[Math.floor(seg.coords.length / 2)];
       map.easeTo({ center: [c[0], c[1]], zoom: 18.6, pitch: 62, duration: 800, padding: isMobile() ? { top: 0, bottom: Math.round(innerHeight * 0.4), left: 0, right: 0 } : { top: 0, bottom: 0, left: 360, right: 0 } });
     },
