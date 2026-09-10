@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "fetch-osm": "tsx scripts/fetch-osm.ts",
     "check": "tsx scripts/check.ts",
-    "build-data": "tsx scripts/build-connections.ts && tsx scripts/check.ts"
+    "build-data": "tsx scripts/build-connections.ts && tsx scripts/check.ts",
+    "build-graph": "tsx scripts/build-graph.ts && tsx scripts/check-graph.ts",
+    "check-graph": "tsx scripts/check-graph.ts"
   },
   "dependencies": {
     "@deck.gl/core": "^9.4.0",

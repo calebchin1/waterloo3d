@@ -28,6 +28,23 @@ MapLibre is served as a vendored UMD script (`public/vendor/`) because its
 inline worker does not survive Vite's dependency pre-bundling. `npm run vendor`
 refreshes the copy after upgrading `maplibre-gl`.
 
+## Directions & walkthrough
+
+`?from=SCH&to=HH` deep-links a route. Routing runs in the browser over
+`public/data/graph.json` (~70 KB): building nodes, portal nodes at each end of
+every tunnel/bridge/doorway link, and outdoor "shortcut" edges between each
+building and its 4 nearest neighbours. The shortcuts are precomputed by
+`npm run build-graph` from the full OSM footway network (1,767 ways, cached
+in `.cache/footways.json`; pass `--refresh` to re-fetch). "Prefer indoor"
+multiplies outdoor cost by 1.6. Times are metres ÷ 1.3 m/s, nothing more.
+
+"Walk it" plays a first-person camera along the route (1.6 m/s, 1×/2×/4×).
+Underground segments tint the edges orange. Per-link corridor detail
+(`public/data/walkthroughs/<linkId>.json`) is planned; the app degrades to
+building-to-building steps when a file is absent.
+
+`/mobile-test.html` shows the app in a 390×844 frame for layout checks.
+
 ## Stack
 
 Vite + TypeScript, MapLibre GL JS (OpenFreeMap Liberty basemap, no API key),

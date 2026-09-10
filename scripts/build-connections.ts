@@ -4,6 +4,7 @@
 // between the nearest edges of the two building footprints. Run: npm run build-data
 import { readFileSync, writeFileSync } from 'node:fs';
 import type { Feature, FeatureCollection, LineString } from 'geojson';
+import { toM, toLL, sub, len, nearestPair, enter, chain, loadBuildings } from './geo';
 
 type Kind = 'tunnel' | 'bridge' | 'doorway';
 interface Def {
@@ -56,94 +57,10 @@ const DEFS: Def[] = [
   { id: 'e2-cph', from: 'E2', to: 'CPH', kind: 'doorway', z_m: 1, verified: true, notes: 'Interior doorways E2 to CPH.' },
 ];
 
-// ---------- geometry helpers (local metric projection) ----------
-const LAT0 = 43.471;
-const MX = 111320 * Math.cos((LAT0 * Math.PI) / 180);
-const MY = 110574;
-const toM = ([lon, lat]: number[]) => [lon * MX, lat * MY];
-const toLL = ([x, y]: number[]) => [+(x / MX).toFixed(7), +(y / MY).toFixed(7)];
-const sub = (a: number[], b: number[]) => [a[0] - b[0], a[1] - b[1]];
-const add = (a: number[], b: number[]) => [a[0] + b[0], a[1] + b[1]];
-const mul = (a: number[], k: number) => [a[0] * k, a[1] * k];
-const len = (a: number[]) => Math.hypot(a[0], a[1]);
-const unit = (a: number[]) => mul(a, 1 / (len(a) || 1));
-
-function nearestOnSeg(p: number[], a: number[], b: number[]) {
-  const ab = sub(b, a);
-  const L = ab[0] ** 2 + ab[1] ** 2;
-  const t = L === 0 ? 0 : Math.max(0, Math.min(1, ((p[0] - a[0]) * ab[0] + (p[1] - a[1]) * ab[1]) / L));
-  return add(a, mul(ab, t));
-}
-function pip(p: number[], ring: number[][]) {
-  let ins = false;
-  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    const [xi, yi] = ring[i], [xj, yj] = ring[j];
-    if (yi > p[1] !== yj > p[1] && p[0] < ((xj - xi) * (p[1] - yi)) / (yj - yi) + xi) ins = !ins;
-  }
-  return ins;
-}
-interface Bldg { code: string; rings: number[][][]; centroid: number[] }
-function inside(b: Bldg, p: number[]) { return b.rings.some((r) => pip(p, r)); }
-function nearestBoundary(b: Bldg, p: number[]) {
-  let best = p, bd = Infinity;
-  for (const r of b.rings) for (let i = 0; i < r.length - 1; i++) {
-    const q = nearestOnSeg(p, r[i], r[i + 1]); const d = len(sub(q, p));
-    if (d < bd) { bd = d; best = q; }
-  }
-  return { q: best, d: bd };
-}
-// Closest pair of points between two buildings' outlines.
-function nearestPair(a: Bldg, b: Bldg) {
-  let best: [number[], number[]] = [a.centroid, b.centroid], bd = Infinity;
-  const pass = (A: Bldg, B: Bldg, flip: boolean) => {
-    for (const r of A.rings) for (const v of r) {
-      const { q, d } = nearestBoundary(B, v);
-      if (d < bd) { bd = d; best = flip ? [q, v] : [v, q]; }
-    }
-  };
-  pass(a, b, false); pass(b, a, true);
-  return best;
-}
-// Push the end of a path 12 m into its building so the tube visibly enters it.
-function enter(b: Bldg, path: number[][], atStart: boolean) {
-  const p = atStart ? path[0] : path[path.length - 1];
-  if (inside(b, p)) return path;
-  const { q } = nearestBoundary(b, p);
-  let dir = unit(sub(q, p));
-  let deep = add(q, mul(dir, 12));
-  if (!inside(b, deep)) { dir = unit(sub(b.centroid, q)); deep = add(q, mul(dir, 12)); }
-  const ext = [q, deep];
-  return atStart ? [...ext.reverse(), ...path] : [...path, ...ext];
-}
-// Chain OSM ways end-to-end regardless of their stored direction.
-function chain(ways: number[][][]) {
-  const same = (a: number[], b: number[]) => len(sub(a, b)) < 0.5;
-  let path = ways[0].slice();
-  for (const w of ways.slice(1)) {
-    const ww = w.slice();
-    if (same(path[path.length - 1], ww[0])) path.push(...ww.slice(1));
-    else if (same(path[path.length - 1], ww[ww.length - 1])) path.push(...ww.reverse().slice(1));
-    else if (same(path[0], ww[ww.length - 1])) path = [...ww.slice(0, -1), ...path];
-    else if (same(path[0], ww[0])) path = [...ww.reverse().slice(0, -1), ...path];
-    else throw new Error('ways do not chain');
-  }
-  return path;
-}
-
 // ---------- load ----------
 const bfc = JSON.parse(readFileSync('public/data/buildings.geojson', 'utf8')) as FeatureCollection;
 const ifc = JSON.parse(readFileSync('public/data/osm-indoor.geojson', 'utf8')) as FeatureCollection<LineString>;
-const bld = new Map<string, Bldg>();
-for (const f of bfc.features) {
-  const code = f.properties?.code as string | null;
-  if (!code) continue;
-  const g = f.geometry as any;
-  const rings: number[][][] = (g.type === 'Polygon' ? [g.coordinates[0]] : g.coordinates.map((p: any) => p[0])).map((r: number[][]) => r.map(toM));
-  const all = rings.flat();
-  const centroid = [all.reduce((s, p) => s + p[0], 0) / all.length, all.reduce((s, p) => s + p[1], 0) / all.length];
-  const prev = bld.get(code);
-  bld.set(code, prev ? { code, rings: [...prev.rings, ...rings], centroid: prev.centroid } : { code, rings, centroid });
-}
+const bld = loadBuildings(bfc);
 const ways = new Map<number, number[][]>();
 for (const f of ifc.features) ways.set(f.properties!.osm_id, f.geometry.coordinates.map(toM));
 

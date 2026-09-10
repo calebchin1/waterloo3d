@@ -28,12 +28,13 @@ export function buildLayers(
   f: Filters,
   onClick: (l: Link, coord: [number, number]) => void,
   onHover: (l: Link | null) => void,
+  dim = 1,
 ): Layer[] {
   const data = visible(links, f);
   const color = (l: Link, alpha = 255): [number, number, number, number] => {
     const base = l.properties.status === 'closed' ? CLOSED : COLORS[l.properties.kind];
-    const dim = f.highlight && f.highlight !== l.properties.id ? 0.35 : 1;
-    return [base[0], base[1], base[2], Math.round(alpha * dim)];
+    const dimmed = (f.highlight && f.highlight !== l.properties.id ? 0.35 : 1) * dim;
+    return [base[0], base[1], base[2], Math.round(alpha * dimmed)];
   };
   const width = (l: Link) => (l.properties.kind === 'doorway' ? 1.6 : 3.2) * (f.highlight === l.properties.id ? 1.6 : 1);
   return [
@@ -44,7 +45,7 @@ export function buildLayers(
       getColor: (l) => color(l, 70),
       getWidth: (l) => width(l) * 1.4,
       widthUnits: 'meters', widthMinPixels: 1, capRounded: true, jointRounded: true,
-      updateTriggers: { getColor: [f.highlight], getWidth: [f.highlight] },
+      updateTriggers: { getColor: [f.highlight, dim], getWidth: [f.highlight] },
     }),
     new PathLayer<Link>({
       id: 'links',
@@ -56,7 +57,7 @@ export function buildLayers(
       pickable: true,
       onClick: (info) => { if (info.object) onClick(info.object, info.coordinate as [number, number]); },
       onHover: (info) => onHover(info.object ?? null),
-      updateTriggers: { getColor: [f.highlight], getWidth: [f.highlight] },
+      updateTriggers: { getColor: [f.highlight, dim], getWidth: [f.highlight] },
     }),
   ];
 }

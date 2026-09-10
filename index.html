@@ -11,28 +11,75 @@
   <body>
     <div id="map"></div>
     <aside id="panel">
+      <div id="grip" aria-hidden="true"></div>
       <header>
         <h1>UW Tunnels <span>3D</span></h1>
-        <p>Every student-accessible indoor link between buildings on the University of Waterloo main campus.</p>
+        <nav class="tabs" role="tablist">
+          <button type="button" class="tab active" data-tab="route" role="tab">Directions</button>
+          <button type="button" class="tab" data-tab="browse" role="tab">Browse links</button>
+        </nav>
       </header>
-      <section class="legend">
-        <label><input type="checkbox" data-kind="tunnel" checked /><i class="sw tunnel"></i>Tunnels <em id="n-tunnel"></em></label>
-        <label><input type="checkbox" data-kind="bridge" checked /><i class="sw bridge"></i>Bridges <em id="n-bridge"></em></label>
-        <label><input type="checkbox" data-kind="doorway" checked /><i class="sw doorway"></i>Doorway links <em id="n-doorway"></em></label>
+
+      <section id="tab-route" class="tabpane active">
+        <form id="route-form" autocomplete="off">
+          <div class="pickers">
+            <label class="pick"><span>From</span><select id="from" required><option value="">Choose building…</option></select></label>
+            <button type="button" id="swap" aria-label="Swap start and end">⇅</button>
+            <label class="pick"><span>To</span><select id="to" required><option value="">Choose building…</option></select></label>
+          </div>
+          <div class="row">
+            <button type="button" id="locate" class="ghost">📍 Use my location</button>
+            <label class="toggle small"><input type="checkbox" id="indoor" checked /> Prefer indoor</label>
+          </div>
+          <button type="submit" id="go" class="primary">Get directions</button>
+        </form>
+        <div id="result" hidden>
+          <div class="summary">
+            <div><b id="r-min"></b> min</div>
+            <div><b id="r-m"></b> m</div>
+            <div><b id="r-indoor"></b> indoors</div>
+            <button type="button" id="walk" class="primary small">▶ Walk it</button>
+          </div>
+          <ol id="steps"></ol>
+          <div class="row">
+            <button type="button" id="share" class="ghost">Copy link</button>
+            <button type="button" id="clear" class="ghost">Clear</button>
+          </div>
+        </div>
+        <p id="route-msg" class="msg" hidden></p>
       </section>
-      <section class="controls">
-        <label class="toggle"><input type="checkbox" id="xray" checked /> X‑ray buildings</label>
-        <label class="toggle"><input type="checkbox" id="unverified" checked /> Show unverified (OSM‑only)</label>
-        <button id="reset" type="button">Reset view</button>
+
+      <section id="tab-browse" class="tabpane">
+        <section class="legend">
+          <label><input type="checkbox" data-kind="tunnel" checked /><i class="sw tunnel"></i>Tunnels <em id="n-tunnel"></em></label>
+          <label><input type="checkbox" data-kind="bridge" checked /><i class="sw bridge"></i>Bridges <em id="n-bridge"></em></label>
+          <label><input type="checkbox" data-kind="doorway" checked /><i class="sw doorway"></i>Doorway links <em id="n-doorway"></em></label>
+        </section>
+        <section class="controls">
+          <label class="toggle"><input type="checkbox" id="xray" checked /> X‑ray buildings</label>
+          <label class="toggle"><input type="checkbox" id="unverified" checked /> Show unverified (OSM‑only)</label>
+          <button id="reset" type="button">Reset view</button>
+        </section>
+        <section class="list">
+          <input id="search" type="search" placeholder="Search building code or name…" autocomplete="off" />
+          <ul id="results"></ul>
+        </section>
       </section>
-      <section class="list">
-        <input id="search" type="search" placeholder="Search building code or name…" autocomplete="off" />
-        <ul id="results"></ul>
-      </section>
+
       <footer>
-        Data: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · basemap <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> · link list from <a href="https://uwimprint.ca/an-introduction-to-tunnels-and-bridges-on-campus/" target="_blank" rel="noopener">Imprint</a>. Tunnel depths and bridge heights are nominal.
+        Data: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · basemap <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> · link list from <a href="https://uwimprint.ca/an-introduction-to-tunnels-and-bridges-on-campus/" target="_blank" rel="noopener">Imprint</a>. Depths, heights and times are nominal (1.3 m/s, no crowds).
       </footer>
     </aside>
+    <div id="pov" hidden>
+      <div class="pov-vignette"></div>
+      <div class="pov-bar">
+        <button type="button" id="pov-play" aria-label="Play/pause">⏸</button>
+        <input type="range" id="pov-seek" min="0" max="1000" value="0" aria-label="Position" />
+        <button type="button" id="pov-speed">1×</button>
+        <button type="button" id="pov-exit" aria-label="Exit walkthrough">✕</button>
+      </div>
+      <div class="pov-step" id="pov-step"></div>
+    </div>
     <button id="panel-toggle" type="button" aria-label="Toggle panel">☰</button>
     <script src="/vendor/maplibre-gl.js"></script>
     <script type="module" src="/src/main.ts"></script>
